@@ -1,0 +1,1 @@
+export const API_URL = "https://drf-api-frirsta.herokuapp.com/accounts/";

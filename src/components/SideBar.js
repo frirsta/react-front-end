@@ -1,0 +1,30 @@
+import React from "react";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+import styles from "../styles/SideBar.module.css";
+import { Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+
+const SideBar = () => {
+  return (
+    <Card>
+      <ListGroup
+        className={`${styles.SideBar} position-fixed top-0 start-0`}
+        variant="flush"
+      >
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <NavLink to="/">
+          <i className="fa-solid fa-house"></i> Home
+        </NavLink>
+        <NavLink to="/signin">
+          <i className="fa-solid fa-right-to-bracket"></i> Sign in
+        </NavLink>
+        <NavLink to="/signup">
+          <i className="fa-solid fa-user-plus"></i> Sign up
+        </NavLink>
+      </ListGroup>
+    </Card>
+  );
+};
+
+export default SideBar;

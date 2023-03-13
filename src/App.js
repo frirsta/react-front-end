@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import SideBar from "./components/SideBar";
+import { Route, Switch } from "react-router-dom/";
+import { Container } from "react-bootstrap";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className={styles.App}>
+    <Container>
+    <SideBar />
+    <Switch>
+    <Route exact path="/" render={() => <h1 className={styles.main}>Home</h1>} />
+    <Route exact path="/signin" render={() => <h1 className={styles.main}>Sign in</h1>} />
+    <Route exact path="/signup" render={() => <h1 className={styles.main}>Sign up</h1>} />
+    <Route render={() => <h1 className={styles.main}>Page not found</h1>} />
+  </Switch>
+  </Container>
+  </div>
   );
 }
 
