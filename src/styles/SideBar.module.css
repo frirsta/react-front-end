@@ -2,4 +2,22 @@
     background-color: rgb(145, 253, 199);
     height: 100vh;
     width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.NavLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    width: 150px;
+    height: 45px;
+}
+
+.icons{
+    font-size: 35px;
+    padding: 0 5px;
 }

@@ -5,44 +5,50 @@ import styles from "../styles/SideBar.module.css";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useCurrentUser } from "../context/CurrentUserContext";
-import style from '../styles/Profile.module.css'
 import Profile from "./Profile";
-
-
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
-  const addPost = <>
-      <NavLink to="/posts/add">
-        <i className="fa-solid fa-square-plus"></i> Add post
+  const addPost = (
+    <>
+      <NavLink className={styles.NavLink} to="/posts/add">
+        <i className={`${styles.icons} fa-solid fa-square-plus`}></i> Add post
       </NavLink>
-  </>
+    </>
+  );
   const loggedInIcons = (
     <>
-
-      <NavLink to={`/accounts/${currentUser?.profile_id}`}>
-        <Profile src={currentUser?.profile_image} text="Profile" height={40} />
+      <NavLink className={styles.NavLink} to="/notification">
+        <i className={`${styles.icons} fa-solid fa-heart`}></i> Notification
+      </NavLink>
+      <NavLink className={styles.NavLink} to="/" onClick={() => {}}>
+        <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i>{" "}
+        Sign out
       </NavLink>
 
-      <NavLink to="/notification">
-        <i className="fa-solid fa-heart"></i> Notification
+      <NavLink
+        className={styles.NavLink}
+        to={`/accounts/${currentUser?.profile_id}`}
+      >
+        <Profile
+          className={styles.icons}
+          src={currentUser?.profile_image}
+          text="Profile"
+          height={40}
+          width={40}
+        />
       </NavLink>
-      <NavLink to="/"
-      onClick={() => {}}>
-        <i className="fa-solid fa-right-from-bracket"></i> Sign out
-      </NavLink>
-      
-      {currentUser?.username}
     </>
   );
 
   const loggedOutIcons = (
     <>
-      <NavLink to="/signin">
-        <i className="fa-solid fa-right-to-bracket"></i> Sign in
+      <NavLink className={styles.NavLink} to="/signin">
+        <i className={`${styles.icons} fa-solid fa-right-to-bracket`}></i> Sign
+        in
       </NavLink>
-      <NavLink to="/signup">
-        <i className="fa-solid fa-user-plus"></i> Sign up
+      <NavLink className={styles.NavLink} to="/signup">
+        <i className={`${styles.icons} fa-solid fa-user-plus`}></i> Sign up
       </NavLink>
     </>
   );
@@ -52,10 +58,10 @@ const SideBar = () => {
         className={`${styles.SideBar} position-fixed top-0 start-0`}
         variant="flush"
       >
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">{currentUser?.username}</Navbar.Brand>
         {currentUser && addPost}
-        <NavLink to="/">
-          <i className="fa-solid fa-house"></i> Home
+        <NavLink className={styles.NavLink} to="/">
+          <i className={`${styles.icons} fa-solid fa-house`}></i> Home
         </NavLink>
         {currentUser ? loggedInIcons : loggedOutIcons}
       </ListGroup>
