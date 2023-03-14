@@ -8,7 +8,8 @@ import { CurrentUserContext } from "../App";
 
 const SideBar = () => {
   const currentUser = useContext(CurrentUserContext);
-  const loggedInIcons = <>{currentUser?.username}</>;
+  const loggedInIcons = <>{currentUser?.username}</>
+
   const loggedOutIcons = (
     <>
       <NavLink to="/signin">
