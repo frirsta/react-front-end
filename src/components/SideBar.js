@@ -8,7 +8,17 @@ import { useCurrentUser } from "../context/CurrentUserContext";
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
-  const loggedInIcons = <>{currentUser?.username}</>
+  const loggedInIcons = (
+    <>
+      <NavLink to="/post">
+        <i className="fa-solid fa-square-plus"></i> Add post
+      </NavLink>
+      <NavLink to="/profile">
+        <i className="fa-solid fa-user"></i> Profile
+      </NavLink>
+      {currentUser?.username}
+    </>
+  );
 
   const loggedOutIcons = (
     <>

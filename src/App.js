@@ -5,8 +5,8 @@ import styles from "./App.module.css";
 import SignUpForm from "./pages/auth/SignUpForm";
 import "./api/axiosDefaults";
 import SignInForm from "./pages/auth/SignInForm";
-import { useEffect, useState, createContext } from "react";
-import axios from "axios";
+import { createContext } from "react";
+
 
 export const CurrentUserContext = createContext();
 export const SetCurrentUserContext = createContext();
