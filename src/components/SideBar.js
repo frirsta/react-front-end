@@ -4,11 +4,24 @@ import ListGroup from "react-bootstrap/ListGroup";
 import styles from "../styles/SideBar.module.css";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { useCurrentUser } from "../context/CurrentUserContext";
+import { useCurrentUser, useSetCurrentUser } from "../context/CurrentUserContext";
 import Profile from "./Profile";
+import axios from "axios";
+
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
+  const setCurrentUser = useSetCurrentUser();
+
+
+  const handleSignOut = async () => {
+    try {
+      await axios.post("/dj-rest-auth/logout/");
+      setCurrentUser(null);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   const addPost = (
     <>
       <NavLink className={styles.NavLink} to="/posts/add">
@@ -21,9 +34,8 @@ const SideBar = () => {
       <NavLink className={styles.NavLink} to="/notification">
         <i className={`${styles.icons} fa-solid fa-heart`}></i> Notification
       </NavLink>
-      <NavLink className={styles.NavLink} to="/" onClick={() => {}}>
-        <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i>{" "}
-        Sign out
+      <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
+        <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i> Sign out
       </NavLink>
 
       <NavLink
