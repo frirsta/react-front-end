@@ -1,6 +1,5 @@
 import SideBar from "./components/SideBar";
 import { Route, Switch } from "react-router-dom/";
-import { Container } from "react-bootstrap";
 import styles from "./App.module.css";
 import SignUpForm from "./pages/auth/SignUpForm";
 import "./api/axiosDefaults";
@@ -15,21 +14,24 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Container>
+      
         <SideBar />
         <Switch>
           <Route
             exact
             path="/"
-            render={() => <h1 className={styles.main}>Home</h1>}
+            render={() => <h1 className={styles.main}>Feed</h1>}
           />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
+          <Route exact path="/posts/add" render={() => <h1 className={styles.main}>Add Post</h1> } />
+          <Route exact path="/notification" render={() =><h1 className={styles.main}>Notification</h1>} />
+          <Route exact path="/accounts" render={() =><h1 className={styles.main}>Profile</h1>} />
           <Route
             render={() => <h1 className={styles.main}>Page not found</h1>}
           />
         </Switch>
-      </Container>
+    
     </div>
 
   );

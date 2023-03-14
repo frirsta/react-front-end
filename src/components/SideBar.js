@@ -5,17 +5,33 @@ import styles from "../styles/SideBar.module.css";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useCurrentUser } from "../context/CurrentUserContext";
+import style from '../styles/Profile.module.css'
+import Profile from "./Profile";
+
+
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
-  const loggedInIcons = (
-    <>
-      <NavLink to="/post">
+  const addPost = <>
+      <NavLink to="/posts/add">
         <i className="fa-solid fa-square-plus"></i> Add post
       </NavLink>
-      <NavLink to="/profile">
-        <i className="fa-solid fa-user"></i> Profile
+  </>
+  const loggedInIcons = (
+    <>
+
+      <NavLink to={`/accounts/${currentUser?.profile_id}`}>
+        <Profile src={currentUser?.profile_image} text="Profile" height={40} />
       </NavLink>
+
+      <NavLink to="/notification">
+        <i className="fa-solid fa-heart"></i> Notification
+      </NavLink>
+      <NavLink to="/"
+      onClick={() => {}}>
+        <i className="fa-solid fa-right-from-bracket"></i> Sign out
+      </NavLink>
+      
       {currentUser?.username}
     </>
   );
@@ -31,12 +47,13 @@ const SideBar = () => {
     </>
   );
   return (
-    <Card>
+    <Card className={"position-fixed top-0 start-0"}>
       <ListGroup
         className={`${styles.SideBar} position-fixed top-0 start-0`}
         variant="flush"
       >
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        {currentUser && addPost}
         <NavLink to="/">
           <i className="fa-solid fa-house"></i> Home
         </NavLink>
