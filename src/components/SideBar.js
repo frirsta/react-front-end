@@ -65,9 +65,9 @@ const SideBar = () => {
     </>
   );
   return (
-    <Card className={"position-fixed top-0 start-0"}>
+    <Card>
       <ListGroup
-        className={`${styles.SideBar} position-fixed top-0 start-0`}
+        className={styles.SideBar}
         variant="flush"
       >
         <Navbar.Brand href="#home">{currentUser?.username}</Navbar.Brand>

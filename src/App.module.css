@@ -2,6 +2,7 @@
     font-family: 'Comfortaa', sans-serif;
     background-color: rgb(184, 250, 193);
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .main{
