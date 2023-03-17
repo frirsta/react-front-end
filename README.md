@@ -1,73 +1,132 @@
-# Getting Started with Create React App
+# React project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+* [**Project**](<#project>)
+* [**Project Management**](<#project-management>)
+* [**Wireframes**](<#wireframes>)
+* [**User Experience UX**](<#user-experience-ux>)
+* [**Features**](<#features>)
+* [**Future Features**](<#future-features>)
+* [**Testing**](<#testing>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Bugs**](<#bugs>)
+* [**Unfixed Bugs**](<#unfixed-bugs>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+* [**Acknowledgement**](<#acknowledgement>)
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+# Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Management
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Wireframes
 
-### `npm run build`
+### I have used [Miro](https://miro.com/) to create WireFrames for the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details><summary>Wireframes</summary>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details><summary>Home page</summary>
+<img src="src/assets/readme/wireframes/home.jpg" alt="Home page desktop screen" style="width: 45%;">
+<img src="src/assets/readme/wireframes/home_mobile_tablet.jpg" alt="Home page mobile and tablet screen" style="width: 45%;">
+<img src="src/assets/readme/wireframes/home_mobile_tablet_full_screen.jpg" alt="Home page full screen mobile and tablet screen" style="width: 45%;">
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details><summary>Post detail</summary>
+<img src="src/assets/readme/wireframes/post_detail.jpg" alt="Post detail page on mobile, tablet and desktop screen">
+</details>
 
-### `npm run eject`
+<details><summary>Signup</summary>
+<img src="src/assets/readme/wireframes/signup.jpg" alt="Sign up page on mobile, tablet and desktop screen">
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details><summary>Sign in</summary>
+<img src="src/assets/readme/wireframes/signin.jpg" alt="Sign in page on mobile, tablet and desktop screen">
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details><summary>Upload</summary>
+<img src="src/assets/readme/wireframes/upload.jpg" alt="Upload page on mobile, tablet and desktop screen">
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<details><summary>profile page from another users view</summary>
+<img src="src/assets/readme/wireframes/profile_user_view.jpg" alt="Profile page from other users view on mobile, tablet and desktop screen">
+</details>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details><summary>profile</summary>
+<img src="src/assets/readme/wireframes/profile.jpg" alt="Profile page on mobile, tablet and desktop screen">
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<details><summary>Edit profile</summary>
+<img src="src/assets/readme/wireframes/edit_profile.jpg" alt="Edit profile page on mobile, tablet and desktop screen">
+</details>
 
-### Code Splitting
+<details><summary>Change username</summary>
+<img src="src/assets/readme/wireframes/change_username.jpg" alt="Change username page on mobile, tablet and desktop screen">
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<details><summary>Liked posts</summary>
+<img src="src/assets/readme/wireframes/liked_posts.jpg" alt="Liked posts page on mobile, tablet and desktop screen">
+</details>
 
-### Analyzing the Bundle Size
+<details><summary>Buisness profile</summary>
+<img src="src/assets/readme/wireframes/buisness_profile.jpg" alt="Buisness profile page on mobile, tablet and desktop screen">
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</details>
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# User Experience UX
 
-### Advanced Configuration
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Features
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Future Features
 
-### `npm run build` fails to minify
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Testing
 
+<br>
+
+# Technologies used
+
+libraries
+npm install react-bootstrap bootstrap
+npm install react-router-dom
+npm install axios
+npm install react-router-dom
+
+<br>
+
+# Bugs
+
+<br>
+
+# Unfixed Bugs
+
+<br>
+
+# Deployment
+
+<br>
+
+# Credits
+<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
+
+<br>
+
+# Acknowledgement
 
 npm install bootstrap reactstrap axios --save
