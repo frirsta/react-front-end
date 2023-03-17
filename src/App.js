@@ -6,6 +6,7 @@ import "./api/axiosDefaults";
 import SignInForm from "./pages/auth/SignInForm";
 import { createContext } from "react";
 import PostAddForm from "./pages/posts/PostAddForm";
+import PostPage from "./pages/posts/PostPage";
 
 
 export const CurrentUserContext = createContext();
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/posts/add" render={() => <PostAddForm /> } />
           <Route exact path="/notification" render={() =><h1 className={styles.main}>Notification</h1>} />
           <Route exact path="/accounts" render={() =><h1 className={styles.main}>Profile</h1>} />
+          <Route exact path="/posts/:id" render={()=> <PostPage />} />
           <Route
             render={() => <h1 className={styles.main}>Page not found</h1>}
           />
