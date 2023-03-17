@@ -1,0 +1,19 @@
+.Image{
+    height: 250px;
+    width: 250px;
+}
+
+.Button{
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}

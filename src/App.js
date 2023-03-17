@@ -5,6 +5,7 @@ import SignUpForm from "./pages/auth/SignUpForm";
 import "./api/axiosDefaults";
 import SignInForm from "./pages/auth/SignInForm";
 import { createContext } from "react";
+import PostAddForm from "./pages/posts/PostAddForm";
 
 
 export const CurrentUserContext = createContext();
@@ -24,7 +25,7 @@ function App() {
           />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
-          <Route exact path="/posts/add" render={() => <h1 className={styles.main}>Add Post</h1> } />
+          <Route exact path="/posts/add" render={() => <PostAddForm /> } />
           <Route exact path="/notification" render={() =><h1 className={styles.main}>Notification</h1>} />
           <Route exact path="/accounts" render={() =><h1 className={styles.main}>Profile</h1>} />
           <Route

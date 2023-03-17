@@ -125,6 +125,9 @@ npm install react-router-dom
 # Credits
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 
+upload:
+<a href="https://www.flaticon.com/free-icons/upload" title="upload icons">Upload icons created by Freepik - Flaticon</a>
+
 <br>
 
 # Acknowledgement
