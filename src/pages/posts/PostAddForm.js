@@ -1,11 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Button, Container, Form, Image } from "react-bootstrap";
+import { Button, Container, Form, Image, Alert } from "react-bootstrap";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Upload from "../../assets/upload.png";
 import Asset from "../../components/Asset";
 import styles from "../../styles/PostAdd.module.css";
-import "../../api/axiosDefaults";
 
 function PostAddForm() {
   const [errors, setErrors] = useState({});
@@ -65,7 +64,12 @@ function PostAddForm() {
           onChange={handleChange}
         />
       </Form.Group>
-      <Button className={styles.Button} onClick={() => {}}>
+      {errors.caption?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
+      <Button className={styles.Button} onClick={() => history.goBack()}>
         Cancel
       </Button>
 
@@ -110,6 +114,11 @@ function PostAddForm() {
           ref={imageInput}
         />
       </Form.Group>
+      {errors.image?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
       <Container>{postFields}</Container>
     </Form>
     </Container>
