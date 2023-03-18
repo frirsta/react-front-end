@@ -28,7 +28,8 @@ const Post = (props) => {
       <div>
         <Media>
           <Link to={`accounts/${profile_id}`}>
-            <Profile src={profile_image} height={50} />
+            <Profile src={currentUser?.profile_image} />
+            {currentUser?.username}
           </Link>
         </Media>
         <span>{updated_date}</span>
@@ -65,7 +66,7 @@ const Post = (props) => {
           </OverlayTrigger>
         )} {likes_count}
         <Link to={`posts/${id}`}>
-            <i className="far fa-comments" />
+        <i className="fa-regular fa-comment" />
         </Link>
         {comments_count}
       </div>
