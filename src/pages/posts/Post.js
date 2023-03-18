@@ -10,7 +10,6 @@ const Post = (props) => {
     id,
     owner,
     profile_id,
-    profile_image,
     comments_count,
     likes_count,
     likes_id,
@@ -26,10 +25,10 @@ const Post = (props) => {
   return (
     <div>
       <div>
-        <Media>
+        <Media className={styles.PostUserContainer}>
           <Link to={`accounts/${profile_id}`}>
-            <Profile src={currentUser?.profile_image} />
-            {currentUser?.username}
+            <span className={styles.ProfileImage}><Profile src={currentUser?.profile_image} /></span>
+            <span>{currentUser?.username}</span>
           </Link>
         </Media>
         <span>{updated_date}</span>
