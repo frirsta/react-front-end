@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import Post from "./Post";
 
 function PostPage() {
   const { id } = useParams();
@@ -20,11 +21,13 @@ function PostPage() {
         console.log(err);
       }
     };
+
     handleMount();
   }, [id]);
+
   return (
     <Container>
-      <p>Post component</p>
+     <Post {...post.results[0]} setPost={setPost} postPage />
       <p>Comments</p>
     </Container>
   );

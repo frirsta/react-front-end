@@ -10,10 +10,10 @@ function PostAddForm() {
   const [errors, setErrors] = useState({});
   const [postData, setPostData] = useState({
     caption: "",
-    image: "",
+    post_image: "",
   });
 
-  const { caption, image } = postData;
+  const { caption, post_image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -27,10 +27,10 @@ function PostAddForm() {
 
   const handleImageChange = (event) => {
     if (event.target.files.length) {
-      URL.revokeObjectURL(image);
+      URL.revokeObjectURL(post_image);
       setPostData({
         ...postData,
-        image: URL.createObjectURL(event.target.files[0]),
+        post_image: URL.createObjectURL(event.target.files[0]),
       });
     }
   };
@@ -40,7 +40,7 @@ function PostAddForm() {
     const formData = new FormData();
 
     formData.append("caption", caption);
-    formData.append("image", imageInput.current.files[0]);
+    formData.append("post_image", imageInput.current.files[0]);
 
     try {
       const { data } = await axiosReq.post("/posts/", formData);
@@ -83,10 +83,10 @@ function PostAddForm() {
     <Container>
     <Form onSubmit={handleSubmit} className={styles.Form}>
       <Form.Group>
-        {image ? (
+        {post_image ? (
           <>
             <figure>
-              <Image className={styles.Image} src={image} rounded />
+              <Image className={styles.Image} src={post_image} rounded />
             </figure>
             <div>
               <Form.Label
@@ -114,7 +114,7 @@ function PostAddForm() {
           ref={imageInput}
         />
       </Form.Group>
-      {errors.image?.map((message, idx) => (
+      {errors.post_image?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
