@@ -133,3 +133,4 @@ upload:
 # Acknowledgement
 
 npm install bootstrap reactstrap axios --save
+Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/

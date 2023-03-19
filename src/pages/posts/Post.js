@@ -9,7 +9,8 @@ const Post = (props) => {
   const {
     id,
     owner,
-    profile_id,
+    accounts_id,
+    profile_image,
     comments_count,
     likes_count,
     likes_id,
@@ -26,9 +27,11 @@ const Post = (props) => {
     <div>
       <div>
         <Media className={styles.PostUserContainer}>
-          <Link to={`accounts/${profile_id}`}>
-            <span className={styles.ProfileImage}><Profile src={currentUser?.profile_image} /></span>
-            <span>{currentUser?.username}</span>
+          <Link to={`accounts/${accounts_id}`}>
+            <span className={styles.ProfileImage}>
+              <Profile src={profile_image} />
+            </span>
+            <span>{owner}</span>
           </Link>
         </Media>
         <span>{updated_date}</span>
@@ -63,9 +66,10 @@ const Post = (props) => {
           >
             <i className="far fa-heart" />
           </OverlayTrigger>
-        )} {likes_count}
+        )}{" "}
+        {likes_count}
         <Link to={`posts/${id}`}>
-        <i className="fa-regular fa-comment" />
+          <i className="fa-regular fa-comment" />
         </Link>
         {comments_count}
       </div>
