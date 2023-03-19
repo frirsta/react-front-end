@@ -58,7 +58,7 @@ const Post = (props) => {
   };
 
   return (
-    <div>
+    <div className={styles.PostContainer}>
       <div>
         <Media className={styles.PostUserContainer}>
           <Link to={`accounts/${accounts_id}`}>
@@ -67,16 +67,16 @@ const Post = (props) => {
             </span>
             <span>{owner}</span>
           </Link>
-        </Media>
         <span>{updated_date}</span>
+        </Media>
         {is_owner && postPage && "..."}
       </div>
       <div>
         <Link to={`/posts/${id}`}>
-          <Card.Img src={post_image} alt={caption} />
+          <Card.Img className={styles.PostImage} src={post_image} alt={caption} />
         </Link>
       </div>
-      <div>
+      <div className={styles.PostUserLikesComments}>
         {caption}
         {is_owner ? (
           <OverlayTrigger
@@ -87,11 +87,11 @@ const Post = (props) => {
           </OverlayTrigger>
         ) : likes_id ? (
           <span onClick={handleUnlike}>
-            <i className={`${styles.LikedPost} fa-solid fa-heart`} />
+            <i className={`${styles.LikedPost} ${styles.Like} fa-solid fa-heart`} />
           </span>
         ) : currentUser ? (
           <span onClick={handleLike}>
-            <i className="far fa-heart" />
+            <i className={`${styles.Like} far fa-heart`} />
           </span>
         ) : (
           <OverlayTrigger

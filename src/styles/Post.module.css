@@ -1,12 +1,37 @@
-.PostUserContainer{
-    border: 1px solid;
-    padding: 10px;
+.PostContainer {
+  margin: 40px auto;
+  height: 457px;
+  border: 1px solid;
+  width: 502px;
 }
-.ProfileImage{
-    padding-right: 5px;
+.PostUserContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProfileImage {
+  padding-right: 5px;
 }
 
-.LikedPost{
-    color: red;
-    
+.PostImage {
+  height: 350px;
+  width: 500px;
+}
+.PostUserLikesComments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 50px;
+}
+.LikedPost {
+  color: red;
+}
+
+.Like{
+  cursor: pointer;
 }

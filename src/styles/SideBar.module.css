@@ -20,7 +20,8 @@
 
 .icons {
   font-size: 35px;
-  padding: 0 5px;
+  width: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 820px) {
