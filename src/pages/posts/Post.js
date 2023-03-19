@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useCurrentUser } from "../../context/CurrentUserContext";
 import styles from "../../styles/Post.module.css";
 import Profile from "../../components/Profile";
+import { axiosRes } from "../../api/axiosDefaults";
 
 const Post = (props) => {
   const {
@@ -18,10 +19,43 @@ const Post = (props) => {
     post_image,
     updated_date,
     postPage,
+    setPost,
   } = props;
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+
+  const handleLike = async () => {
+    try {
+      const { data } = await axiosRes.post("/likes/", { post: id });
+      setPost((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, likes_count: post.likes_count + 1, likes_id: data.id }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUnlike = async () => {
+    try {
+      await axiosRes.delete(`/likes/${likes_id}`);
+      setPost((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, likes_count: post.likes_count - 1, likes_id: null }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div>
@@ -52,11 +86,11 @@ const Post = (props) => {
             <i className="far fa-heart" />
           </OverlayTrigger>
         ) : likes_id ? (
-          <span onClick={() => {}}>
-            <i className="far fa-heart" />
+          <span onClick={handleUnlike}>
+            <i className={`${styles.LikedPost} fa-solid fa-heart`} />
           </span>
         ) : currentUser ? (
-          <span onClick={() => {}}>
+          <span onClick={handleLike}>
             <i className="far fa-heart" />
           </span>
         ) : (
