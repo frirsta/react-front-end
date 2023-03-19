@@ -22,7 +22,7 @@ function App() {
           <Route
             exact
             path="/"
-            render={() => <h1 className={styles.main}>Feed</h1>}
+            render={() => <PostPage />}
           />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />

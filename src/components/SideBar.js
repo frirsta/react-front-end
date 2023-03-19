@@ -70,7 +70,12 @@ const SideBar = () => {
         className={styles.SideBar}
         variant="flush"
       >
-        <Navbar.Brand href="#home">{currentUser?.username}</Navbar.Brand>
+        <Navbar.Brand>
+          <NavLink to="/">
+          {currentUser?.username}
+            Brand
+          </NavLink>
+          </Navbar.Brand>
         {currentUser && addPost}
         <NavLink className={styles.NavLink} to="/">
           <i className={`${styles.icons} fa-solid fa-house`}></i> Home
