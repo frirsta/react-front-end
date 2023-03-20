@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import NotFound from "../../assets/not_found.png";
 
 import { useLocation } from "react-router";
@@ -12,11 +12,12 @@ function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/?${filter}`);
+        const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
         setPosts(data);
         setHasLoaded(true);
       } catch (err) {
@@ -25,7 +26,15 @@ function PostsPage({ message, filter = "" }) {
     };
     setHasLoaded(false);
     fetchPosts();
-  }, [filter, pathname]);
+  }, [filter, query, pathname]);
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+  }
+
+  const handleSearchChange = (event) => {
+    setQuery(event.target.value)
+  }
 
   return (
     <Container className={styles.PostsPageContainer}>
@@ -33,25 +42,38 @@ function PostsPage({ message, filter = "" }) {
       <div className={styles.PostContainer}>
         {hasLoaded ? (
           <>
-          <div className={styles.PostsList}>
-            {posts.results.length ? (
-              posts.results.map((post) => (
-              <Post key={post.id} {...post} setPosts={setPosts} />
-              ))
-            ) : (
-              <Container className={styles.NotFoundContainer}>
-                <Asset src={NotFound} message={message} />
-               
-                
+            <div className={styles.PostsList}>
+              <div className={styles.Search}>
+              
+                <div>
+                  <Form onSubmit={handleSearch}>
+                    <div className={styles.SearchBar}>
+                    <i className={`fa-solid fa-magnifying-glass`} />
+          <Form.Control 
+          type="text"
+          placeholder="Search"
+          value={query}
+          onChange={handleSearchChange}
+          />
+          </div>
+                  </Form>
+                </div>
+              </div>
+              {posts.results.length ? (
+                posts.results.map((post) => (
+                  <Post key={post.id} {...post} setPosts={setPosts} />
+                ))
+              ) : (
+                <Container className={styles.NotFoundContainer}>
+                  <Asset src={NotFound} message={message} />
                 </Container>
-            )}
+              )}
             </div>
           </>
         ) : (
           <Container className={styles.NotFoundContainer}>
-             <Asset spinner />
-            </Container>
-         
+            <Asset spinner />
+          </Container>
         )}
       </div>
     </Container>
