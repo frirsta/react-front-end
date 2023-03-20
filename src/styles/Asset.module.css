@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    width: 120px;
+
+}
+.AssetImage{
+    height: 100px;
+    width: 100px;
 }

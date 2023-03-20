@@ -1,39 +1,37 @@
-.Image{
-    height: 250px;
-    width: 250px;
+.Image {
+  height: 250px;
+  width: 250px;
 }
 
-.Button{
-    width: 100px;
-    height: 35px;
-    background-color: #000;
-    margin: 0 15px;
-    border: none;
+.Button {
+  width: 100px;
+  height: 35px;
+  background-color: #000;
+  margin: 0 15px;
+  border: none;
 }
 
-.Form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin: auto;
-    height: 100vh;
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  height: 100vh;
 }
 
-.FormContainer{
-
+.FormContainer {
 }
 
-.UploadPost{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.UploadPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-
-.AddPostButton{
-    display: none;
+.AddPostButton {
+  display: none;
 }

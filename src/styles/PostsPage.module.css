@@ -1,0 +1,28 @@
+.PostsPageContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+.PostContainer{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.NotFoundConatiner{
+    height: 100vh;
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ExploreAccounts{
+    width: 220px;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+}

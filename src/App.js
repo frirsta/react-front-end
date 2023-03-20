@@ -19,40 +19,58 @@ function App() {
 
   return (
     <div className={styles.App}>
-      
-        <SideBar />
-        <Switch>
+      <SideBar />
+      <Switch>
         <Route
-            exact
-            path="/"
-            render={() => <PostsPage message="No results found. Adjust the search keyword"
-             />}
-          />
-          <Route
-            exact
-            path="/feed"
-            render={() => <PostsPage message="No results found. Adjust the search keyword or follow a user"
-             filter={`owner__account_followed__owner__account=${profile_id}&`} />}
-          />
+          exact
+          path="/"
+          render={() => (
+            <PostsPage message="No results found. Adjust the search keyword" />
+          )}
+        />
+        <Route
+          exact
+          path="/feed"
+          render={() => (
+            <PostsPage
+              message="No results found. Adjust the search keyword or follow a user"
+              filter={`owner__account_followed__owner__account=${profile_id}&`}
+            />
+          )}
+        />
 
-          <Route exact path="/signin" render={() => <SignInForm />} />
-          <Route exact path="/signup" render={() => <SignUpForm />} />
-          <Route exact path="/posts/add" render={() => <PostAddForm /> } />
-          <Route
-            exact
-            path="/likes"
-            render={() => <PostsPage message="No results found. Adjust the search keyword or like a post"
-             filter={`likes__owner__account=${profile_id}&ordering=-likes__created_date&`} />}
-          />
-          <Route exact path="/accounts" render={() =><h1 className={styles.main}>Profile</h1>} />
-          <Route exact path="/posts/:id" render={()=> <PostPage />} />
-          <Route
-            render={() => <h1 className={styles.main}>Page not found</h1>}
-          />
-        </Switch>
-    
+        <Route exact path="/signin" render={() => <SignInForm />} />
+        <Route exact path="/signup" render={() => <SignUpForm />} />
+        <Route exact path="/posts/add" render={() => <PostAddForm />} />
+        <Route
+          exact
+          path="/likes"
+          render={() => (
+            <PostsPage
+              message="No results found. Adjust the search keyword or like a post"
+              filter={`likes__owner__account=${profile_id}&ordering=-likes__created_date&`}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/saved"
+          render={() => (
+            <PostsPage
+              message="No results found. Adjust the search keyword or like a post"
+              filter={`saved__owner__account=${profile_id}&ordering=-saved__created_date&`}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/accounts"
+          render={() => <h1 className={styles.main}>Profile</h1>}
+        />
+        <Route exact path="/posts/:id" render={() => <PostPage />} />
+        <Route render={() => <h1 className={styles.main}>Page not found</h1>} />
+      </Switch>
     </div>
-
   );
 }
 

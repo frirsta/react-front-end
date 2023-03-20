@@ -31,8 +31,8 @@ const SideBar = () => {
   );
   const loggedInIcons = (
     <>
-      <NavLink className={styles.NavLink} to="/liked">
-        <i className={`${styles.icons} fa-solid fa-heart`}></i> Liked posts
+      <NavLink className={styles.NavLink} to="/saved">
+        <i className={`${styles.icons} fa-solid fa-heart`}></i> Saved posts
       </NavLink>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i> Sign out
