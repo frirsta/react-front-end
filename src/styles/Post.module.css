@@ -28,6 +28,14 @@
   width: 150px;
   height: 50px;
 }
+.PostCounts{
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .LikedPost {
   color: red;
 }

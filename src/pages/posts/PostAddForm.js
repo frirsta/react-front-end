@@ -80,9 +80,9 @@ function PostAddForm() {
   );
 
   return (
-    <Container>
+    <Container className={styles.FormContainer}>
     <Form onSubmit={handleSubmit} className={styles.Form}>
-      <Form.Group>
+      <Form.Group className={styles.UploadPost}>
         {post_image ? (
           <>
             <figure>
@@ -103,16 +103,19 @@ function PostAddForm() {
             htmlFor="add-image"
           >
             <Asset src={Upload} message="Click or tap to upload image" />
-            Upload image
+        
           </Form.Label>
         )}
-
+  
         <Form.File
           id="add-image"
           accept="image/*"
           onChange={handleImageChange}
           ref={imageInput}
+          className={styles.AddPostButton}
+          
         />
+      
       </Form.Group>
       {errors.post_image?.map((message, idx) => (
               <Alert variant="warning" key={idx}>

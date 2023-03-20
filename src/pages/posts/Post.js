@@ -78,6 +78,7 @@ const Post = (props) => {
       </div>
       <div className={styles.PostUserLikesComments}>
         {caption}
+    <div className={styles.PostCounts}>
         {is_owner ? (
           <OverlayTrigger
             placement="top"
@@ -102,10 +103,13 @@ const Post = (props) => {
           </OverlayTrigger>
         )}{" "}
         {likes_count}
+        </div>
+        <div className={styles.PostCounts}>
         <Link to={`posts/${id}`}>
           <i className="fa-regular fa-comment" />
         </Link>
         {comments_count}
+        </div>
       </div>
     </div>
   );
