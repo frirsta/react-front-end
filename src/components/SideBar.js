@@ -70,7 +70,7 @@ const SideBar = () => {
         className={styles.SideBar}
         variant="flush"
       >
-        <Navbar.Brand>
+        <Navbar.Brand className={styles.Brand} >
           <NavLink to="/">
           {currentUser?.username}
             Brand

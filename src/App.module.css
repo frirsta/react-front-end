@@ -1,6 +1,9 @@
 * {
     background-color: rgb(184, 250, 193);
 }
+a{
+    color: #000;
+}
 .App {
     font-family: 'Comfortaa', sans-serif;
     background-color: rgb(184, 250, 193);

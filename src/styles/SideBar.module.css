@@ -8,7 +8,9 @@
   align-items: flex-start;
   position: fixed;
 }
-
+.Brand{
+  background-color: transparent;
+}
 .NavLink {
   display: flex;
   flex-direction: row;
@@ -17,6 +19,7 @@
   width: 200px;
   height: 45px;
   color: #000;
+  background-color: transparent;
 }
 
 .icons {
@@ -24,6 +27,8 @@
   width: 50px;
   text-align: center;
   color: #000;
+  background-color: transparent;
+  
 }
 
 @media screen and (max-width: 820px) {
