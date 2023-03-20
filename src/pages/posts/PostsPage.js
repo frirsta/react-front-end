@@ -33,9 +33,10 @@ function PostsPage({ message, filter = "" }) {
       <div className={styles.PostContainer}>
         {hasLoaded ? (
           <>
+          <div className={styles.PostsList}>
             {posts.results.length ? (
               posts.results.map((post) => (
-                <Post key={post.id} {...post} setPosts={setPosts} />
+              <Post key={post.id} {...post} setPosts={setPosts} />
               ))
             ) : (
               <Container className={styles.NotFoundContainer}>
@@ -44,6 +45,7 @@ function PostsPage({ message, filter = "" }) {
                 
                 </Container>
             )}
+            </div>
           </>
         ) : (
           <Container className={styles.NotFoundContainer}>
