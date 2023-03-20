@@ -7,6 +7,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   position: fixed;
+  width: 350px;
 }
 .Brand{
   background-color: transparent;
