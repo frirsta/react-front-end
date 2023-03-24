@@ -25,40 +25,40 @@ function PostsPage({ message, filter = "" }) {
       }
     };
     setHasLoaded(false);
-    fetchPosts();
+    const timer = setTimeout(() => {
+      fetchPosts();
+    }, 1000);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [filter, query, pathname]);
 
   const handleSearch = (event) => {
     event.preventDefault();
-  }
+  };
 
   const handleSearchChange = (event) => {
-    setQuery(event.target.value)
-  }
+    setQuery(event.target.value);
+  };
 
   return (
     <Container className={styles.PostsPageContainer}>
-      <div className={styles.ExploreAccounts}>Explore accounts</div>
       <div className={styles.PostContainer}>
+        <Form onSubmit={handleSearch} className={styles.SearchBar}>
+          <i
+            className={`fa-solid fa-magnifying-glass`}
+            
+          />
+          <Form.Control
+            type="text"
+            placeholder="Search"
+            value={query}
+            onChange={handleSearchChange}
+          />
+        </Form>
         {hasLoaded ? (
           <>
             <div className={styles.PostsList}>
-              <div className={styles.Search}>
-              
-                <div>
-                  <Form onSubmit={handleSearch}>
-                    <div className={styles.SearchBar}>
-                    <i className={`fa-solid fa-magnifying-glass`} />
-          <Form.Control 
-          type="text"
-          placeholder="Search"
-          value={query}
-          onChange={handleSearchChange}
-          />
-          </div>
-                  </Form>
-                </div>
-              </div>
               {posts.results.length ? (
                 posts.results.map((post) => (
                   <Post key={post.id} {...post} setPosts={setPosts} />

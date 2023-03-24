@@ -5,10 +5,10 @@
 }
 
 .PostContainer{
-    width: 100vh;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column
 }
 
 .PostsList{
@@ -16,12 +16,8 @@
     flex-direction: column;
 }
 
-.Search{
-    display: flex;
-    align-items: center;
-}
 
-.SearchBar{
+.SearchBar input{
     width: 500px;
     height: 20px;
     border-radius: 10px;
@@ -35,11 +31,4 @@
     align-items: center;
 }
 
-.ExploreAccounts{
-    width: 350px;
-    position: fixed;
-    right: 0px;
-    padding-top: 100px;
-    height: 100vh;
-    background-color: cadetblue;
-}
+

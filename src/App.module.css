@@ -14,3 +14,13 @@ a{
 .main{
     text-align: center;
 }
+
+.ExploreAccounts{
+    width: 25vw;
+    position: fixed;
+    top: 0px;
+    padding-top: 100px;
+    height: 100vh;
+    background-color: cadetblue;
+    right: 0;
+}
