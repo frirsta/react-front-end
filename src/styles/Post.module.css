@@ -31,8 +31,8 @@
 .PostCountContainer{
   display: flex;
   flex-direction: row;
-  width: 75px;
   justify-content: space-between;
+  width: 100%;
 }
 
 .PostCounts{
@@ -43,16 +43,27 @@
   align-items: baseline;
 }
 
+.LikeComment{
+  display: flex;
+  flex-direction: row;
+  width: 75px;
+  justify-content: space-between;
+}
 
 .LikedPost {
   color: red;
 }
 
-.Like{
+.Icon{
   cursor: pointer;
 }
 
 /* saved posts */
+.SavedPostIcon{
+  flex-direction: row-reverse;
+  margin-right: 20px;
+
+}
 
 .SavedPost{
   color: #01051b;

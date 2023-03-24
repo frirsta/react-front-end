@@ -113,6 +113,7 @@ const Post = (props) => {
       <div className={styles.PostUserLikesComments}>
         {caption}
         <div className={styles.PostCountContainer}>
+          <div className={styles.LikeComment}>
     <div className={styles.PostCounts}>
         {is_owner ? (
           <OverlayTrigger
@@ -123,11 +124,11 @@ const Post = (props) => {
           </OverlayTrigger>
         ) : likes_id ? (
           <span onClick={handleUnlike}>
-            <i className={`${styles.LikedPost} ${styles.Like} fa-solid fa-heart`} />
+            <i className={`${styles.LikedPost} ${styles.Icon} fa-solid fa-heart`} />
           </span>
         ) : currentUser ? (
           <span onClick={handleLike}>
-            <i className={`${styles.Like} far fa-heart`} />
+            <i className={`${styles.Icon} far fa-heart`} />
           </span>
         ) : (
           <OverlayTrigger
@@ -145,7 +146,8 @@ const Post = (props) => {
         </Link>
         {comments_count}
         </div>
-        <div className={styles.PostCounts} >
+        </div>
+        <div className={`${styles.PostCounts} ${styles.SavedPostIcon}`} >
         {is_owner ? (
           <OverlayTrigger
             placement="top"
@@ -156,11 +158,11 @@ const Post = (props) => {
           </OverlayTrigger>
         ) : saved_id ? (
           <span onClick={handleRemoveSave}>
-            <i className={`${styles.SavedPost} ${styles.Like} fa-solid fa-bookmark`} />
+            <i className={`${styles.SavedPost} ${styles.Icon} fa-solid fa-bookmark`} />
           </span>
         ) : currentUser ? (
           <span onClick={handleSave}>
-            <i className={`${styles.Like} fa-regular fa-bookmark`} />
+            <i className={`${styles.Icon} fa-regular fa-bookmark`} />
           </span>
         ) : (
           <OverlayTrigger
