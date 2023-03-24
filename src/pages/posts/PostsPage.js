@@ -7,6 +7,8 @@ import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
 import styles from "../../styles/PostsPage.module.css";
 import Asset from "../../components/Asset";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { fetchMoreData } from "../../utils/utils";
 
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
@@ -45,10 +47,7 @@ function PostsPage({ message, filter = "" }) {
     <Container className={styles.PostsPageContainer}>
       <div className={styles.PostContainer}>
         <Form onSubmit={handleSearch} className={styles.SearchBar}>
-          <i
-            className={`fa-solid fa-magnifying-glass`}
-            
-          />
+          <i className={`fa-solid fa-magnifying-glass`} />
           <Form.Control
             type="text"
             placeholder="Search"
@@ -60,9 +59,15 @@ function PostsPage({ message, filter = "" }) {
           <>
             <div className={styles.PostsList}>
               {posts.results.length ? (
-                posts.results.map((post) => (
-                  <Post key={post.id} {...post} setPosts={setPosts} />
-                ))
+                <InfiniteScroll
+                  children={posts.results.map((post) => (
+                    <Post key={post.id} {...post} setPosts={setPosts} />
+                  ))}
+                  dataLength={posts.results.length}
+                  loader={<Asset spinner />}
+                  hasMore={!!posts.next}
+                  next={() => fetchMoreData(posts, setPosts)}
+                />
               ) : (
                 <Container className={styles.NotFoundContainer}>
                   <Asset src={NotFound} message={message} />

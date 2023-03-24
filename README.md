@@ -136,3 +136,4 @@ npm install bootstrap reactstrap axios --save
 Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/
 
 <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+npm install --save react-infinite-scroll-component

@@ -24,3 +24,10 @@ a{
     background-color: cadetblue;
     right: 0;
 }
+
+@media screen and (max-width: 820px) { 
+
+    .ExploreAccounts{
+        display: none;
+    }
+}
