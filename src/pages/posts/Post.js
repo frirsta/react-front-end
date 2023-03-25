@@ -5,6 +5,7 @@ import { useCurrentUser } from "../../context/CurrentUserContext";
 import styles from "../../styles/Post.module.css";
 import Profile from "../../components/Profile";
 import { axiosRes } from "../../api/axiosDefaults";
+import { MoreDropdown } from "../../components/UserDropdown";
 
 const Post = (props) => {
   const {
@@ -93,87 +94,95 @@ const Post = (props) => {
 
   return (
     <div className={styles.PostContainer}>
-      <div>
-        <Media className={styles.PostUserContainer}>
-          <Link to={`accounts/${accounts_id}`}>
-            <span className={styles.ProfileImage}>
-              <Profile src={profile_image} />
-            </span>
-            <span>{owner}</span>
-          </Link>
+      <Media className={styles.PostUserContainer}>
+        <Link to={`accounts/${accounts_id}`}>
+          <span className={styles.ProfileImage}>
+            <Profile src={profile_image} />
+          </span>
+          <span>{owner}</span>
+        </Link>
+        <div className={styles.DropdownContainer}>
         <span>{updated_date}</span>
-        </Media>
-        {is_owner && postPage && "..."}
-      </div>
+        {is_owner && postPage && <MoreDropdown />}
+        </div>
+      </Media>
+
       <div>
         <Link to={`/posts/${id}`}>
-          <Card.Img className={styles.PostImage} src={post_image} alt={caption} />
+          <Card.Img
+            className={styles.PostImage}
+            src={post_image}
+            alt={caption}
+          />
         </Link>
       </div>
       <div className={styles.PostUserLikesComments}>
         {caption}
         <div className={styles.PostCountContainer}>
           <div className={styles.LikeComment}>
-    <div className={styles.PostCounts}>
-        {is_owner ? (
-          <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>You cant like your own post</Tooltip>}
-          >
-            <i className="far fa-heart" />
-          </OverlayTrigger>
-        ) : likes_id ? (
-          <span onClick={handleUnlike}>
-            <i className={`${styles.LikedPost} ${styles.Icon} fa-solid fa-heart`} />
-          </span>
-        ) : currentUser ? (
-          <span onClick={handleLike}>
-            <i className={`${styles.Icon} far fa-heart`} />
-          </span>
-        ) : (
-          <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>Log in to like post</Tooltip>}
-          >
-            <i className="far fa-heart" />
-          </OverlayTrigger>
-        )}{" "}
-        {likes_count}
-        </div>
-        <div className={styles.PostCounts}>
-        <Link to={`posts/${id}`}>
-          <i className="fa-regular fa-comment" />
-        </Link>
-        {comments_count}
-        </div>
-        </div>
-        <div className={`${styles.PostCounts} ${styles.SavedPostIcon}`} >
-        {is_owner ? (
-          <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>You cant save your own post</Tooltip>}
-          >
-          
-            <i className="fa-regular fa-bookmark" />
-          </OverlayTrigger>
-        ) : saved_id ? (
-          <span onClick={handleRemoveSave}>
-            <i className={`${styles.SavedPost} ${styles.Icon} fa-solid fa-bookmark`} />
-          </span>
-        ) : currentUser ? (
-          <span onClick={handleSave}>
-            <i className={`${styles.Icon} fa-regular fa-bookmark`} />
-          </span>
-        ) : (
-          <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>Log in to save post</Tooltip>}
-          >
-            <i className="fa-regular fa-bookmark" />
-          </OverlayTrigger>
-        )}{" "}
-        {saved_count}
-        </div>
+            <div className={styles.PostCounts}>
+              {is_owner ? (
+                <OverlayTrigger
+                  placement="top"
+                  overlay={<Tooltip>You cant like your own post</Tooltip>}
+                >
+                  <i className="far fa-heart" />
+                </OverlayTrigger>
+              ) : likes_id ? (
+                <span onClick={handleUnlike}>
+                  <i
+                    className={`${styles.LikedPost} ${styles.Icon} fa-solid fa-heart`}
+                  />
+                </span>
+              ) : currentUser ? (
+                <span onClick={handleLike}>
+                  <i className={`${styles.Icon} far fa-heart`} />
+                </span>
+              ) : (
+                <OverlayTrigger
+                  placement="top"
+                  overlay={<Tooltip>Log in to like post</Tooltip>}
+                >
+                  <i className="far fa-heart" />
+                </OverlayTrigger>
+              )}{" "}
+              {likes_count}
+            </div>
+            <div className={styles.PostCounts}>
+              <Link to={`posts/${id}`}>
+                <i className="fa-regular fa-comment" />
+              </Link>
+              {comments_count}
+            </div>
+          </div>
+          <div className={`${styles.PostCounts} ${styles.SavedPostIcon}`}>
+            {is_owner ? (
+              <OverlayTrigger
+                placement="top"
+                overlay={<Tooltip>You cant save your own post</Tooltip>}
+              >
+                <i className="fa-regular fa-bookmark" />
+              </OverlayTrigger>
+            ) : saved_id ? (
+              <span onClick={handleRemoveSave}>
+                <i
+                  className={`${styles.SavedPost} ${styles.Icon} fa-solid fa-bookmark`}
+                />
+              </span>
+            ) : currentUser ? (
+              <span onClick={handleSave}>
+                <i className={`${styles.Icon} fa-regular fa-bookmark`} />
+              </span>
+            ) : (
+              <OverlayTrigger
+                placement="top"
+                overlay={<Tooltip>Log in to save post</Tooltip>}
+              >
+                <i className="fa-regular fa-bookmark" />
+              </OverlayTrigger>
+            )}{" "}
+            {saved_count}
+          </div>
         </div>
       </div>
     </div>

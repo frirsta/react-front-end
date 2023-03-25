@@ -68,3 +68,12 @@
 .SavedPost{
   color: #01051b;
 }
+
+/* dropdown */
+
+.DropdownContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 120px;
+}
