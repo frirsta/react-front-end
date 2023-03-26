@@ -109,7 +109,7 @@ const Post = (props) => {
   return (
     <div className={styles.PostContainer}>
       <Media className={styles.PostUserContainer}>
-        <Link to={`accounts/${accounts_id}`}>
+        <Link to={`/accounts/${accounts_id}`}>
           <span className={styles.ProfileImage}>
             <Profile src={profile_image} />
           </span>
