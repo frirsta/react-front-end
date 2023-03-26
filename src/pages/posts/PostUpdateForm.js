@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Button, Container, Form, Image, Alert } from "react-bootstrap";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-import Upload from "../../assets/upload.png";
-import Asset from "../../components/Asset";
 import styles from "../../styles/PostAdd.module.css";
 
 function PostUpdateForm() {
@@ -101,8 +99,7 @@ function PostUpdateForm() {
     <Container className={styles.FormContainer}>
       <Form onSubmit={handleSubmit} className={styles.Form}>
         <Form.Group className={styles.UploadPost}>
-          {post_image ? (
-            <>
+
               <figure>
                 <Image className={styles.Image} src={post_image} rounded />
               </figure>
@@ -114,15 +111,7 @@ function PostUpdateForm() {
                   Change Image
                 </Form.Label>
               </div>
-            </>
-          ) : (
-            <Form.Label
-              className="d-flex justify-content-center"
-              htmlFor="add-image"
-            >
-              <Asset src={Upload} message="Click or tap to upload image" />
-            </Form.Label>
-          )}
+
 
           <Form.File
             id="add-image"
