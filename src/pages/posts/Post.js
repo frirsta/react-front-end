@@ -118,9 +118,7 @@ const Post = (props) => {
         <div className={styles.DropdownContainer}>
           <span>{updated_date}</span>
           {is_owner && postPage && (
-            <MoreDropdown 
-             handleEdit={handleEdit} 
-            handleDelete={handleDelete} />
+            <MoreDropdown handleEdit={handleEdit} handleDelete={handleDelete} />
           )}
         </div>
       </Media>

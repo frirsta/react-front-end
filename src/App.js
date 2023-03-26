@@ -10,6 +10,7 @@ import PostPage from "./pages/posts/PostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./context/CurrentUserContext";
 import ExploreAccounts from "./components/ExploreAccounts";
+import PostUpdateForm from "./pages/posts/PostUpdateForm";
 
 export const CurrentUserContext = createContext();
 export const SetCurrentUserContext = createContext();
@@ -43,6 +44,7 @@ function App() {
         <Route exact path="/signin" render={() => <SignInForm />} />
         <Route exact path="/signup" render={() => <SignUpForm />} />
         <Route exact path="/posts/add" render={() => <PostAddForm />} />
+        <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm/>} />
         <Route
           exact
           path="/likes"
