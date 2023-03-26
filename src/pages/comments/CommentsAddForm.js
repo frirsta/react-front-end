@@ -6,7 +6,7 @@ import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/Comments.module.css";
 
 function CommentsAddForm(props) {
-  const { post, setPost, setComment, profileImage, accounts_id } = props;
+  const { post, setPost, setComments, profileImage, accounts_id } = props;
   const [content, setContent] = useState("");
 
   const handleChange = (event) => {
@@ -20,15 +20,15 @@ function CommentsAddForm(props) {
         content,
         post,
       });
-      setComment((prevComment) => ({
-        ...prevComment,
-        results: [data, ...prevComment.results],
+      setComments((prevComments) => ({
+        ...prevComments,
+        results: [data, ...prevComments.results],
       }));
       setPost((prevPost) => ({
         results: [
           {
             ...prevPost.results[0],
-            comment_count: prevPost.results[0].comment_count + 1,
+            comments_count: prevPost.results[0].comments_count + 1,
           },
         ],
       }));

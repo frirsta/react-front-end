@@ -1,12 +1,17 @@
-.CommentsInput{
-    width: 250px;
-    }
-    
-    .CommentsButton{
-        padding: 5px 10px;
-    }
-    
-    .Form{
-        text-align: center;
-        margin: 0 auto;
-    }
+.CommentsInput {
+  width: 250px;
+}
+
+.CommentsButton {
+  padding: 5px 10px;
+}
+
+.Form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.CommentContainer {
+  border: 1px solid;
+  margin: 0 auto;
+}
