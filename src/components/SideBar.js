@@ -2,17 +2,17 @@ import { React } from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import styles from "../styles/SideBar.module.css";
-import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { useCurrentUser, useSetCurrentUser } from "../context/CurrentUserContext";
+import {
+  useCurrentUser,
+  useSetCurrentUser,
+} from "../context/CurrentUserContext";
 import Profile from "./Profile";
 import axios from "axios";
-
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
-
 
   const handleSignOut = async () => {
     try {
@@ -25,31 +25,33 @@ const SideBar = () => {
   const addPost = (
     <>
       <NavLink className={styles.NavLink} to="/posts/add">
-        <i className={`${styles.icons} fa-solid fa-square-plus`}></i> Add post
+        <i className={`${styles.icons} fa-solid fa-square-plus`}></i>{" "}
+        <span className={styles.SideBarLink}>Add post</span>
       </NavLink>
     </>
   );
   const loggedInIcons = (
     <>
-      <NavLink className={styles.NavLink} to="/saved">
-     
-        <i className={`${styles.icons} fa-solid fa-bookmark`}></i> Saved posts
-      </NavLink>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i> Sign out
+        <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i>{" "}
+        <span className={styles.SideBarLink}>Sign out</span>
       </NavLink>
+      {addPost}
+      <NavLink className={styles.NavLink} to="/saved">
+        <i className={`${styles.icons} fa-solid fa-bookmark`}></i>{" "}
+        <span className={styles.SideBarLink}>Saved posts</span>
+      </NavLink>
+     
 
       <NavLink
         className={styles.NavLink}
         to={`/accounts/${currentUser?.profile_id}`}
       >
         <Profile
-          className={styles.icons}
+          className={`${styles.icons} ${styles.Profile}`}
           src={currentUser?.profile_image}
-          text="Profile"
-          height={40}
-          width={40}
-        />
+        />{" "}
+        <span className={styles.SideBarLink}>Profile</span>
       </NavLink>
     </>
   );
@@ -57,29 +59,22 @@ const SideBar = () => {
   const loggedOutIcons = (
     <>
       <NavLink className={styles.NavLink} to="/signin">
-        <i className={`${styles.icons} fa-solid fa-right-to-bracket`}></i> Sign
+        <i className={`${styles.icons} fa-solid fa-right-to-bracket`}></i>{" "}
+        <span className={styles.SideBarLink}>Sign</span>
         in
       </NavLink>
       <NavLink className={styles.NavLink} to="/signup">
-        <i className={`${styles.icons} fa-solid fa-user-plus`}></i> Sign up
+        <i className={`${styles.icons} fa-solid fa-user-plus`}></i>{" "}
+        <span className={styles.SideBarLink}>Sign up</span>
       </NavLink>
     </>
   );
   return (
-    <Card>
-      <ListGroup
-        className={styles.SideBar}
-        variant="flush"
-      >
-        <Navbar.Brand className={styles.Brand} >
-          <NavLink to="/">
-          {currentUser?.username}
-            Brand
-          </NavLink>
-          </Navbar.Brand>
-        {currentUser && addPost}
+    <Card className={styles.SideBarContainer}>
+      <ListGroup className={styles.SideBar} variant="flush">
         <NavLink className={styles.NavLink} to="/">
-          <i className={`${styles.icons} fa-solid fa-house`}></i> Home
+          <i className={`${styles.icons} fa-solid fa-house`}></i>{" "}
+          <span className={styles.SideBarLink}>Home</span>
         </NavLink>
         {currentUser ? loggedInIcons : loggedOutIcons}
       </ListGroup>

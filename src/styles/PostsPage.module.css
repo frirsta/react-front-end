@@ -16,11 +16,26 @@
     flex-direction: column;
 }
 
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px
+}
+.SearchIcon{
+    position: absolute;
+    background: transparent;
+    font-size: 20px;
+    padding: 10px;
+    color: gray;
+}
 
 .SearchBar input{
     width: 500px;
-    height: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
+    padding: 0px 30px;
+
 }
 
 .NotFoundConatiner{

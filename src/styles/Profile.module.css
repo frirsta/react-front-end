@@ -1,25 +1,3 @@
-.Profile {
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 5px;
-    background-color: transparent;
-}
-
 .ProfileContainer{
     background-color: transparent;
-}
-
-@media screen and (max-width: 450px) {
-    .Profile {
-        width: 30px;
-        height: 30px;
-        margin-right: 0;
-    }
-}
-@media screen and (max-width: 300px) {
-    .Profile {
-        width: 25px;
-        height: 25px;
-
-    }
 }

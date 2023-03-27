@@ -3,13 +3,16 @@
   height: 100vh;
   width: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   align-items: flex-start;
   position: fixed;
   width: 20vw;
 }
-.Brand{
+.SideBarContainer{
+  border: none;
+}
+.SideBarLink{
   background-color: transparent;
 }
 .NavLink {
@@ -21,6 +24,15 @@
   height: 45px;
   color: #000;
   background-color: transparent;
+  padding: 10px 0;
+}
+
+.Profile {
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 7px;
+  width: 38px!important;
+  height: 38px;
 }
 
 .icons {
@@ -31,15 +43,76 @@
   background-color: transparent;
   
 }
+@media screen and (max-width: 1000px) {
+  .NavLink {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 820px) {
   .SideBar {
     height: 10vw;
     width: 100vw;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     bottom: 0vh;
+  }
+  .SideBarLink{
+   display: none;
+  }
+  .NavLink {
+    font-size: 15px;
+    width: unset;
+  }
+  .icons{
+    font-size: 35px;
+    width: 35px;
+  }
+  .Profile {
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 7px;
+    width: 38px!important;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .NavLink {
+    font-size: 12px;
+
+  }
+  .icons{
+    font-size: 28px;
+  }
+  .Profile {
+    width: 31px!important;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icons{
+    font-size: 25px;
+  }
+  .Profile {
+    width: 28px!important;
+    height: 28px;
+  }
+  .NavLink {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .icons{
+    font-size: 22px;
+  }
+  .Profile {
+    width: 25px!important;
+    height: 25px;
   }
 }

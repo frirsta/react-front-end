@@ -11,6 +11,7 @@ import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./context/CurrentUserContext";
 import ExploreAccounts from "./components/ExploreAccounts";
 import PostUpdateForm from "./pages/posts/PostUpdateForm";
+import Brand from "./components/Brand";
 
 export const CurrentUserContext = createContext();
 export const SetCurrentUserContext = createContext();
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className={styles.App}>
+      <Brand />
       <SideBar />
       <Switch>
         <Route

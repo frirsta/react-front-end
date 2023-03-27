@@ -47,7 +47,7 @@ function PostsPage({ message, filter = "" }) {
     <Container className={styles.PostsPageContainer}>
       <div className={styles.PostContainer}>
         <Form onSubmit={handleSearch} className={styles.SearchBar}>
-          <i className={`fa-solid fa-magnifying-glass`} />
+          <i className={`${styles.SearchIcon} fa-solid fa-magnifying-glass`} />
           <Form.Control
             type="text"
             placeholder="Search"
