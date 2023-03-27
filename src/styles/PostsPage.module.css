@@ -32,3 +32,8 @@
 }
 
 
+@media screen and (max-width: 600px) {
+    .SearchBar input{
+        max-width: 80vw;
+    }
+}

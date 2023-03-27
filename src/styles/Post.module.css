@@ -1,7 +1,7 @@
 .PostContainer {
   margin: 40px auto;
   border: 1px solid;
-  width: 502px;
+  width: 452px;
 }
 .PostUserContainer {
   padding: 10px;
@@ -16,7 +16,7 @@
 
 .PostImage {
   height: 350px;
-  width: 500px;
+  width: 450px;
 }
 .PostUserLikesComments {
   display: flex;
@@ -28,14 +28,14 @@
   padding-left: 10px;
   padding-top: 10px;
 }
-.PostCountContainer{
+.PostCountContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.PostCounts{
+.PostCounts {
   width: 30px;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@
   align-items: baseline;
 }
 
-.LikeComment{
+.LikeComment {
   display: flex;
   flex-direction: row;
   width: 75px;
@@ -54,26 +54,86 @@
   color: red;
 }
 
-.Icon{
+.Icon {
   cursor: pointer;
 }
 
 /* saved posts */
-.SavedPostIcon{
+.SavedPostIcon {
   flex-direction: row-reverse;
   margin-right: 20px;
-
 }
 
-.SavedPost{
+.SavedPost {
   color: #01051b;
 }
 
 /* dropdown */
 
-.DropdownContainer{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 120px;
+.DropdownContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  .PostContainer {
+    margin: 40px auto;
+    border: 1px solid;
+    max-width: 80vw;
+  }
+
+  .PostImage {
+    height: 300px;
+    max-width: 79vw;
+  }
+
+  .PostImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Username {
+    font-size: 15px;
+  }
+  .Date {
+    font-size: 14px;
+  }
+  .DropdownContainer {
+    width: 100px;
+  }
+  .Caption {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PostContainer {
+    height: 400px;
+  }
+
+  .PostImage {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .Username {
+    font-size: 13px;
+  }
+  .Date {
+    font-size: 12px;
+  }
+  .DropdownContainer {
+    width: 100px;
+  }
+  .Caption {
+    font-size: 13px;
+  }
 }

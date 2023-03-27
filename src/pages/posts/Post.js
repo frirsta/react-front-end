@@ -113,17 +113,17 @@ const Post = (props) => {
           <span className={styles.ProfileImage}>
             <Profile src={profile_image} />
           </span>
-          <span>{owner}</span>
+          <span className={styles.Username}>{owner}</span>
         </Link>
         <div className={styles.DropdownContainer}>
-          <span>{updated_date}</span>
+          <span className={styles.Date}>{updated_date}</span>
           {is_owner && postPage && (
             <MoreDropdown handleEdit={handleEdit} handleDelete={handleDelete} />
           )}
         </div>
       </Media>
 
-      <div>
+      <div className={styles.PostImageContainer}>
         <Link to={`/posts/${id}`}>
           <Card.Img
             className={styles.PostImage}
@@ -133,7 +133,7 @@ const Post = (props) => {
         </Link>
       </div>
       <div className={styles.PostUserLikesComments}>
-        {caption}
+        <span className={styles.Caption}>{caption}</span>
         <div className={styles.PostCountContainer}>
           <div className={styles.LikeComment}>
             <div className={styles.PostCounts}>
