@@ -16,3 +16,10 @@
         margin-right: 0;
     }
 }
+@media screen and (max-width: 300px) {
+    .Profile {
+        width: 25px;
+        height: 25px;
+
+    }
+}
