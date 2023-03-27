@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 820px) {
   .SideBar {
-    height: 10vw;
+    height: 11vw;
     width: 100vw;
     flex-direction: row;
     justify-content: space-evenly;
@@ -63,7 +63,6 @@
    display: none;
   }
   .NavLink {
-    font-size: 15px;
     width: unset;
   }
   .icons{
@@ -79,12 +78,9 @@
   }
 }
 
-@media screen and (max-width: 700px) {
 
-  .NavLink {
-    font-size: 12px;
+@media screen and (max-width: 540px) {
 
-  }
   .icons{
     font-size: 28px;
   }
@@ -93,26 +89,16 @@
     height: 31px;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .icons{
-    font-size: 25px;
-  }
-  .Profile {
-    width: 28px!important;
-    height: 28px;
-  }
-  .NavLink {
-    font-size: 11px;
-  }
+@media screen and (max-width: 450px) {
+.icons{
+  font-size: 22px;
+}
+.Profile {
+  width: 23px!important;
+  height: 23px;
+}
 }
 
-@media screen and (max-width: 540px) {
-  .icons{
-    font-size: 22px;
-  }
-  .Profile {
-    width: 25px!important;
-    height: 25px;
-  }
+@media screen and (max-width: 300px) {
+
 }
