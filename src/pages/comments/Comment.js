@@ -51,11 +51,12 @@ const Comment = (props) => {
         </Link>
 
         <Media.Body>
-          <div>
+          <div className={styles.DateOwnerContainer}>
             <span>{owner}</span>
 
             <span>{updated_date}</span>
-
+            </div>
+          <div className={styles.Content}>
             <span>{content}</span>
           </div>
         </Media.Body>

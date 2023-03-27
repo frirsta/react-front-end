@@ -40,11 +40,11 @@ function CommentsAddForm(props) {
 
   return (
     <Form onSubmit={handleSubmit} className={styles.Form}>
-      <Form.Group>
-        <InputGroup>
+      <Form.Group className={styles.CommentFormGroup}>
+        <InputGroup className={styles.AddComment}>
         <Link to={`/accounts/${accounts_id}`}>
-          <span className={styles.profile_image}>
-            <Profile src={profileImage} />
+          <span>
+            <Profile className={styles.profile_image} src={profileImage} />
           </span>
         </Link>
 
@@ -53,7 +53,7 @@ function CommentsAddForm(props) {
           className={styles.CommentsInput}
           value={content}
           onChange={handleChange}
-          as="textarea"
+          type="text"
           placeholder="Leave a comment..."
         />
         </InputGroup>

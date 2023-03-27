@@ -60,8 +60,8 @@ const SideBar = () => {
     <>
       <NavLink className={styles.NavLink} to="/signin">
         <i className={`${styles.icons} fa-solid fa-right-to-bracket`}></i>{" "}
-        <span className={styles.SideBarLink}>Sign</span>
-        in
+        <span className={styles.SideBarLink}>Sign in</span>
+        
       </NavLink>
       <NavLink className={styles.NavLink} to="/signup">
         <i className={`${styles.icons} fa-solid fa-user-plus`}></i>{" "}
