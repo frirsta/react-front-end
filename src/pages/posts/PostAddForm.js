@@ -54,10 +54,11 @@ function PostAddForm() {
   };
 
   const postFields = (
-    <div className="text-center">
+    <div className={styles.CaptionButtons}>
       <Form.Group>
         <Form.Label>Caption</Form.Label>
         <Form.Control
+        className={styles.Caption}
           type="text"
           name="caption"
           value={caption}
