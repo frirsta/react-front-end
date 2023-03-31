@@ -125,6 +125,10 @@
   .Caption {
     font-size: 15px;
   }
+  .ProfileImage{
+    height: 30px;
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 400px) {
