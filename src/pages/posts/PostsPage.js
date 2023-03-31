@@ -60,6 +60,7 @@ function PostsPage({ message, filter = "" }) {
             <div className={styles.PostsList}>
               {posts.results.length ? (
                 <InfiniteScroll
+                 className={styles.InfiniteScroll}
                   children={posts.results.map((post) => (
                     <Post key={post.id} {...post} setPosts={setPosts} />
                   ))}
