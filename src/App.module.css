@@ -28,6 +28,9 @@ a {
 }
 
 @media screen and (max-width: 820px) {
+  .App{
+    margin-bottom: 100px;
+  }
   .ExploreAccounts {
     display: none;
   }
