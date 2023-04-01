@@ -27,8 +27,8 @@ function CommentsUpdateForm(props) {
               }
             : comment;
         }),
-      })),
-        setDisplayUpdateForm(false);
+      }));
+      setDisplayUpdateForm(false);
     } catch (err) {
       console.log(err);
     }

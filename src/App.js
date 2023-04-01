@@ -9,9 +9,9 @@ import PostAddForm from "./pages/posts/PostAddForm";
 import PostPage from "./pages/posts/PostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./context/CurrentUserContext";
-import ExploreAccounts from "./components/ExploreAccounts";
 import PostUpdateForm from "./pages/posts/PostUpdateForm";
 import Brand from "./components/Brand";
+
 
 export const CurrentUserContext = createContext();
 export const SetCurrentUserContext = createContext();
@@ -75,7 +75,7 @@ function App() {
         <Route exact path="/posts/:id" render={() => <PostPage />} />
         <Route render={() => <h1 className={styles.main}>Page not found</h1>} />
       </Switch>
-      <ExploreAccounts />
+
     </div>
   );
 }
