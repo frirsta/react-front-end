@@ -28,7 +28,11 @@ function CommentsUpdateForm(props) {
             : comment;
         }),
       }));
+<<<<<<< HEAD
       setDisplayUpdateForm(false);
+=======
+        setDisplayUpdateForm(false);
+>>>>>>> 6f5f8fd58e74e90dbfea4be6bc0595fe13ab61c9
     } catch (err) {
       console.log(err);
     }
