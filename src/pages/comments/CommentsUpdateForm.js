@@ -27,7 +27,7 @@ function CommentsUpdateForm(props) {
               }
             : comment;
         }),
-      })),
+      }));
         setDisplayUpdateForm(false);
     } catch (err) {
       console.log(err);
