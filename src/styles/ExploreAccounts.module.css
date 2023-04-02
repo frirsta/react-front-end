@@ -1,0 +1,16 @@
+.ExploreAccounts {
+    width: 20vw;
+    position: fixed;
+    top: 0px;
+    padding-top: 100px;
+    height: 100vh;
+    background-color: cadetblue;
+    right: 0;
+  }
+.PopularAccountsUsername{}
+
+@media screen and (max-width: 991px) {
+    .ExploreAccounts {
+      display: none;
+    }
+} 

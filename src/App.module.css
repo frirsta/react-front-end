@@ -13,16 +13,6 @@ a {
   text-align: center;
 }
 
-.ExploreAccounts {
-  width: 20vw;
-  position: fixed;
-  top: 0px;
-  padding-top: 100px;
-  height: 100vh;
-  background-color: cadetblue;
-  right: 0;
-}
-
 .Brand {
   display: none;
 }
@@ -30,9 +20,6 @@ a {
 @media screen and (max-width: 820px) {
   .App{
     margin-bottom: 100px;
-  }
-  .ExploreAccounts {
-    display: none;
   }
 
   .Brand {

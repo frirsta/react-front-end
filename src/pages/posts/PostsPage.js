@@ -9,6 +9,7 @@ import styles from "../../styles/PostsPage.module.css";
 import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import ExploreAccounts from "../accounts/ExploreAccounts";
 
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
@@ -46,6 +47,7 @@ function PostsPage({ message, filter = "" }) {
   return (
     <Container className={styles.PostsPageContainer}>
       <div className={styles.PostContainer}>
+      <ExploreAccounts mobile />
         <Form onSubmit={handleSearch} className={styles.SearchBar}>
           <i className={`${styles.SearchIcon} fa-solid fa-magnifying-glass`} />
           <Form.Control

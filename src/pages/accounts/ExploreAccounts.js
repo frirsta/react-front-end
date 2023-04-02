@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import styles from "../../App.module.css";
+import styles from "../../styles/ExploreAccounts.module.css";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from "../../context/CurrentUserContext";
+import Asset from "../../components/Asset";
 
-const ExploreAccounts = () => {
+const ExploreAccounts = ({ mobile }) => {
   const [accountsData, setAccountsData] = useState({
     pageAccount: { results: [] },
     popularAccounts: { results: [] },
@@ -30,10 +31,31 @@ const ExploreAccounts = () => {
   }, [currentUser]);
 
   return (
-    <div className={styles.ExploreAccounts}>
-{popularAccounts.results.map((account) => (
-  <p key={account.id}>{account.owner}</p>
-))}
+    <div className={`${mobile && "d-lg-none text-center mb-3"}`}>
+      {popularAccounts.results.length ? (
+        <>
+          <p>Explore Accounts</p>
+          {mobile ? (
+            <div className="d-flex justify-content-around">
+              {popularAccounts.results.slice(0, 5).map((account) => (
+                <p className={styles.PopularAccountsUsername} key={account.id}>
+                  {account.owner}
+                </p>
+              ))}
+            </div>
+          ) : (
+            <div className={`${styles.ExploreAccounts}`}>
+              {popularAccounts.results.map((account) => (
+                <p className={styles.PopularAccountsUsername} key={account.id}>
+                  {account.owner}
+                </p>
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        <Asset spinner />
+      )}
     </div>
   );
 };
