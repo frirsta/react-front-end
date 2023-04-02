@@ -3,6 +3,7 @@ import styles from "../../styles/ExploreAccounts.module.css";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from "../../context/CurrentUserContext";
 import Asset from "../../components/Asset";
+import Account from "./Account";
 
 const ExploreAccounts = ({ mobile }) => {
   const [accountsData, setAccountsData] = useState({
@@ -38,17 +39,14 @@ const ExploreAccounts = ({ mobile }) => {
           {mobile ? (
             <div className="d-flex justify-content-around">
               {popularAccounts.results.slice(0, 5).map((account) => (
-                <p className={styles.PopularAccountsUsername} key={account.id}>
-                  {account.owner}
-                </p>
+                <Account key={account.id} account={account} mobile />
+
               ))}
             </div>
           ) : (
             <div className={`${styles.ExploreAccounts}`}>
               {popularAccounts.results.map((account) => (
-                <p className={styles.PopularAccountsUsername} key={account.id}>
-                  {account.owner}
-                </p>
+   <Account key={account.id} account={account} />
               ))}
             </div>
           )}
