@@ -45,16 +45,16 @@ const Comment = (props) => {
 
   return (
     <div className={styles.CommentContainer}>
-      <Media>
+      <Media className={styles.CommentMedia}>
         <Link to={`/accounts/${accounts_id}`}>
-          <Profile src={profile_image} />
+          <Profile className={styles.profileImageStyles} src={profile_image} />
         </Link>
 
-        <Media.Body>
+        <Media.Body className={styles.CommentMediaBody}>
           <div className={styles.DateOwnerContainer}>
-            <span>{owner}</span>
+            <span className={styles.DateOwner}>{owner}</span>
 
-            <span>{updated_date}</span>
+            <span className={styles.DateOwner}>{updated_date}</span>
           </div>
           {displayUpdateForm ? (
             <CommentsUpdateForm 
@@ -66,8 +66,8 @@ const Comment = (props) => {
             setDisplayUpdateForm={setDisplayUpdateForm}
             />
           ) : (
-            <div className={styles.Content}>
-              <span>{content}</span>
+            <div >
+              <span className={styles.Content}>{content}</span>
             </div>
           )}
         </Media.Body>

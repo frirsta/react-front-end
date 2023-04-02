@@ -44,7 +44,7 @@ function CommentsAddForm(props) {
         <InputGroup className={styles.AddComment}>
         <Link to={`/accounts/${accounts_id}`}>
           <span>
-            <Profile className={styles.profile_image} src={profileImage} />
+            <Profile className={styles.profileImageStyles} src={profileImage} />
           </span>
         </Link>
 

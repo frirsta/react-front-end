@@ -137,3 +137,5 @@ Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor
 
 <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
 npm install --save react-infinite-scroll-component
+
+Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/

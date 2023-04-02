@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { axiosRes } from "../../api/axiosDefaults";
+import styles from '../../styles/Comments.module.css'
+
 
 function CommentsUpdateForm(props) {
   const { id, content, setDisplayUpdateForm, setComments } = props;
@@ -36,16 +38,18 @@ function CommentsUpdateForm(props) {
 
   return (
     <div>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
-          <Form.Control type="text" value={formData} onChange={handleChange} />
+      <Form className={styles.UpdateCommentForm} onSubmit={handleSubmit}>
+        <Form.Group className={styles.CommentInputContainer}>
+          <Form.Control className={styles.CommentUpdateInput} type="text" value={formData} onChange={handleChange} />
         </Form.Group>
-        <Button type="button" onClick={() => setDisplayUpdateForm(false)}>
+        <div className={styles.ButtonContainer}>
+        <Button className={styles.CommentButtons} type="button" onClick={() => setDisplayUpdateForm(false)}>
           Cancel
         </Button>
-        <Button type="submit" disabled={!content.trim()}>
+        <Button className={styles.CommentButtons} type="submit" disabled={!content.trim()}>
           Save
         </Button>
+        </div>
       </Form>
     </div>
   );

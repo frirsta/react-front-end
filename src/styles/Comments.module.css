@@ -9,7 +9,7 @@
   width: 450px;
 }
 
-.CommentFormGroup{
+.CommentFormGroup {
   border-bottom: 1px solid;
 }
 
@@ -22,53 +22,128 @@
 }
 .CommentContainer {
   border-bottom: 1px solid;
-  margin: 20px auto;
-  width: 500px;
-  height: 70px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:  0 auto;
+  max-width: 70vw;
 }
-.AddComment{
+.CommentMedia{
+  width: 100%;
+}
+.AddComment {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 
-.DateOwnerContainer{
+.DateOwnerContainer {
   display: flex;
   flex-direction: row;
-  width: 400px;
   justify-content: space-between;
   font-size: 15px;
   padding: 5px;
   color: #333333;
 }
-.Content{}
+.Content {
+}
 
-.profile_image{
+.profileImageStyles {
   height: 40px;
   width: 40px;
+}
 
+.UpdateCommentForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.CommentInputContainer{
+  margin: 0;
+}
+.CommentUpdateInput {
+  background-color: transparent;
+  border: none;
+ 
+}
+.CommentUpdateInput:focus {
+  background-color: transparent;
+}
+
+.CommentButtons{
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+.ButtonContainer {
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.CommentMediaBody{
+ 
 }
 
 @media screen and (max-width: 820px) {
-  .CommentsInput{
+  .CommentsInput {
     font-size: 12px;
     padding-bottom: 0;
+  }
+  .CommentUpdateInput{
+   
+  }
+  .CommentButtons{
+    margin: 0 2px;
+    padding: 4px 6px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .profile_image{
+  .profileImageStyles {
     height: 30px;
     width: 30px;
   }
-}
 
-@media screen and (max-width: 300px){
-    .profile_image{
-      height: 20px;
-      width: 20px;
-    }
+  .DateOwnerContainer{
+   
+  }
+  .DateOwner{
+    font-size: 13px;
+  }
+  .CommentUpdateInput{
+    height: 30px;
+    font-size: 14px;
+    margin: 0 3px;
+  }
+  .Content{
+    font-size: 13px;
+  }
+
+}
+@media screen and (max-width: 450px) {
+  .DateOwner{
+    font-size: 10px;
+  }
+  .CommentUpdateInput{
+    height: 25px;
+    font-size: 11px;
+    margin: 0;
+  }
+  .profileImageStyles{
+    height: 25px;
+    width: 25px;
+  }
+  .Content{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .profileImageStyles {
+    height: 20px;
+    width: 20px;
+  }
 }
