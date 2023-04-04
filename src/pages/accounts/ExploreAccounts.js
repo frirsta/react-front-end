@@ -1,35 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "../../styles/ExploreAccounts.module.css";
-import { axiosReq } from "../../api/axiosDefaults";
-import { useCurrentUser } from "../../context/CurrentUserContext";
 import Asset from "../../components/Asset";
 import Account from "./Account";
+import { useAccountData } from "../../context/AccountDataContext";
 
 const ExploreAccounts = ({ mobile }) => {
-  const [accountsData, setAccountsData] = useState({
-    pageAccount: { results: [] },
-    popularAccounts: { results: [] },
-  });
-
-  const { popularAccounts } = accountsData;
-  const currentUser = useCurrentUser();
-
-  useEffect(() => {
-    const handleMount = async () => {
-      try {
-        const { data } = await axiosReq.get(
-          "/accounts/?ordering=-followed_count"
-        );
-        setAccountsData((prevState) => ({
-          ...prevState,
-          popularAccounts: data,
-        }));
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    handleMount();
-  }, [currentUser]);
+  const { popularAccounts }  = useAccountData();
 
   return (
     <div className={`${mobile && "d-lg-none text-center mb-3"}`}>

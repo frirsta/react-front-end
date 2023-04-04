@@ -6,12 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./api/axiosDefaults";
 import { CurrentUserProvider } from "./context/CurrentUserContext";
+import { AccountDataProvider } from "./context/AccountDataContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <CurrentUserProvider>
+      <AccountDataProvider>
     <App />
+    </AccountDataProvider>
     </CurrentUserProvider>
   </Router>
 );
