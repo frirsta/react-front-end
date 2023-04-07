@@ -15,7 +15,8 @@ import { Button, Image, Row } from "react-bootstrap";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Post from '../posts/Post';
 import notFound from '../../assets/not_found.png';
-import { fetchMoreData } from '../../utils/utils'
+import { fetchMoreData } from '../../utils/utils';
+import { AccountUpdateDropdown } from "../../components/UserDropdown";
 
 function AccountPage() {
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -51,6 +52,7 @@ function AccountPage() {
 
   const mainAccount = (
     <>
+    {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
       <Image src={account?.profile_image} roundedCircle />
       {account?.owner}
       <br></br>
