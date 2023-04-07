@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import Asset from "../../components/Asset";
 
 import styles from "../../styles/Accounts.module.css";
@@ -24,7 +23,7 @@ function AccountPage() {
 
   const currentUser = useCurrentUser();
   const { id } = useParams();
-  const setAccountData = useSetAccountData();
+  const {setAccountData, handleFollow, handleUnfollow} = useSetAccountData();
   const { pageAccount } = useAccountData();
   const [account] = pageAccount.results;
   const is_owner = currentUser?.username === account?.owner;
@@ -64,12 +63,12 @@ function AccountPage() {
         {currentUser &&
           !is_owner &&
           (account?.following_id ? (
-            <Button>unfollow</Button>
+            <Button variant="dark" onClick={() => handleUnfollow(account)}>unfollow</Button>
           ) : (
-            <Button>Follow</Button>
+            <Button onClick={() => handleFollow(account)}>Follow</Button>
           ))}
       </div>
-      {account?.content && <Col>{account.content}</Col>}
+      {account?.bio && <Col>{account.bio}</Col>}
     </>
   );
 

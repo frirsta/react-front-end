@@ -32,6 +32,12 @@ export const followHelper = (account, clickedAccount, following_id) => {
 
 export const unfollowHelper = (account, clickedAccount) => {
   return account.id === clickedAccount.id
-    ? { ...account, followed_count: account.following_count - 1 }
+    ? { 
+      ...account, 
+      followed_count: account.followed_count - 1,
+    following_id: null,
+   }
+   : account.is_owner
+   ? { ...account, following_count: account.following_count - 1 }
     : account;
 };

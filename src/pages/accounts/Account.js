@@ -6,6 +6,8 @@ import Profile from "../../components/Profile";
 import { Button } from "react-bootstrap";
 import { useSetAccountData } from "../../context/AccountDataContext";
 
+
+
 const Account = (props) => {
   const { account, mobile } = props;
   const { id, following_id, profile_image, owner } = account;
