@@ -1,21 +1,18 @@
 import SideBar from "./components/SideBar";
+import Brand from "./components/Brand";
 import { Route, Switch } from "react-router-dom/";
 import styles from "./App.module.css";
 import SignUpForm from "./pages/auth/SignUpForm";
 import "./api/axiosDefaults";
 import SignInForm from "./pages/auth/SignInForm";
-import { createContext } from "react";
 import PostAddForm from "./pages/posts/PostAddForm";
 import PostPage from "./pages/posts/PostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./context/CurrentUserContext";
 import PostUpdateForm from "./pages/posts/PostUpdateForm";
-import Brand from "./components/Brand";
-import ExploreAccounts from './pages/accounts/ExploreAccounts'
+import ExploreAccounts from './pages/accounts/ExploreAccounts';
+import AccountPage from "./pages/accounts/AccountPage";
 
-
-export const CurrentUserContext = createContext();
-export const SetCurrentUserContext = createContext();
 
 function App() {
   const currentUser = useCurrentUser();
@@ -48,6 +45,7 @@ function App() {
         <Route exact path="/signup" render={() => <SignUpForm />} />
         <Route exact path="/posts/add" render={() => <PostAddForm />} />
         <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm/>} />
+       
         <Route
           exact
           path="/likes"
@@ -68,11 +66,8 @@ function App() {
             />
           )}
         />
-        <Route
-          exact
-          path="/accounts"
-          render={() => <h1 className={styles.main}>Profile</h1>}
-        />
+
+         <Route exact path="/accounts/:id" render={() => <AccountPage />} />
         <Route exact path="/posts/:id" render={() => <PostPage />} />
         <Route render={() => <h1 className={styles.main}>Page not found</h1>} />
       </Switch>
