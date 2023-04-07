@@ -53,7 +53,7 @@ function AccountPage() {
   const mainAccount = (
     <>
     {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
-      <Image src={account?.profile_image} roundedCircle />
+      <Image  className={styles.AccountProfileImage} src={account?.profile_image} roundedCircle />
       {account?.owner}
       <br></br>
       posts: {account?.posts_count}

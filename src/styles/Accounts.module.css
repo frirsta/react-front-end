@@ -1,20 +1,31 @@
-.Worb-break{
-    word-break: break-all;
+.Worb-break {
+  word-break: break-all;
 }
 
-.AccountPageContainer{
-    text-align: center;
+/* account page */
+.AccountPageContainer {
+  text-align: center;
 }
 .ProfileImage {
+  object-fit: cover;
 
-    object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
 
-    width: 40px;
-    height: 40px;
-  }
 
- .AccountPage {
-    margin: 0 auto;
-    text-align: center;
-    width: fit-content;
+.AccountPage {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.Form {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.AccountProfileImage {
+  height: 100px;
 }

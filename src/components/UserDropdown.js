@@ -1,7 +1,7 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import styles from "../styles/UserDropdown.module.css";
-import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router";
 
 const UserDropdownMenu = React.forwardRef(({ onClick }, ref) => (
   <i
@@ -39,7 +39,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
   );
 };
 
-export const AccountUpdateDropdown = ({ id }) => {
+export function AccountUpdateDropdown({ id }) {
   const history = useHistory();
   return (
     <Dropdown>
@@ -60,7 +60,7 @@ export const AccountUpdateDropdown = ({ id }) => {
           update username
         </Dropdown.Item>
         <Dropdown.Item
-          onClick={() => history.push(`/accounts/${id}/change/password`)}
+          onClick={() => history.push(`/accounts/${id}/update/password`)}
           aria-label="update-username"
         >
           
