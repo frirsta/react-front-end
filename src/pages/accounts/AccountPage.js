@@ -13,9 +13,15 @@ import {
   useSetAccountData,
 } from "../../context/AccountDataContext";
 import { Button, Image, Row } from "react-bootstrap";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Post from '../posts/Post';
+import notFound from '../../assets/not_found.png';
+import { fetchMoreData } from '../../utils/utils'
 
 function AccountPage() {
   const [hasLoaded, setHasLoaded] = useState(false);
+  const [accountPosts, setAccountsPosts] = useState({ results: [] });
+
   const currentUser = useCurrentUser();
   const { id } = useParams();
   const setAccountData = useSetAccountData();
@@ -26,13 +32,16 @@ function AccountPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [{ data: pageAccount }] = await Promise.all([
-          axiosReq.get(`/accounts/${id}`),
-        ]);
+        const [{ data: pageAccount }, { data: accountPosts }] =
+          await Promise.all([
+            axiosReq.get(`/accounts/${id}`),
+            axiosReq.get(`/posts/?owner__account=${id}`),
+          ]);
         setAccountData((prevState) => ({
           ...prevState,
           pageAccount: { results: [pageAccount] },
         }));
+        setAccountsPosts(accountPosts);
         setHasLoaded(true);
       } catch (err) {
         console.log(err);
@@ -45,10 +54,12 @@ function AccountPage() {
     <>
       <Image src={account?.profile_image} roundedCircle />
       {account?.owner}
-      {account?.posts_count}
-      {account?.followers_count}
-      {account?.following_count}
-
+      <br></br>
+      posts: {account?.posts_count}
+      <br></br>
+      followers: {account?.followed_count}
+      <br></br>
+      following: {account?.following_count}
       <div>
         {currentUser &&
           !is_owner &&
@@ -64,30 +75,43 @@ function AccountPage() {
 
   const mainAccountPosts = (
     <>
-  
-        <p>Account posts</p>
-      
+      <hr />
+      <p>{account?.owner}'s posts</p>
+      {accountPosts.results.length ? (
+        <InfiniteScroll
+        children={accountPosts.results.map((post) => (
+            <Post key={post.id} {...post} setPosts={setAccountsPosts} />
+        ))}
+        dataLength={accountPosts.results.length}
+        loader={<Asset spinner />}
+        hasMore={!!accountPosts.next}
+        next={() => fetchMoreData(accountPosts, setAccountsPosts)}
+         />
+      ) : (
+        <Asset src={notFound} 
+        message={`No results found, ${account?.owner} has not posted yet.`} />
+      )}
     </>
   );
 
   return (
-    <Row>
-        <Col>
+    <Row className={styles.AccountPage}>
+      <Col>
         <ExploreAccounts mobile />
         <div>
-            {hasLoaded ? (
-                <>
-                {mainAccount}
-                {mainAccountPosts}
-                </>
-            ) : (
-                <Asset spinner />
-            )}
+          {hasLoaded ? (
+            <>
+              {mainAccount}
+              {mainAccountPosts}
+            </>
+          ) : (
+            <Asset spinner />
+          )}
         </div>
         <ExploreAccounts />
-        </Col>
+      </Col>
     </Row>
-  )
+  );
 }
 
 export default AccountPage;

@@ -12,3 +12,9 @@
     width: 40px;
     height: 40px;
   }
+
+ .AccountPage {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}

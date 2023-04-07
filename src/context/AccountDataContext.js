@@ -16,6 +16,52 @@ export const AccountDataProvider = ({ children }) => {
 
   const currentUser = useCurrentUser();
 
+  // const handleFollow = async (clickedAccount) => {
+  //   try {
+  //     const { data } = await axiosRes.post("/followers/", {
+  //       followed: clickedAccount.id,
+  //     });
+  //     setAccountData((prevState) => ({
+  //       ...prevState,
+  //       pageAccount: {
+  //         results: prevState.pageAccount.results.map((account) =>
+  //           followHelper(account, clickedAccount, data.id)
+  //         ),
+  //       },
+  //       exploreAccounts: {
+  //         ...prevState.exploreAccounts,
+  //         results: prevState.exploreAccounts.results.map((account) =>
+  //           followHelper(account, clickedAccount, data.id)
+  //         ),
+  //       },
+  //     }));
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
+
+  // const handleUnfollow = async (clickedAccount) => {
+  //   try {
+  //     await axiosRes.delete(`/followers/${clickedAccount.following_id}/`);
+
+  //     setAccountData((prevState) => ({
+  //       ...prevState,
+  //       pageAccount: {
+  //         results: prevState.pageAccount.results.map((account) =>
+  //           unfollowHelper(account, clickedAccount)
+  //         ),
+  //       },
+  //       exploreAccounts: {
+  //         ...prevState.exploreAccounts,
+  //         results: prevState.exploreAccounts.results.map((account) =>
+  //           unfollowHelper(account, clickedAccount)
+  //         ),
+  //       },
+  //     }));
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   useEffect(() => {
     const handleMount = async () => {
