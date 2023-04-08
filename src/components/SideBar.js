@@ -9,6 +9,7 @@ import {
 } from "../context/CurrentUserContext";
 import Profile from "./Profile";
 import axios from "axios";
+import { removeTokenTimestamp } from "../utils/utils";
 
 const SideBar = () => {
   const currentUser = useCurrentUser();
@@ -18,6 +19,7 @@ const SideBar = () => {
     try {
       await axios.post("/dj-rest-auth/logout/");
       setCurrentUser(null);
+      removeTokenTimestamp();
     } catch (err) {
       console.log(err);
     }
