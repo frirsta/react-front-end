@@ -5,8 +5,10 @@ import { axiosReq } from "../../api/axiosDefaults";
 import Upload from "../../assets/upload.png";
 import Asset from "../../components/Asset";
 import styles from "../../styles/PostAdd.module.css";
+import { useRedirect } from "../../hooks/useRedirect";
 
 function PostAddForm() {
+  useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
   const [postData, setPostData] = useState({
     caption: "",

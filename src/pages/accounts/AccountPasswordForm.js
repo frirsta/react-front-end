@@ -5,7 +5,7 @@ import { axiosRes } from "../../api/axiosDefaults";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import styles from '../../styles/Accounts.module.css';
+import styles from "../../styles/Accounts.module.css";
 
 const AccountPasswordForm = () => {
   const history = useHistory();
@@ -47,31 +47,31 @@ const AccountPasswordForm = () => {
   return (
     <div>
       <Form className={styles.Form} onSubmit={handleSubmit}>
-      <Form.Group>
-              <Form.Label>Confirm password</Form.Label>
-              <Form.Control
-                placeholder="confirm new password"
-                type="password"
-                value={new_password1}
-                onChange={handleChange}
-                name="new_password1"
-              />
-            </Form.Group>
+        <Form.Group>
+          <Form.Label>Confirm password</Form.Label>
+          <Form.Control
+            placeholder="confirm new password"
+            type="password"
+            value={new_password1}
+            onChange={handleChange}
+            name="new_password1"
+          />
+        </Form.Group>
         {errors?.new_password1?.map((message, idx) => (
           <Alert key={idx} variant="warning">
             {message}
           </Alert>
         ))}
-            <Form.Group>
-              <Form.Label>Confirm password</Form.Label>
-              <Form.Control
-                placeholder="confirm new password"
-                type="password"
-                value={new_password2}
-                onChange={handleChange}
-                name="new_password2"
-              />
-            </Form.Group>
+        <Form.Group>
+          <Form.Label>Confirm password</Form.Label>
+          <Form.Control
+            placeholder="confirm new password"
+            type="password"
+            value={new_password2}
+            onChange={handleChange}
+            name="new_password2"
+          />
+        </Form.Group>
         {errors?.new_password2?.map((message, idx) => (
           <Alert key={idx} variant="warning">
             {message}

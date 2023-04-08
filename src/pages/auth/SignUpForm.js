@@ -5,8 +5,10 @@ import Form from "react-bootstrap/Form";
 import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignForm.module.css";
 import "../../api/axiosDefaults";
+import { useRedirect } from "../../hooks/useRedirect";
 
 export default function SignUpForm() {
+  useRedirect("loggedIn");
   const [signUpData, setSignUpData] = useState({
     username: "",
     password1: "",
