@@ -14,6 +14,7 @@ import ExploreAccounts from './pages/accounts/ExploreAccounts';
 import AccountPage from "./pages/accounts/AccountPage";
 import UsernameForm from "./pages/accounts/UsernameForm";
 import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
+import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
 
 
 
@@ -71,6 +72,7 @@ function App() {
         />
 
          <Route exact path="/accounts/:id" render={() => <AccountPage />} />
+         <Route exact path="/accounts/:id/update/password" render={() => <AccountPasswordForm />} />
          <Route exact path="/accounts/:id/update/username" render={() => <UsernameForm />} />
          <Route exact path="/accounts/:id/update" render={() => <AccountUpdateForm />} />
         <Route exact path="/posts/:id" render={() => <PostPage />} />
