@@ -141,6 +141,7 @@ npm install --save react-infinite-scroll-component
 <br>
 
 # Credits
+Sources that have helped build the website:
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 
 Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/
