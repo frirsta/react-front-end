@@ -86,6 +86,23 @@
 
 # User Experience UX
 
+## User story
+
+<img src="src/assets/readme/user-story/user_story_1.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_2.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_3.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_4.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_5.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_6.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_7.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_8.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_9.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_10.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_11.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_12.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_13.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_14.png" alt="User story">
+
 <br>
 
 # Features
@@ -101,13 +118,14 @@
 <br>
 
 # Technologies used
-
 libraries
 npm install react-bootstrap bootstrap
 npm install react-router-dom
 npm install axios
 npm install react-router-dom
 npm install jwt-decode
+npm install bootstrap reactstrap axios --save
+npm install --save react-infinite-scroll-component
 <br>
 
 # Bugs
@@ -125,17 +143,17 @@ npm install jwt-decode
 # Credits
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 
+Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/
+
 upload:
 <a href="https://www.flaticon.com/free-icons/upload" title="upload icons">Upload icons created by Freepik - Flaticon</a>
+Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/
+
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
 
 <br>
 
 # Acknowledgement
 
-npm install bootstrap reactstrap axios --save
-Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/
 
-<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
-npm install --save react-infinite-scroll-component
 
-Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/
