@@ -4,13 +4,13 @@ import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
+import Container from "react-bootstrap/Container";
 import { axiosReq } from "../../api/axiosDefaults";
 import styles from '../../styles/Accounts.module.css';
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../../context/CurrentUserContext";
-import { Container } from "react-bootstrap";
 
 const AccountUpdateForm = () => {
   const currentUser = useCurrentUser();

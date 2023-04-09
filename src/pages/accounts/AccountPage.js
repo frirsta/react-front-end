@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
 import Asset from "../../components/Asset";
 
 import styles from "../../styles/Accounts.module.css";
@@ -11,11 +14,10 @@ import {
   useAccountData,
   useSetAccountData,
 } from "../../context/AccountDataContext";
-import { Button, Image, Row } from "react-bootstrap";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Post from '../posts/Post';
-import notFound from '../../assets/not_found.png';
-import { fetchMoreData } from '../../utils/utils';
+import Post from "../posts/Post";
+import notFound from "../../assets/not_found.png";
+import { fetchMoreData } from "../../utils/utils";
 import { AccountUpdateDropdown } from "../../components/UserDropdown";
 
 function AccountPage() {
@@ -24,7 +26,7 @@ function AccountPage() {
 
   const currentUser = useCurrentUser();
   const { id } = useParams();
-  const {setAccountData, handleFollow, handleUnfollow} = useSetAccountData();
+  const { setAccountData, handleFollow, handleUnfollow } = useSetAccountData();
   const { pageAccount } = useAccountData();
   const [account] = pageAccount.results;
   const is_owner = currentUser?.username === account?.owner;
@@ -52,8 +54,12 @@ function AccountPage() {
 
   const mainAccount = (
     <>
-    {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
-      <Image  className={styles.AccountProfileImage} src={account?.profile_image} roundedCircle />
+      {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
+      <Image
+        className={styles.AccountProfileImage}
+        src={account?.profile_image}
+        roundedCircle
+      />
       {account?.owner}
       <br></br>
       posts: {account?.posts_count}
@@ -65,7 +71,9 @@ function AccountPage() {
         {currentUser &&
           !is_owner &&
           (account?.following_id ? (
-            <Button variant="dark" onClick={() => handleUnfollow(account)}>unfollow</Button>
+            <Button variant="dark" onClick={() => handleUnfollow(account)}>
+              unfollow
+            </Button>
           ) : (
             <Button onClick={() => handleFollow(account)}>Follow</Button>
           ))}
@@ -80,17 +88,19 @@ function AccountPage() {
       <p>{account?.owner}'s posts</p>
       {accountPosts.results.length ? (
         <InfiniteScroll
-        children={accountPosts.results.map((post) => (
+          children={accountPosts.results.map((post) => (
             <Post key={post.id} {...post} setPosts={setAccountsPosts} />
-        ))}
-        dataLength={accountPosts.results.length}
-        loader={<Asset spinner />}
-        hasMore={!!accountPosts.next}
-        next={() => fetchMoreData(accountPosts, setAccountsPosts)}
-         />
+          ))}
+          dataLength={accountPosts.results.length}
+          loader={<Asset spinner />}
+          hasMore={!!accountPosts.next}
+          next={() => fetchMoreData(accountPosts, setAccountsPosts)}
+        />
       ) : (
-        <Asset src={notFound} 
-        message={`No results found, ${account?.owner} has not posted yet.`} />
+        <Asset
+          src={notFound}
+          message={`No results found, ${account?.owner} has not posted yet.`}
+        />
       )}
     </>
   );

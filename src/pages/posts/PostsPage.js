@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Form } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Container from "react-bootstrap/Container";
 import NotFound from "../../assets/not_found.png";
 
 import { useLocation } from "react-router";

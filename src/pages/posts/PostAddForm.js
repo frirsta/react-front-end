@@ -1,5 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Button, Container, Form, Image, Alert } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Upload from "../../assets/upload.png";

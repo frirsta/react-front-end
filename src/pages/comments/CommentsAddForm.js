@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Form, InputGroup } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
 import Profile from "../../components/Profile";
 import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/Comments.module.css";

@@ -3,7 +3,7 @@ import styles from "../../styles/Accounts.module.css";
 import { useCurrentUser } from "../../context/CurrentUserContext";
 import { Link } from "react-router-dom";
 import Profile from "../../components/Profile";
-import { Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import { useSetAccountData } from "../../context/AccountDataContext";
 
 
