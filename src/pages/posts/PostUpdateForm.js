@@ -30,7 +30,7 @@ function PostUpdateForm() {
 
         owner ? setPostData({ caption, post_image }) : history.push("/");
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
     handleMount();
@@ -67,7 +67,7 @@ function PostUpdateForm() {
       await axiosReq.put(`/posts/${id}`, formData);
       history.push(`/posts/${id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
