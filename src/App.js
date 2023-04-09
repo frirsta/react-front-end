@@ -15,6 +15,7 @@ import AccountPage from "./pages/accounts/AccountPage";
 import UsernameForm from "./pages/accounts/UsernameForm";
 import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
 import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
+import NotFound from "./components/NotFound";
 
 
 
@@ -76,7 +77,7 @@ function App() {
          <Route exact path="/accounts/:id/update/username" render={() => <UsernameForm />} />
          <Route exact path="/accounts/:id/update" render={() => <AccountUpdateForm />} />
         <Route exact path="/posts/:id" render={() => <PostPage />} />
-        <Route render={() => <h1 className={styles.main}>Page not found</h1>} />
+        <Route render={() => <NotFound />} />
       </Switch>
 <ExploreAccounts />
     </div>
