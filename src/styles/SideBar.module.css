@@ -12,9 +12,7 @@
 .SideBarContainer{
   border: none;
 }
-.Brand{
-  display: flex;
-}
+
 .SideBarLink{
   background-color: transparent;
 }
