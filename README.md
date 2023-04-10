@@ -1,7 +1,7 @@
 # React project
 Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
 
-[Front-end live link]()
+[Front-end live link](https://front-end-react.herokuapp.com/)
 
 The frontend application is connected to Snap it's API.
 
