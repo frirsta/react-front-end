@@ -14,6 +14,7 @@ The frontend application is connected to Snap it's API.
 
 * [**Project**](<#project>)
 * [**Project Management**](<#project-management>)
+* [**Design**](<#design>)
 * [**Wireframes**](<#wireframes>)
 * [**User Experience UX**](<#user-experience-ux>)
 * [**Features**](<#features>)
@@ -38,14 +39,34 @@ Color palette
 <br>
 
 # Project Management
+
+
+I have used github issues to work with Snap it.
+
+<details><summary>GitHub Issues</summary>
+<img src="src/assets/readme/github_projects/issues.png" alt="github Issues" style="width: 100%">
+</details>
+<br>
+
 I have used the github project board to work with Snap it.
-I have used the github project board to work with the blog.
+
 <details><summary>GitHub Board</summary>
 <img src="src/assets/readme/github_projects/github_projects.png" alt="github board" style="width: 100%">
 </details>
 <br>
 
+
 <br>
+
+# Design
+Color Scheme
+<img src="src/assets/readme/design/color_palette.png" alt="github board" style="width: 100%">
+
+* #F4F2F3 has been used for the background to create a background that does not distract from the images shared by users.
+
+* #F4F2F3 has been used for the sidebar, because it is an important feature for the users. Therefore, this color is perfect because it makes the sidebar easy to find.
+
+
 
 # Wireframes
 
