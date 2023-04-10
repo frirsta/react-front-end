@@ -2,12 +2,15 @@
     width: 20vw;
     position: fixed;
     top: 0px;
-    padding-top: 100px;
-    height: 100vh;
-    background-color: cadetblue;
     right: 0;
+    height: 100vh;
+    padding-top: 50px;
+    
+    border-left: 1px solid #94A7AE;
+    padding-left: 10px;
+
   }
-.PopularAccountsUsername{}
+
 
 @media screen and (max-width: 991px) {
     .ExploreAccounts {

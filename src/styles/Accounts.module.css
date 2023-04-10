@@ -2,6 +2,12 @@
   word-break: break-all;
 }
 
+/* explore accounts */
+.ExploreAccount{
+  margin: 40px 0!important;
+}
+
+
 /* account page */
 .AccountPageContainer {
   text-align: center;

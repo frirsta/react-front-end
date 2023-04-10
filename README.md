@@ -1,4 +1,14 @@
 # React project
+Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
+
+[Front-end live link]()
+
+The frontend application is connected to Snap it's API.
+
+[Back-end API repository](https://github.com/frirsta/drf-api-react)
+<br>
+
+[Back-end API deployment](https://drf-api-frirsta.herokuapp.com/)
 
 <br>
 
@@ -19,10 +29,21 @@
 <br>
 
 # Project
+Color palette
+#94A7AE ljus blå
+#c0a9bd lila
+#F4F2F3 ljus lila
+#64766A grön
 
 <br>
 
 # Project Management
+I have used the github project board to work with Snap it.
+I have used the github project board to work with the blog.
+<details><summary>GitHub Board</summary>
+<img src="src/assets/readme/github_projects/github_projects.png" alt="github board" style="width: 100%">
+</details>
+<br>
 
 <br>
 
@@ -142,6 +163,10 @@ npm install --save react-infinite-scroll-component
 
 # Credits
 Sources that have helped build the website:
+
+Favicon:
+<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Pavani TLN - Flaticon</a>
+
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 
 Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/

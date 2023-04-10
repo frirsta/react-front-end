@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/Accounts.module.css";
+import ButtonStyle from '../../styles/Buttons.module.css';
 import { useCurrentUser } from "../../context/CurrentUserContext";
 import { Link } from "react-router-dom";
 import Profile from "../../components/Profile";
@@ -17,7 +18,7 @@ const Account = (props) => {
   const { handleFollow, handleUnfollow } = useSetAccountData();
   return (
     <div
-      className={`my-3 d-flex align-items-center ${mobile && "flex-column"}`}
+      className={`my-3 d-flex align-items-center ${mobile && "flex-column"} ${styles.ExploreAccount}`}
     >
       <div>
         <Link className="align-self-center" to={`/accounts/${id}`}>
@@ -36,7 +37,7 @@ const Account = (props) => {
               unfollow
             </Button>
           ) : (
-            <Button variant="primary" onClick={() => handleFollow(account)}>
+            <Button className={ButtonStyle.Follow} variant="primary" onClick={() => handleFollow(account)}>
               follow
             </Button>
           ))}
