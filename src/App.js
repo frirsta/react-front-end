@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Brand />
+      <Brand className={styles.Logo} />
       <SideBar />
       <Switch>
         <Route

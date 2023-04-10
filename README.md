@@ -185,8 +185,11 @@ npm install --save react-infinite-scroll-component
 # Credits
 Sources that have helped build the website:
 
+logo
+<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
+
 Favicon:
-<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Pavani TLN - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 

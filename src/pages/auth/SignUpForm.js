@@ -43,9 +43,9 @@ export default function SignUpForm() {
   };
 
   return (
-    <Row>
+    <Row className={styles.Row}>
       <Container className={styles.FormContainer}>
-        <Col xs={6}>
+        <Col className={styles.FormOuter} xs={6}>
           <Form onSubmit={handleSubmit} className={styles.Form}>
             <Form.Group className="mb-3" controlId="username">
               <Form.Label>Username</Form.Label>
@@ -105,7 +105,7 @@ export default function SignUpForm() {
               </Alert>
             ))}
           </Form>
-          <span>
+          <span className={styles.HaveAccount}>
             Already have an account?
             <Link to="/signin">Sign in</Link>
           </span>

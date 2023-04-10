@@ -12,3 +12,24 @@
     padding: 10px 20px;
     border-radius: 10px;
 }
+.FormOuter{
+    margin: 0 auto;
+    width: 500px;
+    max-width: 95vw;
+}
+.Row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 820px) {
+    .FormContainer{
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .HaveAccount{
+        font-size: 15px;
+    }
+}

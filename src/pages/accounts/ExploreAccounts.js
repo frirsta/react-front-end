@@ -11,9 +11,9 @@ const ExploreAccounts = ({ mobile }) => {
     <div className={`${mobile && "d-lg-none text-center mb-3"}`}>
       {exploreAccounts.results.length ? (
         <>
-          <p>Explore Accounts</p>
           {mobile ? (
             <div className="d-flex justify-content-around">
+              <p>Explore Accounts</p>
               {exploreAccounts.results.slice(0, 5).map((account) => (
                 <Account key={account.id} account={account} mobile />
 

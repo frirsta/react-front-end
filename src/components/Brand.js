@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import styles from "../App.module.css";
+import Camera from '../assets/icons/camera.png'
 
-const Brand = () => {
+
+const Brand = ({className}) => {
   return (
-    <NavLink to="/" className={styles.Brand}>
-     Brand
+    <NavLink to="/" className={className}>
+     <img className={className} src={Camera} alt="The website logo, a camera" />
     </NavLink>
   );
 };
