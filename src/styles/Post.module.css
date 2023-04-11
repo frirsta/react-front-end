@@ -19,10 +19,14 @@
   width: 40px;
   height: 40px;
 }
-
-.PostImage {
+.PostImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.PostImage{
   height: 350px;
-  width: 450px;
 }
 .PostUserLikesComments {
   display: flex;
@@ -41,7 +45,6 @@
   justify-content: space-between;
   width: 100%;
 }
-
 .PostCounts {
   width: 30px;
   display: flex;
@@ -49,69 +52,49 @@
   justify-content: space-between;
   align-items: baseline;
 }
-
 .LikeComment {
   display: flex;
   flex-direction: row;
   width: 75px;
   justify-content: space-between;
 }
-
 .LikedPost {
   color: red;
 }
-
 .Icon {
   cursor: pointer;
 }
-
 /* saved posts */
 .SavedPostIcon {
   flex-direction: row-reverse;
   margin-right: 20px;
 }
-
 .SavedPost {
   color: #01051b;
 }
-
 /* dropdown */
-
 .DropdownContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 120px;
 }
-
 @media screen and (max-width: 600px) {
   .PostContainer {
     margin: 40px auto;
     border: 1px solid;
     max-width: 80vw;
   }
-
-  .PostImage {
-    height: 300px;
-    max-width: 79vw;
-  }
-
-  .PostImageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
 }
-
 @media screen and (max-width: 500px) {
 .ProfileImage{
   width: 35px;
   height: 35px;
 }
+.PostImage{
+  height: 300px;
 }
-
+}
 @media screen and (max-width: 450px) {
   .Username {
     font-size: 15px;
@@ -129,51 +112,45 @@
     height: 30px;
     width: 30px;
   }
-}
-
-@media screen and (max-width: 400px) {
-
-
-  .PostImage {
+  .PostImage{
     height: 250px;
   }
 }
-
-@media screen and (max-width: 300px) {
-  .ProfileImage{
-    height: 30px;
-    width: 30px;
+@media screen and (max-width: 400px) {
+  .PostImage{
+    height: 200px;
   }
-
+  .LikeComment{
+    width: 60px;
+  }
+  .PostCounts{
+    width: 25px;
+    font-size: 12px;
+  }
+  .DropdownContainer{
+    justify-content: end;
+  }
   .Username {
-    font-size: 13px;
+    font-size: 12px;
   }
   .Date {
     font-size: 12px;
   }
-  .DropdownContainer {
-    width: unset;
-  }
   .Caption {
-    font-size: 13px;
+    font-size: 12px;
   }
-
-  .PostImage {
-    height: 200px;
-  }
-
-  .LikeComment{
-    width: 70px;
+}
+@media screen and (max-width: 300px) {
+  .ProfileImage{
+    height: 30px;
+    width: 30px;
   }
   .PostUserLikesComments{
     padding-left: 5px;
     padding-top: 5px;
     height: unset;
   }
-
   .PostCounts{
-    font-size: 15px;
     margin-right: 5px;
-
   }
 }

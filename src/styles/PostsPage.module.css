@@ -3,19 +3,15 @@
     flex-direction: row-reverse;
     justify-content: center;
 }
-
 .PostContainer{
-    height: 100vh;
     display: flex;
     justify-content: flex-start;
     flex-direction: column
 }
-
 .PostsList{
     display: flex;
     flex-direction: column;
 }
-
 .SearchBar{
     display: flex;
     flex-direction: row;
@@ -57,7 +53,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    .SearchBar{
+        padding: 0px;
+    }
     .SearchBar input{
         max-width: 80vw;
+        width: 450px;
+    border-radius: 30px;
+    padding: 0px 30px;
+    height: 30px;
+    font-size: 12px;
     }
 }
