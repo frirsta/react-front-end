@@ -2,9 +2,12 @@ import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import styles from "../styles/UserDropdown.module.css";
 import { useHistory } from "react-router";
+import Menu from "../assets/icons/dropdown.png";
 
 const UserDropdownMenu = React.forwardRef(({ onClick }, ref) => (
-  <i
+  <img
+    src={Menu}
+    alt="dropdown menu"
     className={`fa-solid fa-caret-down ${styles.DropdownMenu}`}
     ref={ref}
     onClick={(e) => {
@@ -42,7 +45,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
 export function AccountUpdateDropdown({ id }) {
   const history = useHistory();
   return (
-    <Dropdown>
+    <Dropdown drop="left">
       <Dropdown.Toggle as={UserDropdownMenu} />
       <Dropdown.Menu>
         <Dropdown.Item
@@ -63,11 +66,10 @@ export function AccountUpdateDropdown({ id }) {
           onClick={() => history.push(`/accounts/${id}/update/password`)}
           aria-label="update-username"
         >
-          
           <i className="fa-solid fa-key" />
           change password
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
-};
+}

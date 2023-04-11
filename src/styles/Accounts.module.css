@@ -1,13 +1,9 @@
 .Worb-break {
   word-break: break-all;
 }
-
-/* explore accounts */
-.ExploreAccount{
-  margin: 40px 0!important;
+.ExploreAccountsButtonsMobile {
+  display: none;
 }
-
-
 /* account page */
 .AccountPageContainer {
   text-align: center;
@@ -20,18 +16,57 @@
 }
 
 
-.AccountPage {
-  margin: 0 auto;
-  text-align: center;
-  width: fit-content;
-}
-
 .Form {
   margin: 0 auto;
   text-align: center;
   width: fit-content;
 }
 
-.AccountProfileImage {
-  height: 100px;
+
+@media screen and (max-width: 1200px) {
+  .ExploreAccountProfileImage {
+    width: 30px;
+    height: 30px;
+  }
+  .ExploreAccountName {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ExploreAccountsButtonsMobile {
+    display: flex;
+  }
+  .ExploreAccountName {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ExploreAccountName {
+    font-size: 12px;
+  }
+  .ExploreAccountProfileImage {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ExploreAccountName {
+    font-size: 11px;
+  }
+  .ExploreAccountProfileImage {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .ExploreAccountName {
+    font-size: 10px;
+  }
+  .ExploreAccountProfileImage {
+    width: 20px;
+    height: 20px;
+  }
 }

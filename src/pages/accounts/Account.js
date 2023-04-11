@@ -22,22 +22,35 @@ const Account = (props) => {
     >
       <div>
         <Link className="align-self-center" to={`/accounts/${id}`}>
-          <Profile src={profile_image} />
+          <Profile className={styles.ExploreAccountProfileImage} src={profile_image} />
         </Link>
       </div>
       <div className={styles.WordBreak}>
-        <strong>{owner}</strong>
+        <strong className={styles.ExploreAccountName}>{owner}</strong>
+      </div>
+        <div className={styles.ExploreAccountsButtonsMobile}>
+        {currentUser &&
+          !is_owner &&
+          (following_id ? (
+            <Button className={`${ButtonStyle.FollowButtons} ${ButtonStyle.UnFollow}`} onClick={() => handleUnfollow(account)}>
+              unfollow
+            </Button>
+          ) : (
+            <Button className={`${ButtonStyle.FollowButtons} ${ButtonStyle.Follow}`} onClick={() => handleFollow(account)}>
+              follow
+            </Button>
+          ))}
       </div>
       <div className={`text-right ${!mobile && "ml-auto"}`}>
         {!mobile &&
           currentUser &&
           !is_owner &&
           (following_id ? (
-            <Button variant="dark" onClick={() => handleUnfollow(account)}>
+            <Button className={`${ButtonStyle.FollowButtons} ${ButtonStyle.UnFollow}`} onClick={() => handleUnfollow(account)}>
               unfollow
             </Button>
           ) : (
-            <Button className={ButtonStyle.Follow} variant="primary" onClick={() => handleFollow(account)}>
+            <Button className={`${ButtonStyle.FollowButtons} ${ButtonStyle.Follow}`} onClick={() => handleFollow(account)}>
               follow
             </Button>
           ))}

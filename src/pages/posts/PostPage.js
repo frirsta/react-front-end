@@ -65,7 +65,7 @@ function PostPage() {
           next={() => fetchMoreData(comments, setComments)}
         />
       ) : currentUser ? (
-        <span>No comments, be the first to comment</span>
+        <span className={styles.NoComments}>No comments, be the first to comment</span>
       ) : (
         <span>No comments</span>
       )}

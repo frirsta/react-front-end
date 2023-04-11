@@ -4,25 +4,28 @@
     top: 0px;
     right: 0;
     height: 100vh;
-
-    
     border-left: 1px solid #94A7AE;
     padding-left: 10px;
-
   }
-
+.ExploreAccount{
+  margin: 40px 0!important;
+}
   .LogoContainer{
-  
     height: 100px;
     border: none;
     padding: 10px;
     left: 50%;
     position: absolute;
   }
-
-
 @media screen and (max-width: 991px) {
     .ExploreAccounts {
       display: none;
+    }
+    /* mobile */
+    .ExploreAccountsMobile{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 } 

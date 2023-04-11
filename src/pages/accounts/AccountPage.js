@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Asset from "../../components/Asset";
 
-import styles from "../../styles/Accounts.module.css";
+import styles from "../../styles/AccountPage.module.css";
 import ExploreAccounts from "./ExploreAccounts";
 import { useCurrentUser } from "../../context/CurrentUserContext";
 import { useParams } from "react-router";
@@ -54,19 +54,33 @@ function AccountPage() {
 
   const mainAccount = (
     <>
-      {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
-      <Image
-        className={styles.AccountProfileImage}
-        src={account?.profile_image}
-        roundedCircle
-      />
-      {account?.owner}
-      <br></br>
-      posts: {account?.posts_count}
-      <br></br>
-      followers: {account?.followed_count}
-      <br></br>
-      following: {account?.following_count}
+      <div className={styles.AccountDropdownContainer}>
+        {account?.is_owner && <AccountUpdateDropdown id={account?.id} />}
+        </div>
+        <div className={styles.ProfileImageName}>
+        <Image
+          className={styles.AccountProfileImage}
+          src={account?.profile_image}
+          roundedCircle
+        />
+        {account?.owner}
+        </div>
+        <br></br>
+
+        <div className={styles.AccountInformation}>
+          <div className={styles.AccountInformationConatiner}>
+         <div>posts</div> <div>{account?.posts_count}</div>
+          </div>
+
+          <div className={styles.AccountInformationConatiner}>
+          <div>followers</div> <div>{account?.followed_count}</div>
+        </div>
+
+        <div className={styles.AccountInformationConatiner}>
+         <div>following:</div>  <div>{account?.following_count}</div>
+          </div>
+        </div>
+    
       <div>
         {currentUser &&
           !is_owner &&

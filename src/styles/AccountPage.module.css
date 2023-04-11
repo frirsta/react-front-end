@@ -1,0 +1,33 @@
+.AccountPage {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+.AccountDropdownContainer{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.ProfileImageName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.AccountProfileImage {
+   
+  }
+  .AccountInformation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AccountInformationConatiner{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}

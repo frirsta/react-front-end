@@ -1,3 +1,9 @@
-.ProfileContainer{
-    background-color: transparent;
+.ProfileContainer {
+  background-color: transparent;
+  padding-right: 7px;
+}
+@media screen and (max-width: 991px) {
+  .ProfileContainer {
+    padding-right: 0px;
+  }
 }

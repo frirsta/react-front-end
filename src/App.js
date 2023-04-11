@@ -16,12 +16,9 @@ import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
 import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
 import NotFound from "./components/NotFound";
 
-
-
 function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || "";
-
   return (
     <div className={styles.App}>
       <SideBar />
@@ -43,12 +40,10 @@ function App() {
             />
           )}
         />
-
         <Route exact path="/signin" render={() => <SignInForm />} />
         <Route exact path="/signup" render={() => <SignUpForm />} />
         <Route exact path="/posts/add" render={() => <PostAddForm />} />
-        <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm/>} />
-       
+        <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm/>} />    
         <Route
           exact
           path="/likes"
@@ -69,7 +64,6 @@ function App() {
             />
           )}
         />
-
          <Route exact path="/accounts/:id" render={() => <AccountPage />} />
          <Route exact path="/accounts/:id/update/password" render={() => <AccountPasswordForm />} />
          <Route exact path="/accounts/:id/update/username" render={() => <UsernameForm />} />
@@ -81,5 +75,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

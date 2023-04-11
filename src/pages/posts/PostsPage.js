@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import NotFound from "../../assets/not_found.png";
-
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
@@ -50,6 +49,7 @@ function PostsPage({ message, filter = "" }) {
   return (
     <Container className={styles.PostsPageContainer}>
       <div className={styles.PostContainer}>
+      <ExploreAccounts />
       <ExploreAccounts mobile />
         <Form onSubmit={handleSearch} className={styles.SearchBar}>
           <i className={`${styles.SearchIcon} fa-solid fa-magnifying-glass`} />

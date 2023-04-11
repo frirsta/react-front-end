@@ -1,3 +1,36 @@
-.Follow{
-    background-color: #64766A;
+.FollowButtons {
+  border-radius: 15px;
+  border-color: transparent;
+  width: 90px;
+  padding: 4px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.FollowButtons:focus {
+  background-color: #c0a9bd;
+}
+.FollowButtons:hover {
+  background-color: #c0a9bd;
+}
+.FollowButtons:active {
+  background-color: #c0a9bd;
+}
+
+.Follow {
+  background-color: #94a7ae;
+  border-radius: 15px;
+  border-color: #94a7ae;
+}
+
+.UnFollow {
+  background-color: #64766a;
+}
+
+@media screen and (max-width: 1200px) {
+  .FollowButtons {
+    width: 75px;
+    padding: 4px;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
 }

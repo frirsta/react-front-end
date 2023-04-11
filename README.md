@@ -201,7 +201,25 @@ Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor
 
 <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
 
+
+menu:
+<a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Ayub Irawan - Flaticon</a>
+
+posts:
+Bild av Amine İspir: https://www.pexels.com/sv-se/foto/vag-par-romantisk-relation-14578722/
+Bild av Matteo Milan: https://www.pexels.com/sv-se/foto/hav-strand-vatten-resa-15962125/
+Bild av Taha Samet Arslan: https://www.pexels.com/sv-se/foto/staende-leende-romantik-sloja-15530666/
+Bild av Diana Titenko: https://www.pexels.com/sv-se/foto/mode-solglasogon-semester-manniskor-3271945/
+Bild av Gustavo Fring: https://www.pexels.com/sv-se/foto/man-par-karlek-kvinna-4148842/
+Bild av Oliver  Morgan: https://www.pexels.com/sv-se/foto/tra-bank-landskap-solnedgang-16053779/
+Bild av Taylen Lundequam: https://www.pexels.com/sv-se/foto/hav-molnig-vagor-kust-14775583/
+Bild av Kübra Doğu: https://www.pexels.com/sv-se/foto/mat-tra-gryning-kaffe-9222655/
+
+
+
 <br>
+
+
 
 # Acknowledgement
 

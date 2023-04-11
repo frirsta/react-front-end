@@ -13,12 +13,15 @@ const ExploreAccounts = ({ mobile }) => {
       {exploreAccounts.results.length ? (
         <>
           {mobile ? (
-            <div className="d-flex justify-content-around">
+            <div>
+              <Brand />
               <p>Explore Accounts</p>
+            <div className="d-flex justify-content-around">
               {exploreAccounts.results.slice(0, 5).map((account) => (
                 <Account key={account.id} account={account} mobile />
 
               ))}
+            </div>
             </div>
           ) : (
             <div className={`${styles.ExploreAccounts}`}>
