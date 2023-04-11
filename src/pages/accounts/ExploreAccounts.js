@@ -14,7 +14,7 @@ const ExploreAccounts = ({ mobile }) => {
         <>
           {mobile ? (
             <div>
-              <Brand />
+             
               <p>Explore Accounts</p>
             <div className="d-flex justify-content-around">
               {exploreAccounts.results.slice(0, 5).map((account) => (

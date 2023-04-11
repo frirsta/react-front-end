@@ -1,0 +1,60 @@
+.LogoContainer {
+    text-align: center;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Logo {
+    height: 80px;
+    border: none;
+  }
+  
+  .SnapIt {
+    position: absolute;
+    background-color: #f4f2f3;
+    font-size: 12px;
+    width: 85px;
+    top: 36px;
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+  }
+
+  /* mobile */
+  .LogoContainerMobile{
+    display: none;
+  }
+
+  @media screen and (max-width: 991px) {
+  /* mobile */
+    .LogoContainerMobile {
+        width: fit-content;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    .LogoMobile {
+      position: unset;
+      height: 60px;
+      border: none;
+    }
+    .SnapItMobile {
+        position: absolute;
+        background-color: #f4f2f3;
+        font-size: 9px;
+        width: 61px;
+        top: 27px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: lowercase;
+    }
+  }
+  

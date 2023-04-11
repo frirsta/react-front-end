@@ -13,39 +13,3 @@ a {
 .main {
   text-align: center;
 }
-.LogoContainer {
-  text-align: center;
-  position: relative;
-  top: 0px;
-}
-.Logo {
-  height: 80px;
-  border: none;
-}
-
-.SnapIt {
-  position: absolute;
-  background-color: #f4f2f3;
-  font-size: 12px;
-  width: 100%;
-  top: 36px;
-  text-align: center;
-  letter-spacing: 6px;
-  text-transform: lowercase;
-}
-
-@media screen and (max-width: 991px) {
-  .LogoContainer {
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .Logo {
-    position: unset;
-  }
-  .SnapIt {
-    width: 80px;
-    font-size: 10px;
-  }
-}

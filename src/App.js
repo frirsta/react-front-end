@@ -14,6 +14,7 @@ import UsernameForm from "./pages/accounts/UsernameForm";
 import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
 import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
 import NotFound from "./components/NotFound";
+import BrandMobile from "./components/BrandMobile";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className={styles.App}>
       <SideBar />
+     <BrandMobile/>
       <Switch>
         <Route
           exact

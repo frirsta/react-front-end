@@ -4,14 +4,14 @@ import Camera from '../assets/icons/camera.png';
 import styles from '../styles/Brand.module.css';
 
 
-const Brand = () => {
+const BrandMobile = () => {
   return (
-    <div className={styles.LogoContainer}>
+    <div className={styles.LogoContainerMobile}>
     <NavLink to="/">
-     <img className={styles.Logo} src={Camera} alt="The website logo, a camera" />
-     <p className={styles.SnapIt}>Snap it</p>
+     <img className={styles.LogoMobile} src={Camera} alt="The website logo, a camera" />
+     <p className={styles.SnapItMobile}>Snap it</p>
     </NavLink>
     </div>
   );
 };
-export default Brand;
+export default BrandMobile;
