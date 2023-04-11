@@ -122,7 +122,6 @@ function AccountPage() {
   return (
     <Row className={styles.AccountPage}>
       <Col>
-        <ExploreAccounts mobile />
         <div>
           {hasLoaded ? (
             <>

@@ -47,6 +47,7 @@ function PostsPage({ message, filter = "" }) {
   };
 
   return (
+
     <Container className={styles.PostsPageContainer}>
       <div className={styles.PostContainer}>
       <ExploreAccounts />

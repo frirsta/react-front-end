@@ -9,7 +9,6 @@ import PostPage from "./pages/posts/PostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./context/CurrentUserContext";
 import PostUpdateForm from "./pages/posts/PostUpdateForm";
-import ExploreAccounts from './pages/accounts/ExploreAccounts';
 import AccountPage from "./pages/accounts/AccountPage";
 import UsernameForm from "./pages/accounts/UsernameForm";
 import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
@@ -71,7 +70,6 @@ function App() {
         <Route exact path="/posts/:id" render={() => <PostPage />} />
         <Route render={() => <NotFound />} />
       </Switch>
-<ExploreAccounts />
     </div>
   );
 }
