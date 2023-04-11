@@ -113,7 +113,7 @@ const Post = (props) => {
     <div className={styles.PostContainer}>
       <Media className={styles.PostUserContainer}>
         <Link to={`/accounts/${accounts_id}`}>
-          <span >
+          <span>
             <Profile className={styles.ProfileImage} src={profile_image} />
           </span>
           <span className={styles.Username}>{owner}</span>
@@ -168,9 +168,18 @@ const Post = (props) => {
               {likes_count}
             </div>
             <div className={styles.PostCounts}>
-              <Link to={`/posts/${id}`}>
-                <i className="fa-regular fa-comment" />
-              </Link>
+              {currentUser ? (
+                <Link to={`/posts/${id}`}>
+                  <i className="fa-regular fa-comment" />
+                </Link>
+              ) : (
+                <OverlayTrigger
+                  placement="top"
+                  overlay={<Tooltip>Log in to comment</Tooltip>}
+                >
+                  <i className="fa-regular fa-comment" />
+                </OverlayTrigger>
+              )}{" "}
               {comments_count}
             </div>
           </div>
