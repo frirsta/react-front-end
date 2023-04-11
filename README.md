@@ -217,6 +217,34 @@ Bild av Kübra Doğu: https://www.pexels.com/sv-se/foto/mat-tra-gryning-kaffe-92
 Bild av João  Jesus: https://www.pexels.com/sv-se/foto/ljus-mode-man-person-1080213/
 Bild av Matheus Bertelli: https://www.pexels.com/sv-se/foto/hander-kvinna-flicka-sot-3764119/
 
+Bild av Cristian Muduc: https://www.pexels.com/sv-se/foto/manniskor-vatten-reser-italien-10146128/
+Bild av Mikhail Nilov: https://www.pexels.com/sv-se/foto/blommor-pask-bestick-porslin-6957717/
+Bild av Valeriya Kobzar: https://www.pexels.com/sv-se/foto/drycker-glas-bord-firande-8630148/
+Bild av Justyna Serafin: https://www.pexels.com/sv-se/foto/hav-vatten-batar-yachter-13563441/
+Bild av Amar  Preciado: https://www.pexels.com/sv-se/foto/kaffe-bar-kafe-ta-bilder-16230535/
+Bild av Lorenzo Castellino: https://www.pexels.com/sv-se/foto/hav-gryning-landskap-solnedgang-15636474/
+Bild av Lany-Jade Mondou: https://www.pexels.com/sv-se/foto/stad-solglasogon-kvinna-byggnader-14460412/
+Bild av Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
+Bild av Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
+Bild av sora: https://www.pexels.com/sv-se/foto/vinter-park-blad-oskarpa-15637648/
+Bild av Mitch Lally: https://www.pexels.com/sv-se/foto/landskap-bergen-hotell-sjo-15032293/
+Bild av arteliusnis  : https://www.pexels.com/sv-se/foto/byggnader-monster-arkitektur-fonster-5338350/
+Bild av Ayako S: https://www.pexels.com/sv-se/foto/brod-mat-tra-gryning-15640312/
+Bild av Majo  Pestaña : https://www.pexels.com/sv-se/foto/vaxt-blomma-blomning-botanik-16172618/
+Bild av Mikkel Kvist: https://www.pexels.com/sv-se/foto/stad-gata-byggnad-flaggor-15949542/
+Bild av Polina Kovaleva: https://www.pexels.com/sv-se/foto/stad-himmel-semester-frankrike-5507232/
+Bild av Kadir Akman: https://www.pexels.com/sv-se/foto/fagel-djur-papegoja-ara-ararauna-15912424/
+Bild av Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-plats-installning-9433045/
+Bild av Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
+
+
+
+
+
+
+
+
+
 
 
 <br>

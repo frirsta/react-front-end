@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { axiosRes } from "../../api/axiosDefaults";
-import styles from '../../styles/Comments.module.css'
+import styles from '../../styles/Comments.module.css';
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 
 function CommentsUpdateForm(props) {
@@ -44,10 +45,10 @@ function CommentsUpdateForm(props) {
           <Form.Control className={styles.CommentUpdateInput} type="text" value={formData} onChange={handleChange} />
         </Form.Group>
         <div className={styles.ButtonContainer}>
-        <Button className={styles.CommentButtons} type="button" onClick={() => setDisplayUpdateForm(false)}>
+        <Button className={ButtonStyles.CommentButton} type="button" onClick={() => setDisplayUpdateForm(false)}>
           Cancel
         </Button>
-        <Button className={styles.CommentButtons} type="submit" disabled={!content.trim()}>
+        <Button className={ButtonStyles.CommentButton} type="submit" disabled={!content.trim()}>
           Save
         </Button>
         </div>

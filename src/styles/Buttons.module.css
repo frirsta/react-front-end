@@ -1,10 +1,22 @@
 .Button{
   border-radius: 15px;
-  border-color: transparent;
+  border-color: transparent!important;
   width: 90px;
   padding: 4px;
   letter-spacing: 1px;
   font-size: 13px;
+  background-color: #94a7ae!important;
+  margin: 0 5px;
+}
+.CommentButton{
+  border-radius: 15px;
+  border-color: transparent!important;
+  width: 70px;
+  padding: 4px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  background-color: #94a7ae!important;
+  margin: 0 2px;
 }
 .FollowButtons,
 .Button {
@@ -17,15 +29,15 @@
 }
 .FollowButtons:focus,
 .Button:focus {
-  background-color: #c0a9bd;
+  background-color: #c0a9bd!important;
 }
 .FollowButtons:hover,
 .Button:hover {
-  background-color: #c0a9bd;
+  background-color: #c0a9bd!important;
 }
 .FollowButtons:active,
 .Button:active {
-  background-color: #c0a9bd;
+  background-color: #c0a9bd!important;
 }
 
 .Follow,
@@ -37,6 +49,13 @@
 
 .UnFollow {
   background-color: #64766a;
+}
+
+.ChangeImage{
+  border-color: #94a7ae;
+  background-color: #94a7ae;
+  color: #fff;
+  width: 150px;
 }
 
 @media screen and (max-width: 1200px) {

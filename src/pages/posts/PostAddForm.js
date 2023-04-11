@@ -11,6 +11,7 @@ import Upload from "../../assets/upload.png";
 import Asset from "../../components/Asset";
 import styles from "../../styles/PostAdd.module.css";
 import { useRedirect } from "../../hooks/useRedirect";
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 function PostAddForm() {
   useRedirect("loggedOut");
@@ -77,11 +78,11 @@ function PostAddForm() {
                 {message}
               </Alert>
             ))}
-      <Button className={styles.Button} onClick={() => history.goBack()}>
+      <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>
         Cancel
       </Button>
 
-      <Button className={styles.Button} type="submit">
+      <Button className={ButtonStyles.Button} type="submit">
         Post
       </Button>
     </div>
@@ -98,7 +99,7 @@ function PostAddForm() {
             </figure>
             <div>
               <Form.Label
-                className={`${styles.Button} btn`}
+                className={`${ButtonStyles.ChangeImage} ${ButtonStyles.Button} btn`}
                 htmlFor="add-image"
               >
                 Change Image

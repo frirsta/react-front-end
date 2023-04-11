@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import styles from "../../styles/PostAdd.module.css";
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 function PostUpdateForm() {
   const [errors, setErrors] = useState({});
@@ -90,13 +91,15 @@ function PostUpdateForm() {
           {message}
         </Alert>
       ))}
-      <Button className={styles.Button} onClick={() => history.goBack()}>
+      <div className={styles.UpdateButtons}>
+      <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>
         Cancel
       </Button>
 
-      <Button className={styles.Button} type="submit">
+      <Button className={ButtonStyles.Button} type="submit">
         Save
       </Button>
+      </div>
     </div>
   );
 
@@ -110,7 +113,7 @@ function PostUpdateForm() {
               </figure>
               <div>
                 <Form.Label
-                  className={`${styles.Button} btn`}
+                  className={`${ButtonStyles.Button} ${ButtonStyles.ChangeImage} btn`}
                   htmlFor="add-image"
                 >
                   Change Image

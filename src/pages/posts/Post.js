@@ -168,7 +168,7 @@ const Post = (props) => {
               {likes_count}
             </div>
             <div className={styles.PostCounts}>
-              <Link to={`posts/${id}`}>
+              <Link to={`/posts/${id}`}>
                 <i className="fa-regular fa-comment" />
               </Link>
               {comments_count}

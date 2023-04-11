@@ -6,6 +6,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Profile from "../../components/Profile";
 import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/Comments.module.css";
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 function CommentsAddForm(props) {
   const { post, setPost, setComments, profileImage, accounts_id } = props;
@@ -61,7 +62,7 @@ function CommentsAddForm(props) {
         </InputGroup>
       </Form.Group>
       <Button
-        className={styles.CommentsButton}
+        className={`${styles.CommentsButton} ${ButtonStyles.Button}`}
         type="submit"
         disabled={!content.trim()}
       >
