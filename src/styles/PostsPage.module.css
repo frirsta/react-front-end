@@ -47,12 +47,14 @@
     text-align: center;
 }
 @media screen and (max-width: 820px) {
-.InfiniteScroll{
-   
+    .PostContainer{
+        padding-bottom: 70px;
+    }
 }
-}
-
 @media screen and (max-width: 600px) {
+    .PostContainer{
+        padding-bottom: 60px;
+    }
     .SearchBar{
         padding: 0px;
     }

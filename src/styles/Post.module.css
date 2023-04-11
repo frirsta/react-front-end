@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: stretch;
 }
-.PostImage{
+.PostImage {
   height: 350px;
 }
 .PostUserLikesComments {
@@ -34,7 +34,6 @@
   align-items: flex-start;
   justify-content: flex-end;
   width: 100%;
-
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -87,13 +86,13 @@
   }
 }
 @media screen and (max-width: 500px) {
-.ProfileImage{
-  width: 35px;
-  height: 35px;
-}
-.PostImage{
-  height: 300px;
-}
+  .ProfileImage {
+    width: 35px;
+    height: 35px;
+  }
+  .PostImage {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 450px) {
   .Username {
@@ -108,26 +107,26 @@
   .Caption {
     font-size: 15px;
   }
-  .ProfileImage{
+  .ProfileImage {
     height: 30px;
     width: 30px;
   }
-  .PostImage{
+  .PostImage {
     height: 250px;
   }
 }
 @media screen and (max-width: 400px) {
-  .PostImage{
+  .PostImage {
     height: 200px;
   }
-  .LikeComment{
+  .LikeComment {
     width: 60px;
   }
-  .PostCounts{
+  .PostCounts {
     width: 25px;
     font-size: 12px;
   }
-  .DropdownContainer{
+  .DropdownContainer {
     justify-content: end;
   }
   .Username {
@@ -139,18 +138,21 @@
   .Caption {
     font-size: 12px;
   }
+  .SavedPostIcon {
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 300px) {
-  .ProfileImage{
+  .ProfileImage {
     height: 30px;
     width: 30px;
   }
-  .PostUserLikesComments{
+  .PostUserLikesComments {
     padding-left: 5px;
     padding-top: 5px;
     height: unset;
   }
-  .PostCounts{
+  .PostCounts {
     margin-right: 5px;
   }
 }
