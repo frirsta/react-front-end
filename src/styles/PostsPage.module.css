@@ -11,6 +11,7 @@
 .PostsList{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .SearchBar{
     display: flex;
@@ -45,6 +46,7 @@
 /* Comments */
 .NoComments{
     text-align: center;
+    width: 100%;
 }
 @media screen and (max-width: 820px) {
     .PostContainer{

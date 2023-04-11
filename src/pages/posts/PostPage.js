@@ -67,7 +67,7 @@ function PostPage() {
       ) : currentUser ? (
         <span className={styles.NoComments}>No comments, be the first to comment</span>
       ) : (
-        <span>No comments</span>
+        <span className={styles.NoComments}>No comments</span>
       )}
     </Container>
   );
