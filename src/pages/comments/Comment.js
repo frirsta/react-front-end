@@ -58,6 +58,7 @@ const Comment = (props) => {
           </div>
           {displayUpdateForm ? (
             <CommentsUpdateForm 
+           
             id={id} 
             accounts_id={accounts_id} 
             content={content} 

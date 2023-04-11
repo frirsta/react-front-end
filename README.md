@@ -236,7 +236,7 @@ Bild av Polina Kovaleva: https://www.pexels.com/sv-se/foto/stad-himmel-semester-
 Bild av Kadir Akman: https://www.pexels.com/sv-se/foto/fagel-djur-papegoja-ara-ararauna-15912424/
 Bild av Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-plats-installning-9433045/
 Bild av Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
-
+Bild av Masha Raymers: https://www.pexels.com/sv-se/foto/gryning-mode-person-kvinna-2726111/
 
 
 
