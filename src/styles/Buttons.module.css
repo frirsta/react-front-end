@@ -1,4 +1,4 @@
-.FollowButtons {
+.Button{
   border-radius: 15px;
   border-color: transparent;
   width: 90px;
@@ -6,17 +6,30 @@
   letter-spacing: 1px;
   font-size: 13px;
 }
-.FollowButtons:focus {
+.FollowButtons,
+.Button {
+  border-radius: 15px;
+  border-color: transparent;
+  width: 90px;
+  padding: 4px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.FollowButtons:focus,
+.Button:focus {
   background-color: #c0a9bd;
 }
-.FollowButtons:hover {
+.FollowButtons:hover,
+.Button:hover {
   background-color: #c0a9bd;
 }
-.FollowButtons:active {
+.FollowButtons:active,
+.Button:active {
   background-color: #c0a9bd;
 }
 
-.Follow {
+.Follow,
+.Button {
   background-color: #94a7ae;
   border-radius: 15px;
   border-color: #94a7ae;

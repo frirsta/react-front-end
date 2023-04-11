@@ -214,6 +214,8 @@ Bild av Gustavo Fring: https://www.pexels.com/sv-se/foto/man-par-karlek-kvinna-4
 Bild av Oliver  Morgan: https://www.pexels.com/sv-se/foto/tra-bank-landskap-solnedgang-16053779/
 Bild av Taylen Lundequam: https://www.pexels.com/sv-se/foto/hav-molnig-vagor-kust-14775583/
 Bild av Kübra Doğu: https://www.pexels.com/sv-se/foto/mat-tra-gryning-kaffe-9222655/
+Bild av João  Jesus: https://www.pexels.com/sv-se/foto/ljus-mode-man-person-1080213/
+Bild av Matheus Bertelli: https://www.pexels.com/sv-se/foto/hander-kvinna-flicka-sot-3764119/
 
 
 

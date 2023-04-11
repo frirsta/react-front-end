@@ -77,7 +77,7 @@ function AccountPage() {
         </div>
 
         <div className={styles.AccountInformationConatiner}>
-         <div>following:</div>  <div>{account?.following_count}</div>
+         <div>following</div>  <div>{account?.following_count}</div>
           </div>
         </div>
     

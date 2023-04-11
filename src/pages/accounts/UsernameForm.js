@@ -8,7 +8,8 @@ import {
   useSetCurrentUser,
 } from "../../context/CurrentUserContext";
 import { axiosRes } from "../../api/axiosDefaults";
-import styles from '../../styles/Accounts.module.css'
+import styles from "../../styles/AccountUpdate.module.css";
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 const UsernameForm = () => {
   const [username, setUsername] = useState("");
@@ -62,12 +63,10 @@ const UsernameForm = () => {
             {message}
           </Alert>
         ))}
-        <Button onClick={() => history.goBack()}>
-          cancel
-        </Button>
-        <Button type="submit">
-          save
-        </Button>
+        <div className={styles.ButtonContainer}>
+        <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>cancel</Button>
+        <Button className={ButtonStyles.Button} type="submit">save</Button>
+        </div>
       </Form>
     </div>
   );

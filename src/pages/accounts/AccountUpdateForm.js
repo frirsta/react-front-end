@@ -6,11 +6,12 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import Container from "react-bootstrap/Container";
 import { axiosReq } from "../../api/axiosDefaults";
-import styles from '../../styles/Accounts.module.css';
+import styles from "../../styles/AccountUpdate.module.css";
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../../context/CurrentUserContext";
+import ButtonStyles from "../../styles/Buttons.module.css";
 
 const AccountUpdateForm = () => {
   const currentUser = useCurrentUser();
@@ -89,8 +90,12 @@ const AccountUpdateForm = () => {
           {message}
         </Alert>
       ))}
-      <Button onClick={() => history.goBack()}>cancel</Button>
-      <Button type="submit">save</Button>
+      <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>
+        cancel
+      </Button>
+      <Button className={ButtonStyles.Button} type="submit">
+        save
+      </Button>
     </>
   );
 
@@ -99,7 +104,7 @@ const AccountUpdateForm = () => {
       <Form.Group>
         {profile_image && (
           <figure>
-            <Image src={profile_image} />
+            <Image className={styles.ProfileImage} src={profile_image} />
           </figure>
         )}
         {errors?.profile_image?.map((message, idx) => (
@@ -113,6 +118,7 @@ const AccountUpdateForm = () => {
           </Form.Label>
         </div>
         <Form.File
+          className={styles.FormInput}
           id="profile_image-upload"
           ref={imageFile}
           accept="image/*"

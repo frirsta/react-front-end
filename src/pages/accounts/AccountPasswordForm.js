@@ -5,7 +5,8 @@ import { axiosRes } from "../../api/axiosDefaults";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import styles from "../../styles/Accounts.module.css";
+import styles from "../../styles/AccountUpdate.module.css";
+import ButtonStyles from "../../styles/Buttons.module.css";
 
 const AccountPasswordForm = () => {
   const history = useHistory();
@@ -77,8 +78,10 @@ const AccountPasswordForm = () => {
             {message}
           </Alert>
         ))}
-        <Button onClick={() => history.goBack()}>cancel</Button>
-        <Button type="submit">save</Button>
+               <div className={styles.ButtonContainer}>
+        <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>cancel</Button>
+        <Button className={ButtonStyles.Button} type="submit">save</Button>
+        </div>
       </Form>
     </div>
   );

@@ -14,15 +14,14 @@
   width: 40px;
   height: 40px;
 }
-
-
 .Form {
   margin: 0 auto;
   text-align: center;
   width: fit-content;
 }
-
-
+.ExploreAccountProfileImage {
+  border-radius: 50%;
+}
 @media screen and (max-width: 1200px) {
   .ExploreAccountProfileImage {
     width: 30px;
@@ -32,7 +31,6 @@
     font-size: 15px;
   }
 }
-
 @media screen and (max-width: 991px) {
   .ExploreAccountsButtonsMobile {
     display: flex;
@@ -50,7 +48,6 @@
     height: 30px;
   }
 }
-
 @media screen and (max-width: 450px) {
   .ExploreAccountName {
     font-size: 11px;
@@ -60,7 +57,6 @@
     height: 25px;
   }
 }
-
 @media screen and (max-width: 300px) {
   .ExploreAccountName {
     font-size: 10px;
