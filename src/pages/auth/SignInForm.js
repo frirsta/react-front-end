@@ -13,6 +13,7 @@ import "../../api/axiosDefaults";
 import { useSetCurrentUser } from "../../context/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
+import ButtonStyles from '../../styles/Buttons.module.css';
 
 export default function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
@@ -81,7 +82,7 @@ export default function SignInForm() {
                 {message}
               </Alert>
             ))}
-            <Button className={styles.FormButton} type="submit" variant="info">
+            <Button className={ButtonStyles.Button} type="submit" variant="info">
               Sign in
             </Button>
             {errors.non_field_errors?.map((message, idx) => (

@@ -1,5 +1,5 @@
 .Form{
-    background-color: rgb(169, 169, 255);
+    background-color: #c0a9bd;
     padding: 20px;
     border-radius: 10px;
 }
@@ -8,10 +8,6 @@
     margin-top: 25vh;
 }
 
-.FormButton{
-    padding: 10px 20px;
-    border-radius: 10px;
-}
 .FormOuter{
     margin: 0 auto;
     width: 500px;

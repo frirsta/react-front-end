@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignForm.module.css";
+import ButtonStyles from '../../styles/Buttons.module.css';
 import "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
@@ -95,7 +96,7 @@ export default function SignUpForm() {
               </Alert>
             ))}
 
-            <Button className={styles.FormButton} type="submit" variant="info">
+            <Button className={ButtonStyles.Button} type="submit" variant="info">
               Sign up
             </Button>
 
