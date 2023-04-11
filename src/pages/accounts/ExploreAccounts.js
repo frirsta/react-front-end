@@ -3,6 +3,7 @@ import styles from "../../styles/ExploreAccounts.module.css";
 import Asset from "../../components/Asset";
 import Account from "./Account";
 import { useAccountData } from "../../context/AccountDataContext";
+import Brand from '../../components/Brand';
 
 const ExploreAccounts = ({ mobile }) => {
   const { exploreAccounts }  = useAccountData();
@@ -21,6 +22,7 @@ const ExploreAccounts = ({ mobile }) => {
             </div>
           ) : (
             <div className={`${styles.ExploreAccounts}`}>
+               <Brand />
               {exploreAccounts.results.map((account) => (
    <Account key={account.id} account={account} />
               ))}

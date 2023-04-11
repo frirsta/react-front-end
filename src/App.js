@@ -1,5 +1,4 @@
 import SideBar from "./components/SideBar";
-import Brand from "./components/Brand";
 import { Route, Switch } from "react-router-dom/";
 import styles from "./App.module.css";
 import SignUpForm from "./pages/auth/SignUpForm";
@@ -25,7 +24,6 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Brand />
       <SideBar />
       <Switch>
         <Route
