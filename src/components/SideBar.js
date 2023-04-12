@@ -27,7 +27,7 @@ const SideBar = () => {
 
   const contact = (
     <>
-    <NavLink className={styles.NavLink}  to="/contactform/">
+    <NavLink className={styles.NavLink}  to="/contact/">
     <i className={`${styles.icons} fa-solid fa-envelope`} /><span className={styles.SideBarLink}>Contact</span>
       </NavLink></>
   )

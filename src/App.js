@@ -16,9 +16,8 @@ import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
 import NotFound from "./components/NotFound";
 import BrandMobile from "./components/BrandMobile";
 import ContactForm from "./pages/contact/ContactForm";
-import ContactPage from "./pages/contact/ContactPage";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -26,7 +25,7 @@ function App() {
   return (
     <div className={styles.App}>
       <SideBar />
-     <BrandMobile/>
+      <BrandMobile />
       <Switch>
         <Route
           exact
@@ -48,7 +47,7 @@ function App() {
         <Route exact path="/signin" render={() => <SignInForm />} />
         <Route exact path="/signup" render={() => <SignUpForm />} />
         <Route exact path="/posts/add" render={() => <PostAddForm />} />
-        <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm/>} />    
+        <Route exact path="/posts/:id/edit" render={() => <PostUpdateForm />} />
         <Route
           exact
           path="/likes"
@@ -69,13 +68,24 @@ function App() {
             />
           )}
         />
-         <Route exact path="/accounts/:id" render={() => <AccountPage />} />
-         <Route exact path="/accounts/:id/update/password" render={() => <AccountPasswordForm />} />
-         <Route exact path="/accounts/:id/update/username" render={() => <UsernameForm />} />
-         <Route exact path="/accounts/:id/update" render={() => <AccountUpdateForm />} />
+        <Route exact path="/accounts/:id" render={() => <AccountPage />} />
+        <Route
+          exact
+          path="/accounts/:id/update/password"
+          render={() => <AccountPasswordForm />}
+        />
+        <Route
+          exact
+          path="/accounts/:id/update/username"
+          render={() => <UsernameForm />}
+        />
+        <Route
+          exact
+          path="/accounts/:id/update"
+          render={() => <AccountUpdateForm />}
+        />
         <Route exact path="/posts/:id" render={() => <PostPage />} />
-        <Route exact path="/contactform/" render={() => <ContactForm />} />
-        <Route exact path="/contact/" render={() => <ContactPage />} />
+        <Route exact path="/contact/" render={() => <ContactForm />} />
         <Route render={() => <NotFound />} />
       </Switch>
       <ToastContainer />

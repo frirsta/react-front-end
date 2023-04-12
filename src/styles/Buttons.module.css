@@ -28,17 +28,15 @@
   font-size: 13px;
 }
 .FollowButtons:focus,
-.Button:focus {
-  background-color: #c0a9bd!important;
-}
+.Button:hover,
 .FollowButtons:hover,
-.Button:hover {
-  background-color: #c0a9bd!important;
-}
+.Button:focus,
 .FollowButtons:active,
-.Button:active {
+.Button:active  {
   background-color: #c0a9bd!important;
+  border-color: #c0a9bd!important;
 }
+
 
 .Follow,
 .Button {
