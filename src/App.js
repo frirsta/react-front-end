@@ -15,6 +15,8 @@ import AccountUpdateForm from "./pages/accounts/AccountUpdateForm";
 import AccountPasswordForm from "./pages/accounts/AccountPasswordForm";
 import NotFound from "./components/NotFound";
 import BrandMobile from "./components/BrandMobile";
+import ContactForm from "./pages/contact/ContactForm";
+import ContactPage from "./pages/contact/ContactPage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -70,6 +72,8 @@ function App() {
          <Route exact path="/accounts/:id/update/username" render={() => <UsernameForm />} />
          <Route exact path="/accounts/:id/update" render={() => <AccountUpdateForm />} />
         <Route exact path="/posts/:id" render={() => <PostPage />} />
+        <Route exact path="/contactform/" render={() => <ContactForm />} />
+        <Route exact path="/contact/" render={() => <ContactPage />} />
         <Route render={() => <NotFound />} />
       </Switch>
     </div>
