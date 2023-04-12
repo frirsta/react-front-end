@@ -2,6 +2,9 @@
 Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
 
 [Front-end live link](https://front-end-react.herokuapp.com/)
+<br>
+
+[Front-end repository](https://github.com/frirsta/react-front-end)
 
 The frontend application is connected to Snap it's API.
 
@@ -30,11 +33,7 @@ The frontend application is connected to Snap it's API.
 <br>
 
 # Project
-Color palette
-#94A7AE ljus blå
-#c0a9bd lila
-#F4F2F3 ljus lila
-#64766A grön
+
 
 <br>
 
@@ -64,7 +63,7 @@ Color Scheme
 
 * #F4F2F3 has been used for the background to create a background that does not distract from the images shared by users.
 
-* #F4F2F3 has been used for the sidebar, because it is an important feature for the users. Therefore, this color is perfect because it makes the sidebar easy to find.
+* #c0a9bd has been used for the sidebar, because it is an important feature for the users. Therefore, this color is perfect because it makes the sidebar easy to find.
 
 
 
@@ -130,6 +129,7 @@ Color Scheme
 
 ## User story
 
+<details><summary>User Story</summary>
 <img src="src/assets/readme/user-story/user_story_1.png" alt="User story">
 <img src="src/assets/readme/user-story/user_story_2.png" alt="User story">
 <img src="src/assets/readme/user-story/user_story_3.png" alt="User story">
@@ -145,13 +145,67 @@ Color Scheme
 <img src="src/assets/readme/user-story/user_story_13.png" alt="User story">
 <img src="src/assets/readme/user-story/user_story_14.png" alt="User story">
 
+</details>
+
 <br>
 
 # Features
+<details><summary>Wireframes</summary>
+
+<details><summary>Home page</summary>
+<img src="src/assets/readme/wireframes/home.jpg" alt="Home page desktop screen" style="width: 45%;">
+<img src="src/assets/readme/wireframes/home_mobile_tablet.jpg" alt="Home page mobile and tablet screen" style="width: 45%;">
+<img src="src/assets/readme/wireframes/home_mobile_tablet_full_screen.jpg" alt="Home page full screen mobile and tablet screen" style="width: 45%;">
+</details>
+
+<details><summary>Post detail</summary>
+<img src="src/assets/readme/wireframes/post_detail.jpg" alt="Post detail page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Signup</summary>
+<img src="src/assets/readme/wireframes/signup.jpg" alt="Sign up page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Sign in</summary>
+<img src="src/assets/readme/wireframes/signin.jpg" alt="Sign in page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Upload</summary>
+<img src="src/assets/readme/wireframes/upload.jpg" alt="Upload page on mobile, tablet and desktop screen">
+</details>
+
+
+<details><summary>profile page from another users view</summary>
+<img src="src/assets/readme/wireframes/profile_user_view.jpg" alt="Profile page from other users view on mobile, tablet and desktop screen">
+</details>
+
+
+<details><summary>profile</summary>
+<img src="src/assets/readme/wireframes/profile.jpg" alt="Profile page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Edit profile</summary>
+<img src="src/assets/readme/wireframes/edit_profile.jpg" alt="Edit profile page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Change username</summary>
+<img src="src/assets/readme/wireframes/change_username.jpg" alt="Change username page on mobile, tablet and desktop screen">
+</details>
+
+<details><summary>Liked posts</summary>
+<img src="src/assets/readme/wireframes/liked_posts.jpg" alt="Liked posts page on mobile, tablet and desktop screen">
+</details>
+
+
+
+</details>
 
 <br>
 
 # Future Features
+* Add admin dashboard
+* Add upload video function
+* Add more testing to application
 
 <br>
 
@@ -160,15 +214,28 @@ Color Scheme
 <br>
 
 # Technologies used
-libraries
-npm install react-bootstrap bootstrap
-npm install react-router-dom
-npm install axios
-npm install react-router-dom
-npm install jwt-decode
-npm install bootstrap reactstrap axios --save
-npm install --save react-infinite-scroll-component
-npm install --save react-toastify
+* React
+* React-Bootstrap
+* Django rest framework
+* HTML
+* CSS
+* JavaScript
+* JSX
+
+Libraries
+* GitPod
+* Git
+* GitHub
+* React
+* Axios
+* React Router
+* JWT
+* React-Bootstrap
+* Heroku
+* Google Fonts
+* Font Awesome
+* Toastify
+
 <br>
 
 # Bugs
