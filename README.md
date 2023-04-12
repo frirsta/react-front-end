@@ -168,6 +168,7 @@ npm install react-router-dom
 npm install jwt-decode
 npm install bootstrap reactstrap axios --save
 npm install --save react-infinite-scroll-component
+npm install --save react-toastify
 <br>
 
 # Bugs

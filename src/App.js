@@ -17,6 +17,8 @@ import NotFound from "./components/NotFound";
 import BrandMobile from "./components/BrandMobile";
 import ContactForm from "./pages/contact/ContactForm";
 import ContactPage from "./pages/contact/ContactPage";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const currentUser = useCurrentUser();
@@ -76,6 +78,7 @@ function App() {
         <Route exact path="/contact/" render={() => <ContactPage />} />
         <Route render={() => <NotFound />} />
       </Switch>
+      <ToastContainer />
     </div>
   );
 }

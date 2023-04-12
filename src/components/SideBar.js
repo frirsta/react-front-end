@@ -24,6 +24,13 @@ const SideBar = () => {
       console.log(err);
     }
   };
+
+  const contact = (
+    <>
+    <NavLink className={styles.NavLink}  to="/contactform/">
+    <i className={`${styles.icons} fa-solid fa-envelope`} />Contact
+      </NavLink></>
+  )
   const addPost = (
     <>
       <NavLink className={styles.NavLink} to="/posts/add">
@@ -34,6 +41,7 @@ const SideBar = () => {
   );
   const loggedInIcons = (
     <>
+    {contact}
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className={`${styles.icons} fa-solid fa-right-from-bracket`}></i>{" "}
         <span className={styles.SideBarLink}>Sign out</span>

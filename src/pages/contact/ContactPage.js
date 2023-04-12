@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
 import NotFound from "../../assets/not_found.png";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Contact from "./Contact";
-import styles from "../../styles/PostsPage.module.css";
+import styles from "../../styles/Contact.module.css";
 import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
@@ -45,37 +46,47 @@ function ContactPage({ message, filter = "" }) {
   };
 
   return (
-
     <Container className={styles.ContactPageContainer}>
-      <div className={styles.PostContainer}>
-        {hasLoaded ? (
-          <>
-            <div className={styles.ContactList}>
-              {contact.results.length ? (
-                <InfiniteScroll
-                 className={styles.InfiniteScroll}
-                  children={contact.results.map((contact) => (
-                    <Contact key={contact.id} {...contact} setContact={setContact} />
-                  ))}
-                  dataLength={contact.results.length}
-                  loader={<Asset spinner />}
-                  hasMore={!!contact.next}
-                  next={() => fetchMoreData(contact, setContact)}
-                />
-              ) : (
-                <Container className={styles.NotFoundContainer}>
-                  <Asset src={NotFound} message={message} />
-                </Container>
-              )}
-            </div>
-          </>
-        ) : (
-          <Container className={styles.NotFoundContainer}>
-            <Asset spinner />
-          </Container>
-        )}
-      </div>
-    </Container>
+    <div>
+      <Form onSubmit={handleSearch} className={styles.SearchBar}>
+        <i className={`${styles.SearchIcon} fa-solid fa-magnifying-glass`} />
+        <Form.Control
+          type="text"
+          placeholder="Search"
+          value={query}
+          onChange={handleSearchChange}
+        />
+      </Form>
+      {hasLoaded ? (
+        <>
+          <div className={styles.ContactsList}>
+            {contact.results.length ? (
+              <InfiniteScroll
+               className={styles.InfiniteScroll}
+                children={contact.results.map((contact) => (
+                  <Contact key={contact.id} {...contact} setcontact={setContact} />
+                ))}
+                dataLength={contact.results.length}
+                loader={<Asset spinner />}
+                hasMore={!!contact.next}
+                next={() => fetchMoreData(contact, setContact)}
+              />
+            ) : (
+              <Container className={styles.NotFoundContainer}>
+                <Asset src={NotFound} message={message} />
+              </Container>
+            )}
+          </div>
+        </>
+      ) : (
+        <Container className={styles.NotFoundContainer}>
+          <Asset spinner />
+        </Container>
+      )}
+    </div>
+  </Container>
+
+    
   );
 }
 

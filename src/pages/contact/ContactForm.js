@@ -1,20 +1,16 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-import Upload from "../../assets/upload.png";
-import Asset from "../../components/Asset";
-import styles from "../../styles/PostAdd.module.css";
-import { useRedirect } from "../../hooks/useRedirect";
+import styles from "../../styles/Contact.module.css";
 import ButtonStyles from "../../styles/Buttons.module.css";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
-  useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
   const [contactData, setContactData] = useState({
     title: "",
@@ -35,13 +31,25 @@ function ContactForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-
     formData.append("title", title);
     formData.append("content", content);
 
     try {
-      const { data } = await axiosReq.post("/contact/", formData);
-      history.push(`/contact/${data.id}`);
+      await axiosReq.post("/contact/", formData)
+      .then(
+          toast.success('Your message has been sent!', {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            })
+
+          )
+      history.push(`/`); 
     } catch (err) {
       console.log(err);
       if (err.response?.status !== 401) {
@@ -51,11 +59,11 @@ function ContactForm() {
   };
 
   const contactFields = (
-    <div className={styles.titleButtons}>
+    <div>
       <Form.Group>
         <Form.Label>title</Form.Label>
         <Form.Control
-          className={styles.title}
+          className={styles.Title}
           type="text"
           name="title"
           value={title}
@@ -70,7 +78,7 @@ function ContactForm() {
             <Form.Group>
         <Form.Label>content</Form.Label>
         <Form.Control
-          className={styles.content}
+          className={styles.Content}
           type="text"
           name="content"
           value={content}
@@ -93,10 +101,11 @@ function ContactForm() {
   );
 
   return (
-    <Container className={styles.FormContainer}>
+    <Container className={styles.Form}>
       <Form onSubmit={handleSubmit}>
         <Container>{contactFields}</Container>
       </Form>
+    
     </Container>
   );
 }
