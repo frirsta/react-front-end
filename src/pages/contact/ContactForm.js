@@ -7,8 +7,8 @@ import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import styles from "../../styles/Contact.module.css";
 import ButtonStyles from "../../styles/Buttons.module.css";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactForm() {
   const [errors, setErrors] = useState({});
@@ -35,21 +35,18 @@ function ContactForm() {
     formData.append("content", content);
 
     try {
-      await axiosReq.post("/contact/", formData)
-      .then(
-          toast.success('Your message has been sent!', {
-            position: "top-center",
-            autoClose: 2000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            })
-
-          )
-      history.push(`/`); 
+      await axiosReq.post("/contact/", formData);
+      toast.success("Your message has been sent!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      history.push(`/`);
     } catch (err) {
       console.log(err);
       if (err.response?.status !== 401) {
@@ -61,7 +58,7 @@ function ContactForm() {
   const contactFields = (
     <div>
       <Form.Group>
-        <Form.Label>title</Form.Label>
+        <Form.Label>What are you contacting us about?</Form.Label>
         <Form.Control
           className={styles.Title}
           type="text"
@@ -75,11 +72,11 @@ function ContactForm() {
           {message}
         </Alert>
       ))}
-            <Form.Group>
-        <Form.Label>content</Form.Label>
+      <Form.Group>
+        <Form.Label>Leave a message?</Form.Label>
         <Form.Control
           className={styles.Content}
-          type="text"
+          as="textarea"
           name="content"
           value={content}
           onChange={handleChange}
@@ -101,11 +98,11 @@ function ContactForm() {
   );
 
   return (
-    <Container className={styles.Form}>
-      <Form onSubmit={handleSubmit}>
+    <Container className={styles.ContactFormContainer}>
+      <h2 className={styles.ContactTitle}>Contact us!</h2>
+      <Form className={styles.Form} onSubmit={handleSubmit}>
         <Container>{contactFields}</Container>
       </Form>
-    
     </Container>
   );
 }

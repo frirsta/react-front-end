@@ -28,7 +28,7 @@ const SideBar = () => {
   const contact = (
     <>
     <NavLink className={styles.NavLink}  to="/contactform/">
-    <i className={`${styles.icons} fa-solid fa-envelope`} />Contact
+    <i className={`${styles.icons} fa-solid fa-envelope`} /><span className={styles.SideBarLink}>Contact</span>
       </NavLink></>
   )
   const addPost = (
