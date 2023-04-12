@@ -210,6 +210,15 @@ Color Scheme
 <br>
 
 # Testing
+* HTML pass [W3C HTML](https://validator.w3.org/) with no error
+* CSS pass [W3C CSS](https://jigsaw.w3.org/) with no error
+ <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 <br>
 
