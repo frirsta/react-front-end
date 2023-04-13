@@ -210,7 +210,10 @@ Color Scheme
 <br>
 
 # Testing
+
 * HTML pass [W3C HTML](https://validator.w3.org/) with no error
+<br>
+
 * CSS pass [W3C CSS](https://jigsaw.w3.org/) with no error
  <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
@@ -221,6 +224,129 @@ Color Scheme
 </p>
 
 <br>
+
+* Lighthouse
+
+<details><summary>home page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_home.png" style="width: 50%" alt="Home page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_home.png" style="width: 50%" alt="Home page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>signup page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_signup.png" style="width: 50%" alt="Signup page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_signup.png" style="width: 50%" alt="Signup page lighthouse test for mobile screen">
+</details>
+
+
+<br>
+
+<details><summary>signin page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_signin.png" style="width: 50%" alt="signin page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_signin.png" style="width: 50%" alt="signin page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>upload page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_upload.png" style="width: 50%" alt="upload page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_upload.png" style="width: 50%" alt="upload page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>profile page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_profile.png" style="width: 50%" alt="profile page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_profile.png" style="width: 50%" alt="profile page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>update profile page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_account_update.png" style="width: 50%" alt="update profile page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_account_update.png" style="width: 50%" alt="update profile page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>change password page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_change_password.png" style="width: 50%" alt="change password page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_change_password.png" style="width: 50%" alt="change password page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>change username page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_update_username.png" style="width: 50%" alt="update username page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_update_username.png" style="width: 50%" alt="update username page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>saved posts page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_saved.png" style="width: 50%" alt="saved posts page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_saved.png" style="width: 50%" alt="saved posts page lighthouse test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>contact page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/tests/lighthouse/desktop_contact.png" style="width: 50%" alt="contact page lighthouse test for desktop screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/tests/lighthouse/mobile_contact.png" style="width: 50%" alt="contact page lighthouse test for mobile screen">
+</details>
+
+
 
 # Technologies used
 * React
