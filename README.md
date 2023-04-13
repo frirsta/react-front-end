@@ -1,3 +1,5 @@
+# Snap it
+
 * [**Project**](<#project>)
 * [**Project Management**](<#project-management>)
 * [**Design**](<#design>)
@@ -23,7 +25,7 @@ Welcome to Snap it! Snap it is the social media app is for everyone who wants to
 
 [Front-end repository](https://github.com/frirsta/react-front-end)
 
-The frontend application is connected to Snap it's API.
+The front-end application is connected to Snap it's API.
 
 [Back-end API repository](https://github.com/frirsta/drf-api-react)
 <br>
@@ -363,6 +365,14 @@ Color Scheme
 
 <br>
 
+The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
+
+* Performance
+* Accessibility
+* Best Practices
+* SEO (Search engine optimisation)
+<br>
+
 <details><summary>Lighthouse</summary>
 
 <details><summary>home page</summary>
@@ -521,6 +531,26 @@ Libraries
 <br>
 
 # Deployment
+
+This website was deployed to [Heroku](https://heroku.com/). To deploy the website follow the steps below:
+
+1. Log in or create an account on heroku.
+
+2. On the heroku Website click 'New' and after click 'Create new app'.
+
+3. Write the app name, choose a region and then click 'Create app'. 
+
+4. In the application website click 'Deploy' on the navigation menu.
+
+5.  In the 'Deploy' page, click the GitHub logo. Search for the GitHub repository that was made for this project.
+
+6. Search for the GitHub repository that was made for this project.
+
+7. When the repository is found click 'Connect'.
+
+8. Scroll down to manual deploy and make sure you have chosen the main branch.
+
+9. Click deploy.
 
 <br>
 
