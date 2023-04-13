@@ -1,20 +1,3 @@
-# React project
-Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
-
-[Front-end live link](https://front-end-react.herokuapp.com/)
-<br>
-
-[Front-end repository](https://github.com/frirsta/react-front-end)
-
-The frontend application is connected to Snap it's API.
-
-[Back-end API repository](https://github.com/frirsta/drf-api-react)
-<br>
-
-[Back-end API deployment](https://drf-api-frirsta.herokuapp.com/)
-
-<br>
-
 * [**Project**](<#project>)
 * [**Project Management**](<#project-management>)
 * [**Design**](<#design>)
@@ -33,6 +16,19 @@ The frontend application is connected to Snap it's API.
 <br>
 
 # Project
+Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
+
+[Front-end live link](https://front-end-react.herokuapp.com/)
+<br>
+
+[Front-end repository](https://github.com/frirsta/react-front-end)
+
+The frontend application is connected to Snap it's API.
+
+[Back-end API repository](https://github.com/frirsta/drf-api-react)
+<br>
+
+[Back-end API deployment](https://drf-api-frirsta.herokuapp.com/)
 
 
 <br>
@@ -150,55 +146,197 @@ Color Scheme
 <br>
 
 # Features
-<details><summary>Wireframes</summary>
+<details><summary>Features</summary>
 
-<details><summary>Home page</summary>
-<img src="src/assets/readme/wireframes/home.jpg" alt="Home page desktop screen" style="width: 45%;">
-<img src="src/assets/readme/wireframes/home_mobile_tablet.jpg" alt="Home page mobile and tablet screen" style="width: 45%;">
-<img src="src/assets/readme/wireframes/home_mobile_tablet_full_screen.jpg" alt="Home page full screen mobile and tablet screen" style="width: 45%;">
+<details><summary>home page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_home.png" style="width: 50%" alt="Home page features test for desktop screen">
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_home.png" style="width: 50%" alt="Home page features test for ipad screen">
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_home.png" style="width: 50%" alt="Home page features test for mobile screen">
 </details>
 
-<details><summary>Post detail</summary>
-<img src="src/assets/readme/wireframes/post_detail.jpg" alt="Post detail page on mobile, tablet and desktop screen">
-</details>
+<br>
 
-<details><summary>Signup</summary>
-<img src="src/assets/readme/wireframes/signup.jpg" alt="Sign up page on mobile, tablet and desktop screen">
-</details>
-
-<details><summary>Sign in</summary>
-<img src="src/assets/readme/wireframes/signin.jpg" alt="Sign in page on mobile, tablet and desktop screen">
-</details>
-
-<details><summary>Upload</summary>
-<img src="src/assets/readme/wireframes/upload.jpg" alt="Upload page on mobile, tablet and desktop screen">
-</details>
+<details><summary>signup page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_signup.png" style="width: 50%" alt="Signup page features test for desktop screen">
 
 
-<details><summary>profile page from another users view</summary>
-<img src="src/assets/readme/wireframes/profile_user_view.jpg" alt="Profile page from other users view on mobile, tablet and desktop screen">
-</details>
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_signup.png" style="width: 50%" alt="Signup page features test for ipad screen">
 
 
-<details><summary>profile</summary>
-<img src="src/assets/readme/wireframes/profile.jpg" alt="Profile page on mobile, tablet and desktop screen">
-</details>
 
-<details><summary>Edit profile</summary>
-<img src="src/assets/readme/wireframes/edit_profile.jpg" alt="Edit profile page on mobile, tablet and desktop screen">
-</details>
+<br>
 
-<details><summary>Change username</summary>
-<img src="src/assets/readme/wireframes/change_username.jpg" alt="Change username page on mobile, tablet and desktop screen">
-</details>
-
-<details><summary>Liked posts</summary>
-<img src="src/assets/readme/wireframes/liked_posts.jpg" alt="Liked posts page on mobile, tablet and desktop screen">
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_signup.png" style="width: 50%" alt="Signup page features test for mobile screen">
 </details>
 
 
+<br>
+
+<details><summary>signin page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_signin.png" style="width: 50%" alt="signin page features test for desktop screen">
+
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_signin.png" style="width: 50%" alt="signin page features test for ipad screen">
+
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_signin.png" style="width: 50%" alt="signin page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>upload page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_upload.png" style="width: 50%" alt="upload page features test for desktop screen">
+
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_upload.png" style="width: 50%" alt="upload page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_upload.png" style="width: 50%" alt="upload page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>profile page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_profile.png" style="width: 50%" alt="profile page features test for desktop screen">
+
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_profile.png" style="width: 50%" alt="profile page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_profile.png" style="width: 50%" alt="profile page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>update profile page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_update_profile.png" style="width: 50%" alt="update profile page features test for desktop screen">
+
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_update_profile.png" style="width: 50%" alt="update profile page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_update_profile.png" style="width: 50%" alt="update profile page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>change password page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_change_password.png" style="width: 50%" alt="change password page features test for desktop screen">
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_change_password.png" style="width: 50%" alt="change password page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_change_password.png" style="width: 50%" alt="change password page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>change username page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_change_username.png" style="width: 50%" alt="update username page features test for desktop screen">
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_change_username.png" style="width: 50%" alt="update username page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_change_username.png" style="width: 50%" alt="update username page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>saved posts page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_saved.png" style="width: 50%" alt="saved posts page features test for desktop screen">
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_saved.png" style="width: 50%" alt="saved posts page features test for ipad screen">
+
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_saved.png" style="width: 50%" alt="saved posts page features test for mobile screen">
+</details>
+
+<br>
+
+<details><summary>contact page</summary>
+<h3>Desktop</h3>
+<img src="src/assets/readme/features/desktop_contact.png" style="width: 50%" alt="contact page features test for desktop screen">
+
+
+<br>
+
+<h3>ipad</h3>
+<img src="src/assets/readme/features/ipad_contact.png" style="width: 50%" alt="contact page features test for ipad screen">
+
+
+<br>
+
+<h3>Mobile</h3>
+<img src="src/assets/readme/features/mobile_contact.png" style="width: 50%" alt="contact page features test for mobile screen">
+</details>
 
 </details>
+
 
 <br>
 
@@ -225,7 +363,7 @@ Color Scheme
 
 <br>
 
-* Lighthouse
+<details><summary>Lighthouse</summary>
 
 <details><summary>home page</summary>
 <h3>Desktop</h3>
@@ -346,6 +484,7 @@ Color Scheme
 <img src="src/assets/readme/tests/lighthouse/mobile_contact.png" style="width: 50%" alt="contact page lighthouse test for mobile screen">
 </details>
 
+</details>
 
 
 # Technologies used
