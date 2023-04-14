@@ -77,8 +77,6 @@ Color Scheme
 
 ### I have used [Miro](https://miro.com/) to create WireFrames for the project.
 
-<details><summary>Wireframes</summary>
-
 <details><summary>Home page</summary>
 <img src="src/assets/readme/wireframes/home.jpg" alt="Home page desktop screen" style="width: 45%;">
 <img src="src/assets/readme/wireframes/home_mobile_tablet.jpg" alt="Home page mobile and tablet screen" style="width: 45%;">
@@ -125,7 +123,6 @@ Color Scheme
 <img src="src/assets/readme/wireframes/buisness_profile.jpg" alt="Buisness profile page on mobile, tablet and desktop screen">
 </details>
 
-</details>
 
 <br>
 
