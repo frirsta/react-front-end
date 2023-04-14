@@ -150,30 +150,83 @@ Color Scheme
 # Features
 
 <details><summary>Post detail</summary>
+<br>
 <img src="src/assets/readme/features/post_detail.png" style="width: 50%" alt="Post detail page features test for desktop screen">
 
 * All comments made on that post are displayed as a list under the image.
 * The user can leave a comment in the post detail page.
 * The owner of the post will have a dropdown menu on the top right corner of the post.
 
+<br>
+
+<img src="src/assets/readme/features/post_dropdown.png" style="width: 50%" alt="post dropdown page">
+
+* Post drop-down menu.
+* If the owner of the post clicks the trash can icon they delete the post.
+* If the owner of the post clicks the pen to square icon, they get redirected to the update post page.
+
+<br>
+
+<img src="src/assets/readme/features/update_post.png" style="width: 50%" alt="update post page">
+
+* The update post page is where the owner of the post can change the caption or image of the post.
+
+
 </details>
 
+<br>
+
 <details><summary>Likes, comments and saved</summary>
+<br>
 <img src="src/assets/readme/features/post_like_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
+<br>
 
 * The bottom of the post has the number of likes, comments and saved displayed.
 * When a user clicks the heart icon they like a post.
 * When a user clicks the comments icon they get redirected to the post details page where they can leave a comment.
 * When a user clicks the save icon they save the post, and they can find the post on the saved Posts page.
 
+<br>
 
 <img src="src/assets/readme/features/post_save_message.png" style="width: 50%" alt="Post can't be saved message">
-
+<br>
 <img src="src/assets/readme/features/post_like_message.png" style="width: 50%" alt="Post can't be liked message">
+<br>
 
 * The owner of the post can't like or save their own posts
 * If the user who owns the account tries to like their own post a message will be displayed
 
+<br>
+<img src="src/assets/readme/features/post_login_comment.png" style="width: 50%" alt="Log in to leave a comment">
+<img src="src/assets/readme/features/post_login_like.png" style="width: 50%" alt="Log in to like a post">
+<img src="src/assets/readme/features/post_login_save.png" style="width: 50%" alt="Log in to save a post">
+<br>
+
+* If a user is not signed in to an account, they can't like, comment or save a post.
+* If they try, a message will be displayed as shown in the images above. 
+
+<br>
+
+<img src="src/assets/readme/features/comment_add.png" style="width: 50%" alt="comment add page">
+<br>
+
+* In the post detail page the user can leave a comment.
+
+<br>
+
+<img src="src/assets/readme/features/comment_list.png" style="width: 50%" alt="comment list page">
+<br>
+
+* The comments are displayed as a list under the post.
+
+<br>
+
+<img src="src/assets/readme/features/comment_dropdown.png" style="width: 50%" alt="comment dropdown page">
+<br>
+
+* The owner of the comment will have a drop-down menu displayed on the top right corner.
+* If the owner of the comment clicks the trash can icon they delete the comment.
+* If the owner of the post clicks the pen to square icon, they will be able to change the content of the comment.
 
 </details>
 
@@ -256,7 +309,7 @@ Color Scheme
 
 <br>
 
-<details><summary>profile page</summary>
+<details><summary>Profile page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_profile.png" style="width: 50%" alt="profile page features test for desktop screen">
 
@@ -272,6 +325,15 @@ Color Scheme
 <h3>Mobile</h3>
 <img src="src/assets/readme/features/mobile_profile.png" style="width: 50%" alt="profile page features test for mobile screen">
 </details>
+
+<br>
+
+<img src="src/assets/readme/features/account_dropdown.png" style="width: 50%" alt="account dropdown page">
+
+* Account drop-down menu.
+* If the owner of the account clicks update profile, they get redirected to the update profile page.
+* If the owner of the account clicks update username, they get redirected to the update username page.
+* If the owner of the account clicks change password, they get redirected to the change password page.
 
 <br>
 
