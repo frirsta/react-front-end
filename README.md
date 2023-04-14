@@ -32,24 +32,32 @@ The front-end application is connected to Snap it's API.
 
 [Back-end API deployment](https://drf-api-frirsta.herokuapp.com/)
 
-
 <br>
+
 
 # Project Management
 
+## Agile methodology
 
-I have used github issues to work with Snap it.
+I have used github issues to work with Snap it. They have been prioritized by four different labels. 
+<br>
 
-<details><summary>GitHub Issues</summary>
+* Must Have - Are the issues that have to be top priority.
+* Should have - Are second priority.
+* Could have - Third priority.
+* Won't have - Is what will not be in the project.
+
+The Won't have label is for long term use in the project and has not been used in this project.
+
+GitHub Issues
+<br>
 <img src="src/assets/readme/github_projects/issues.png" alt="github Issues" style="width: 50%">
-</details>
+
 <br>
 
 I have used the github project board to work with Snap it.
-
-<details><summary>GitHub Board</summary>
+<br>
 <img src="src/assets/readme/github_projects/github_projects.png" alt="github board" style="width: 100%">
-</details>
 <br>
 
 
