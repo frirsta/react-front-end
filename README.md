@@ -151,10 +151,11 @@ User Story
 
 # Features
 
-<details><summary>Post detail</summary>
+### Post Detail
+
+<img src="src/assets/readme/features/post_detail.png" style="width: 50%" alt="Post detail page features test for desktop screen">
 
 <br>
-<img src="src/assets/readme/features/post_detail.png" style="width: 50%" alt="Post detail page features test for desktop screen">
 
 - All comments made on that post are displayed as a list under the image.
 - The user can leave a comment in the post detail page.
@@ -174,9 +175,8 @@ User Story
 
 - The update post page is where the owner of the post can change the caption or image of the post.
 
-</details>
 
-<details><summary>Likes, comments and saved</summary>
+### Likes, comments and saved
 
 <br>
 <img src="src/assets/readme/features/post_like_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
@@ -231,7 +231,7 @@ User Story
 
 </details>
 
-<details><summary>Navbar</summary>
+### Navbar
 
 - The sidebar/navbar when user is offline has a link to the home page, sign up page and sign in page.
 
@@ -239,7 +239,7 @@ User Story
 
 - The navbar on a tablet and mobile screen.
 <br>
-<img src="src/assets/readme/features/sidebar_mobile_offline.png" style="width: 50%" alt="The sidebar when user is offline">
+<img src="src/assets/readme/features/sidebar_mobile_offline.png" style="width: 50%" alt="The sidebar on smaller screens when user is offline">
 
 <br>
 
@@ -249,13 +249,13 @@ User Story
 
 - The navbar on a tablet and mobile screen.
 <br>
-<img src="src/assets/readme/features/sidebar_mobile_online.png" style="width: 50%" alt="The sidebar when user is online">
+<img src="src/assets/readme/features/sidebar_mobile_online.png" style="width: 50%" alt="The sidebar on smaller screens when user is online">
 
 <br>
 
 </details>
 
-<details><summary>All pages</summary>
+## All page
 
 <details><summary>Home page</summary>
 <h3>Desktop</h3>
@@ -435,7 +435,6 @@ User Story
 <img src="src/assets/readme/features/mobile_contact.png" style="width: 50%" alt="contact page features test for mobile screen">
 </details>
 
-</details>
 
 <br>
 
