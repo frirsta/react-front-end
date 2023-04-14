@@ -466,9 +466,9 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 - Accessibility
 - Best Practices
 - SEO (Search engine optimisation)
-  <br>
+<br>
 
-<details><summary>Lighthouse</summary>
+## Lighthouse
 
 <details><summary>home page</summary>
 <h3>Desktop</h3>
@@ -588,7 +588,6 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 <img src="src/assets/readme/tests/lighthouse/mobile_contact.png" style="width: 50%" alt="contact page lighthouse test for mobile screen">
 </details>
 
-</details>
 
 # Technologies used
 
