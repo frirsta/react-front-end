@@ -133,9 +133,8 @@ Color Scheme
 
 # User Experience UX
 
-## User story
 
-<details><summary>User Story</summary>
+User Story
 <img src="src/assets/readme/user-story/user_story_1.png" alt="User story">
 <img src="src/assets/readme/user-story/user_story_2.png" alt="User story">
 <img src="src/assets/readme/user-story/user_story_3.png" alt="User story">
@@ -153,7 +152,6 @@ Color Scheme
 
 </details>
 
-<br>
 
 # Features
 
