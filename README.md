@@ -340,7 +340,7 @@ Color Scheme
 
 <h3>Mobile</h3>
 <img src="src/assets/readme/features/mobile_profile.png" style="width: 50%" alt="profile page features test for mobile screen">
-</details>
+
 
 <br>
 
@@ -350,6 +350,8 @@ Color Scheme
 * If the owner of the account clicks update profile, they get redirected to the update profile page.
 * If the owner of the account clicks update username, they get redirected to the update username page.
 * If the owner of the account clicks change password, they get redirected to the change password page.
+
+</details>
 
 <br>
 
