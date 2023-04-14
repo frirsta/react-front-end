@@ -246,9 +246,9 @@ Color Scheme
 <br>
 </details>
 
-<details><summary>Features</summary>
+<details><summary>All pages</summary>
 
-<details><summary>home page</summary>
+<details><summary>Home page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_home.png" style="width: 50%" alt="Home page features test for desktop screen">
 
@@ -265,7 +265,7 @@ Color Scheme
 
 <br>
 
-<details><summary>signup page</summary>
+<details><summary>Sign up page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_signup.png" style="width: 50%" alt="Signup page features test for desktop screen">
 
@@ -286,7 +286,7 @@ Color Scheme
 
 <br>
 
-<details><summary>signin page</summary>
+<details><summary>Sign in page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_signin.png" style="width: 50%" alt="signin page features test for desktop screen">
 
@@ -306,7 +306,7 @@ Color Scheme
 
 <br>
 
-<details><summary>upload page</summary>
+<details><summary>Upload page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_upload.png" style="width: 50%" alt="upload page features test for desktop screen">
 
@@ -355,7 +355,7 @@ Color Scheme
 
 <br>
 
-<details><summary>update profile page</summary>
+<details><summary>Update profile page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_update_profile.png" style="width: 50%" alt="update profile page features test for desktop screen">
 
@@ -374,7 +374,7 @@ Color Scheme
 
 <br>
 
-<details><summary>change password page</summary>
+<details><summary>Change password page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_change_password.png" style="width: 50%" alt="change password page features test for desktop screen">
 
@@ -392,7 +392,7 @@ Color Scheme
 
 <br>
 
-<details><summary>change username page</summary>
+<details><summary>Change username page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_change_username.png" style="width: 50%" alt="update username page features test for desktop screen">
 
@@ -410,7 +410,7 @@ Color Scheme
 
 <br>
 
-<details><summary>saved posts page</summary>
+<details><summary>Saved posts page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_saved.png" style="width: 50%" alt="saved posts page features test for desktop screen">
 
@@ -429,7 +429,7 @@ Color Scheme
 
 <br>
 
-<details><summary>contact page</summary>
+<details><summary>Contact page</summary>
 <h3>Desktop</h3>
 <img src="src/assets/readme/features/desktop_contact.png" style="width: 50%" alt="contact page features test for desktop screen">
 
