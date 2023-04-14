@@ -343,6 +343,7 @@ Color Scheme
 <br>
 
 # Future Features
+* Add business profile so user can create an account for their business.
 * Add admin dashboard
 * Add upload video function
 * Add more testing to application
