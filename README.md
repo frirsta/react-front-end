@@ -159,7 +159,7 @@ Color Scheme
 </details>
 
 <details><summary>Likes, comments and saved</summary>
-<img src="src/assets/readme/features/post_likes_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
+<img src="src/assets/readme/features/post_like_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
 
 * The bottom of the post has the number of likes, comments and saved displayed.
 * When a user clicks the heart icon they like a post.
