@@ -665,7 +665,9 @@ This website was deployed to [Heroku](https://heroku.com/). To deploy the websit
 
 Sources that have helped build the website:
 
-logo
+<details><summary>Image sources</summary>
+
+Logo:
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
 
 Favicon:
@@ -673,51 +675,54 @@ Favicon:
 
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Good Ware - Flaticon</a>
 
-Bild av Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/
+Image by Frans van Heerden: https://www.pexels.com/sv-se/foto/kall-sno-landskap-natur-624015/
 
 upload:
 <a href="https://www.flaticon.com/free-icons/upload" title="upload icons">Upload icons created by Freepik - Flaticon</a>
-Bild av Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/
+Image by Artūras Kokorevas: https://www.pexels.com/sv-se/foto/ljus-vag-manniskor-gata-15954341/
 
 <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
 
-menu:
+Menu:
 <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Ayub Irawan - Flaticon</a>
 
-posts:
-Bild av Amine İspir: https://www.pexels.com/sv-se/foto/vag-par-romantisk-relation-14578722/
-Bild av Matteo Milan: https://www.pexels.com/sv-se/foto/hav-strand-vatten-resa-15962125/
-Bild av Taha Samet Arslan: https://www.pexels.com/sv-se/foto/staende-leende-romantik-sloja-15530666/
-Bild av Diana Titenko: https://www.pexels.com/sv-se/foto/mode-solglasogon-semester-manniskor-3271945/
-Bild av Gustavo Fring: https://www.pexels.com/sv-se/foto/man-par-karlek-kvinna-4148842/
-Bild av Oliver Morgan: https://www.pexels.com/sv-se/foto/tra-bank-landskap-solnedgang-16053779/
-Bild av Taylen Lundequam: https://www.pexels.com/sv-se/foto/hav-molnig-vagor-kust-14775583/
-Bild av Kübra Doğu: https://www.pexels.com/sv-se/foto/mat-tra-gryning-kaffe-9222655/
-Bild av João Jesus: https://www.pexels.com/sv-se/foto/ljus-mode-man-person-1080213/
-Bild av Matheus Bertelli: https://www.pexels.com/sv-se/foto/hander-kvinna-flicka-sot-3764119/
+Posts:
+Image by Amine İspir: https://www.pexels.com/sv-se/foto/vag-par-romantisk-relation-14578722/
+Image by Matteo Milan: https://www.pexels.com/sv-se/foto/hav-strand-vatten-resa-15962125/
+Image by Taha Samet Arslan: https://www.pexels.com/sv-se/foto/staende-leende-romantik-sloja-15530666/
+Image by Diana Titenko: https://www.pexels.com/sv-se/foto/mode-solglasogon-semester-manniskor-3271945/
+Image by Gustavo Fring: https://www.pexels.com/sv-se/foto/man-par-karlek-kvinna-4148842/
+Image by Oliver Morgan: https://www.pexels.com/sv-se/foto/tra-bank-landskap-solnedgang-16053779/
+Image by Taylen Lundequam: https://www.pexels.com/sv-se/foto/hav-molnig-vagor-kust-14775583/
+Image by Kübra Doğu: https://www.pexels.com/sv-se/foto/mat-tra-gryning-kaffe-9222655/
+Image by João Jesus: https://www.pexels.com/sv-se/foto/ljus-mode-man-person-1080213/
+Image by Matheus Bertelli: https://www.pexels.com/sv-se/foto/hander-kvinna-flicka-sot-3764119/
 
-Bild av Cristian Muduc: https://www.pexels.com/sv-se/foto/manniskor-vatten-reser-italien-10146128/
-Bild av Mikhail Nilov: https://www.pexels.com/sv-se/foto/blommor-pask-bestick-porslin-6957717/
-Bild av Valeriya Kobzar: https://www.pexels.com/sv-se/foto/drycker-glas-bord-firande-8630148/
-Bild av Justyna Serafin: https://www.pexels.com/sv-se/foto/hav-vatten-batar-yachter-13563441/
-Bild av Amar Preciado: https://www.pexels.com/sv-se/foto/kaffe-bar-kafe-ta-bilder-16230535/
-Bild av Lorenzo Castellino: https://www.pexels.com/sv-se/foto/hav-gryning-landskap-solnedgang-15636474/
-Bild av Lany-Jade Mondou: https://www.pexels.com/sv-se/foto/stad-solglasogon-kvinna-byggnader-14460412/
-Bild av Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
-Bild av Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
-Bild av sora: https://www.pexels.com/sv-se/foto/vinter-park-blad-oskarpa-15637648/
-Bild av Mitch Lally: https://www.pexels.com/sv-se/foto/landskap-bergen-hotell-sjo-15032293/
-Bild av arteliusnis : https://www.pexels.com/sv-se/foto/byggnader-monster-arkitektur-fonster-5338350/
-Bild av Ayako S: https://www.pexels.com/sv-se/foto/brod-mat-tra-gryning-15640312/
-Bild av Majo Pestaña : https://www.pexels.com/sv-se/foto/vaxt-blomma-blomning-botanik-16172618/
-Bild av Mikkel Kvist: https://www.pexels.com/sv-se/foto/stad-gata-byggnad-flaggor-15949542/
-Bild av Polina Kovaleva: https://www.pexels.com/sv-se/foto/stad-himmel-semester-frankrike-5507232/
-Bild av Kadir Akman: https://www.pexels.com/sv-se/foto/fagel-djur-papegoja-ara-ararauna-15912424/
-Bild av Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-plats-installning-9433045/
-Bild av Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
-Bild av Masha Raymers: https://www.pexels.com/sv-se/foto/gryning-mode-person-kvinna-2726111/
-Bild av R. Fera: https://www.pexels.com/sv-se/foto/svartvitt-mode-man-person-432059/
+Image by Cristian Muduc: https://www.pexels.com/sv-se/foto/manniskor-vatten-reser-italien-10146128/
+Image by Mikhail Nilov: https://www.pexels.com/sv-se/foto/blommor-pask-bestick-porslin-6957717/
+Image by Valeriya Kobzar: https://www.pexels.com/sv-se/foto/drycker-glas-bord-firande-8630148/
+Image by Justyna Serafin: https://www.pexels.com/sv-se/foto/hav-vatten-batar-yachter-13563441/
+Image by Amar Preciado: https://www.pexels.com/sv-se/foto/kaffe-bar-kafe-ta-bilder-16230535/
+Image by Lorenzo Castellino: https://www.pexels.com/sv-se/foto/hav-gryning-landskap-solnedgang-15636474/
+Image by Lany-Jade Mondou: https://www.pexels.com/sv-se/foto/stad-solglasogon-kvinna-byggnader-14460412/
+Image by Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
+Image by Efe Ersoy: https://www.pexels.com/sv-se/foto/karlek-sommar-sol-tradgard-14905759/
+Image by sora: https://www.pexels.com/sv-se/foto/vinter-park-blad-oskarpa-15637648/
+Image by Mitch Lally: https://www.pexels.com/sv-se/foto/landskap-bergen-hotell-sjo-15032293/
+Image by arteliusnis : https://www.pexels.com/sv-se/foto/byggnader-monster-arkitektur-fonster-5338350/
+Image by Ayako S: https://www.pexels.com/sv-se/foto/brod-mat-tra-gryning-15640312/
+Image by Majo Pestaña : https://www.pexels.com/sv-se/foto/vaxt-blomma-blomning-botanik-16172618/
+Image by Mikkel Kvist: https://www.pexels.com/sv-se/foto/stad-gata-byggnad-flaggor-15949542/
+Image by Polina Kovaleva: https://www.pexels.com/sv-se/foto/stad-himmel-semester-frankrike-5507232/
+Image by Kadir Akman: https://www.pexels.com/sv-se/foto/fagel-djur-papegoja-ara-ararauna-15912424/
+Image by Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-plats-installning-9433045/
+Image by Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
+Image by Masha Raymers: https://www.pexels.com/sv-se/foto/gryning-mode-person-kvinna-2726111/
+Image by R. Fera: https://www.pexels.com/sv-se/foto/svartvitt-mode-man-person-432059/
 
+</details>
 <br>
 
 # Acknowledgement
+This website has been made for my 5th Portfolio Project (Advanced Front-end) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
+I would like to thank my mentor PGareth McGirr from Code Institute who helped me develop the website with feedback through the project.
