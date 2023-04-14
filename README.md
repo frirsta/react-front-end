@@ -237,13 +237,22 @@ User Story
 
 <img src="src/assets/readme/features/sidebar.png" style="width: 50%" alt="The sidebar when user is offline">
 
+- The navbar on a tablet and mobile screen.
+<br>
+<img src="src/assets/readme/features/sidebar_mobile_offline.png" style="width: 50%" alt="The sidebar when user is offline">
+
 <br>
 
 - The sidebar/navbar when user is online has a link to the home page, contact page, sign out page, add post page, saved posts page and profile page.
 
-<img src="src/assets/readme/features/sidebar_online.png" style="width: 50%" alt="The sidebar online when user is offline">
+<img src="src/assets/readme/features/sidebar_online.png" style="width: 50%" alt="The sidebar when user is online">
+
+- The navbar on a tablet and mobile screen.
+<br>
+<img src="src/assets/readme/features/sidebar_mobile_online.png" style="width: 50%" alt="The sidebar when user is online">
 
 <br>
+
 </details>
 
 <details><summary>All pages</summary>
