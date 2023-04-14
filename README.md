@@ -252,6 +252,19 @@ User Story
 
 </details>
 
+
+### Explore accounts
+<img src="src/assets/readme/features/explore_accounts_desktop.png" style="width: 50%" alt="Explore accounts feature">
+<br>
+
+* The explore accounts feature shows five of the most followed accounts for other users to find and follow if they want to.
+
+<br>
+<img src="src/assets/readme/features/explore_accounts_mobile.png" style="width: 50%" alt="Explore accounts feature">
+<br>
+
+* The explore accounts feature on smaller screens.
+
 ## All page
 
 <details><summary>Home page</summary>
