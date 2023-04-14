@@ -150,6 +150,7 @@ Color Scheme
 # Features
 
 <details><summary>Post detail</summary>
+
 <br>
 <img src="src/assets/readme/features/post_detail.png" style="width: 50%" alt="Post detail page features test for desktop screen">
 
@@ -171,12 +172,12 @@ Color Scheme
 
 * The update post page is where the owner of the post can change the caption or image of the post.
 
-
 </details>
 
 <br>
 
 <details><summary>Likes, comments and saved</summary>
+
 <br>
 <img src="src/assets/readme/features/post_like_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
 <br>
@@ -228,6 +229,21 @@ Color Scheme
 * If the owner of the comment clicks the trash can icon they delete the comment.
 * If the owner of the post clicks the pen to square icon, they will be able to change the content of the comment.
 
+</details>
+
+<details><summary>Navbar</summary>
+
+* The sidebar/navbar when user is offline has a link to the home page, sign up page and sign in page.
+
+<img src="src/assets/readme/features/sidebar.png" style="width: 50%" alt="The sidebar when user is offline">
+
+<br>
+
+* The sidebar/navbar when user is online has a link to the home page, contact page, sign out page, add post page, saved posts page and profile page.  
+
+<img src="src/assets/readme/features/sidebar_online.png" style="width: 50%" alt="The sidebar online when user is offline">
+
+<br>
 </details>
 
 <details><summary>Features</summary>
