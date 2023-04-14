@@ -174,7 +174,6 @@ Color Scheme
 
 </details>
 
-<br>
 
 <details><summary>Likes, comments and saved</summary>
 
