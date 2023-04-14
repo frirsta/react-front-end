@@ -148,6 +148,35 @@ Color Scheme
 <br>
 
 # Features
+
+<details><summary>Post detail</summary>
+<img src="src/assets/readme/features/post_detail.png" style="width: 50%" alt="Post detail page features test for desktop screen">
+
+* All comments made on that post are displayed as a list under the image.
+* The user can leave a comment in the post detail page.
+* The owner of the post will have a dropdown menu on the top right corner of the post.
+
+</details>
+
+<details><summary>Likes, comments and saved</summary>
+<img src="src/assets/readme/features/post_likes_comments_saved.png" style="width: 50%" alt="post likes comments saved page features test for desktop screen">
+
+* The bottom of the post has the number of likes, comments and saved displayed.
+* When a user clicks the heart icon they like a post.
+* When a user clicks the comments icon they get redirected to the post details page where they can leave a comment.
+* When a user clicks the save icon they save the post, and they can find the post on the saved Posts page.
+
+
+<img src="src/assets/readme/features/post_save_message.png" style="width: 50%" alt="Post can't be saved message">
+
+<img src="src/assets/readme/features/post_like_message.png" style="width: 50%" alt="Post can't be liked message">
+
+* The owner of the post can't like or save their own posts
+* If the user who owns the account tries to like their own post a message will be displayed
+
+
+</details>
+
 <details><summary>Features</summary>
 
 <details><summary>home page</summary>
