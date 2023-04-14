@@ -41,7 +41,7 @@ The front-end application is connected to Snap it's API.
 I have used github issues to work with Snap it.
 
 <details><summary>GitHub Issues</summary>
-<img src="src/assets/readme/github_projects/issues.png" alt="github Issues" style="width: 100%">
+<img src="src/assets/readme/github_projects/issues.png" alt="github Issues" style="width: 50%">
 </details>
 <br>
 
