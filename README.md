@@ -10,7 +10,6 @@
 - [**Testing**](#testing)
 - [**Technologies Used**](#technologies-used)
 - [**Bugs**](#bugs)
-- [**Unfixed Bugs**](#unfixed-bugs)
 - [**Deployment**](#deployment)
 - [**Credits**](#credits)
 - [**Acknowledgement**](#acknowledgement)
