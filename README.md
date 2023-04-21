@@ -37,9 +37,11 @@ The front-end application is connected to Snap it's API.
 
 # Project Management
 
+I have used github issues to work with Snap it. They have been prioritized by four different labels.
+<br>
+
 ## Agile methodology
 
-I have used github issues to work with Snap it. They have been prioritized by four different labels.
 <br>
 
 - Must Have - Are the issues that have to be top priority.
@@ -630,10 +632,6 @@ Libraries
 <br>
 
 # Bugs
-
-<br>
-
-# Unfixed Bugs
 
 <br>
 
