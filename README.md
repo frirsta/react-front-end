@@ -723,4 +723,4 @@ Image by R. Fera: https://www.pexels.com/sv-se/foto/svartvitt-mode-man-person-43
 
 # Acknowledgement
 This website has been made for my 5th Portfolio Project (Advanced Front-end) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
-I would like to thank my mentor PGareth McGirr from Code Institute who helped me develop the website with feedback through the project.
+I would like to thank my mentor Gareth McGirr from Code Institute who helped me develop the website with feedback through the project.
