@@ -4,11 +4,15 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import {
+  useCurrentUser,
+  useSetCurrentUser,
+} from "../../context/CurrentUserContext";
 
-import { useHistory, useParams } from "react-router";
+import { useHistory, useParams } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
 import styles from "../../styles/PostAdd.module.css";
-import ButtonStyles from '../../styles/Buttons.module.css';
+import ButtonStyles from "../../styles/Buttons.module.css";
 
 function PostUpdateForm() {
   const [errors, setErrors] = useState({});
@@ -16,6 +20,9 @@ function PostUpdateForm() {
     caption: "",
     post_image: "",
   });
+
+  const currentUser = useCurrentUser();
+  const setCurrentUser = useSetCurrentUser();
 
   const { caption, post_image } = postData;
 
@@ -25,13 +32,15 @@ function PostUpdateForm() {
 
   useEffect(() => {
     const handleMount = async () => {
-      try {
-        const { data } = await axiosReq.get(`/posts/${id}/`);
-        const { caption, post_image, is_owner } = data;
+      if (currentUser?.profile_id?.toString() === id) {
+        try {
+          const { data } = await axiosReq.get(`/posts/${id}/`);
+          const { caption, post_image, is_owner } = data;
 
-        is_owner ? setPostData({ caption, post_image }) : history.push("/");
-      } catch (err) {
-        // console.log(err);
+          is_owner ? setPostData({ caption, post_image }) : history.push("/");
+        } catch (err) {
+          history.push("/");
+        }
       }
     };
     handleMount();
@@ -65,7 +74,7 @@ function PostUpdateForm() {
     }
 
     try {
-      await axiosReq.put(`/posts/${id}`, formData);
+      await axiosReq.put(`/posts/${id}/`, formData);
       history.push(`/posts/${id}`);
     } catch (err) {
       // console.log(err);
@@ -92,13 +101,16 @@ function PostUpdateForm() {
         </Alert>
       ))}
       <div className={styles.UpdateButtons}>
-      <Button className={ButtonStyles.Button} onClick={() => history.goBack()}>
-        Cancel
-      </Button>
+        <Button
+          className={ButtonStyles.Button}
+          onClick={() => history.goBack()}
+        >
+          Cancel
+        </Button>
 
-      <Button className={ButtonStyles.Button} type="submit">
-        Save
-      </Button>
+        <Button className={ButtonStyles.Button} type="submit">
+          Save
+        </Button>
       </div>
     </div>
   );
@@ -107,19 +119,17 @@ function PostUpdateForm() {
     <Container className={styles.FormContainer}>
       <Form onSubmit={handleSubmit} className={styles.Form}>
         <Form.Group className={styles.UploadPost}>
-
-              <figure>
-                <Image className={styles.Image} src={post_image} rounded />
-              </figure>
-              <div>
-                <Form.Label
-                  className={`${ButtonStyles.Button} ${ButtonStyles.ChangeImage} btn`}
-                  htmlFor="add-image"
-                >
-                  Change Image
-                </Form.Label>
-              </div>
-
+          <figure>
+            <Image className={styles.Image} src={post_image} rounded />
+          </figure>
+          <div>
+            <Form.Label
+              className={`${ButtonStyles.Button} ${ButtonStyles.ChangeImage} btn`}
+              htmlFor="add-image"
+            >
+              Change Image
+            </Form.Label>
+          </div>
 
           <Form.File
             id="add-image"
