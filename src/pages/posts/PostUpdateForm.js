@@ -26,10 +26,10 @@ function PostUpdateForm() {
   useEffect(() => {
     const handleMount = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/${id}`);
-        const { caption, post_image, owner } = data;
+        const { data } = await axiosReq.get(`/posts/${id}/`);
+        const { caption, post_image, is_owner } = data;
 
-        owner ? setPostData({ caption, post_image }) : history.push("/");
+        is_owner ? setPostData({ caption, post_image }) : history.push("/");
       } catch (err) {
         // console.log(err);
       }

@@ -460,6 +460,42 @@ User Story
 
 # Testing
 
+## User story testing
+<img src="src/assets/readme/user-story/user_story_1.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_2.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_3.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_4.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_5.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_6.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_7.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_8.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_9.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_10.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_11.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_12.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_13.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_14.png" alt="User story">
+
+<br>
+
+User story | Steps | Expected | Results | Pass/Fail |
+--- | --- | --- | --- | ---
+As a user I can upload a picture so that I can share my images with other people | 1. Navigate to the Add post page.
+2. Click the upload image.
+3. Choose a picture to post.
+4. Type a caption and click the post button  | Go to the uploaded posts detail page. | Go to the uploaded posts detail page | Success
+As a user I can 'view a list of posts* so that I can see what people have uploaded | Navigate to home page | See a list of all posts created, with the newest post on top os the list | See a list of all posts created, with the newest post on top os the list | Success
+As a User I can create an account so that I can comment, like/dislike, and upload images |1. Navigate to signup page. 2. Choose a username and password. 3. Click the Sign up button | Go to Sign in page, and successfully log in to the created account  | Go to Sign in page, and successfully log in to the created account  | Success
+As a User I can login so that I can upload, delete and edit my posts | Navigate to Sign in page. 2. Type account infromation | Go to home page. Be able to add post, delete and edit their own post. | Go to home page. Be able to add post, delete and edit their own post. | Success
+As a Site Admin I can logout so that someone else using my computer can't post from my account | 1. Click the Sign out button. | When signed out, the profile, add post, contact and saved posts are removed from the navbar. | When signed out, the profile, add post, contact and saved posts are removed from the navbar. | ---
+As a Site user I can go to a profile page specifically for me so that I can find all posts created by me | --- |  --- | --- | ---
+As a *User' I can comment posts so that I can write what I think about the post and interact with other users | --- | --- | --- | ---
+As a User I can delete comments I have made so that I have control over my comments, and can remove them if I change my mind on the comments | --- | --- | --- | ---
+As a User I can read comments that are made for a specific post so that I can read what people think of the post | --- | --- | --- | ---
+As a User I can contact the site Owner so that I can ask questions or report a problem | --- | --- | --- | ---
+As a site user I can save posts so that I can find them easily | --- | --- | --- | ---
+As a user I can use the navbar from every page so that I can find all pages easily | --- | --- | --- | ---
+
 - HTML pass [W3C HTML](https://validator.w3.org/) with no error
   <br>
 
@@ -716,6 +752,7 @@ Image by Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-pla
 Image by Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
 Image by Masha Raymers: https://www.pexels.com/sv-se/foto/gryning-mode-person-kvinna-2726111/
 Image by R. Fera: https://www.pexels.com/sv-se/foto/svartvitt-mode-man-person-432059/
+Image by Jonathan Borba: https://www.pexels.com/sv-se/foto/tra-fagel-djur-husdjur-16147939/
 
 </details>
 <br>
