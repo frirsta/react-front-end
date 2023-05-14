@@ -37,6 +37,8 @@ function PostUpdateForm() {
         } catch (err) {
           history.push("/");
         }
+      } else {
+        history.push("/");
       }
     };
     handleMount();
