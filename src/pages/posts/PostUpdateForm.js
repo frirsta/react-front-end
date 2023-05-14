@@ -4,10 +4,7 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-import {
-  useCurrentUser,
-  useSetCurrentUser,
-} from "../../context/CurrentUserContext";
+import { useCurrentUser } from "../../context/CurrentUserContext";
 
 import { useHistory, useParams } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -22,7 +19,6 @@ function PostUpdateForm() {
   });
 
   const currentUser = useCurrentUser();
-  const setCurrentUser = useSetCurrentUser();
 
   const { caption, post_image } = postData;
 
@@ -44,7 +40,7 @@ function PostUpdateForm() {
       }
     };
     handleMount();
-  }, [history, id]);
+  }, [currentUser, history, id]);
 
   const handleChange = (event) => {
     setPostData({
