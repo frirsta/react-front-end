@@ -487,6 +487,39 @@ Here are the components that have been used for multiple pages:
 
 # Testing
 
+## User story testing
+<img src="src/assets/readme/user-story/user_story_1.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_2.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_3.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_4.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_5.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_6.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_7.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_8.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_9.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_10.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_11.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_12.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_13.png" alt="User story">
+<img src="src/assets/readme/user-story/user_story_14.png" alt="User story">
+
+<br>
+
+User story | Steps | Expected | Results | Pass/Fail |
+--- | --- | --- | --- | ---
+As a user. I can upload a picture so that I can share my images with other people | 1. Navigate to the Add post page. <br> 2. Click the upload image. <br> 3. Choose a picture to post. <br> 4. Type a caption and click the post button  | Go to the uploaded posts detail page. | Go to the uploaded posts detail page | Success
+As a user, I can view a list of posts so that I can see what people have uploaded | 1. Navigate to home page | See a list of all posts created, with the newest post on top of the list | See a list of all posts created, with the newest post on top of the list | Success
+As a User, I can create an account so that I can comment, like/dislike, and upload images |1. Navigate to sign up page. <br> 2. Choose a username and password. <br> 3. Click the Sign up button | Go to Sign in page, and successfully log in to the created account  | Go to Sign in page, and successfully log in to the created account  | Success
+As a User, I can log in so that I can upload, delete and edit my posts | 1. Navigate to Sign in page. <br> 2. Type account information | Go to home page. Be able to add posts, delete and edit their own post. | Go to home page. Be able to add posts, delete and edit their own post. | Success
+As a Site user, I can log out so that someone else using my computer can't post from my account | 1. Click the Sign out button. | When signed out, the profile, add post, contact and saved posts are removed from the navbar. | When signed out, the profile, add post, contact and saved posts are removed from the navbar. | Success
+As a Site user I can go to a profile page specifically for me so that I can find all posts created by me | 1. Navigate to profile page | Go to profile page, see my profile image, the number of followers I have, the number of users I am following, the number of posts I have uploaded, a dropdown menu on the top right corner and a list of all posts uploaded by me. | Go to profile page, see my profile image, the number of followers I have, the number of users I am following, the number of posts I have uploaded, a dropdown menu on the top right corner and a list of all posts uploaded by me. | Success
+As a User, I can comment on posts so that I can write what I think about the post and interact with other users | 1. Click a post I want to comment. <br> 2. Click the "Leave a comment..." placeholder text. <br> 3. Type my comment. <br> 4. Click Submit button | See the created comment under the post. | See the created comment under the post. | Success
+As a User, I can delete comments I have made so that I have control over my comments, and can remove them if I change my mind in the comments | 1. Click the dropdown menu on the right corner of the comment. <br> 2. Click the trash can icon. | The comment disappears from the list of comments | The comment disappears from the list of comments | Success
+As a User, I can read comments that are made for a specific post so that I can read what people think of the post | 1. Click a post. <br> 2. Scroll to below post and read comments | See a list of comments, if no comments have been made "No comments, be the first to comment" will be displayed | See a list of comments, if no comments have been made "No comments, be the first to comment" will be displayed | Success
+As a User, I can contact the site Owner so that I can ask questions or report a problem | 1. Navigate to the contact page. <br> 2. Type why I am contacting them, and leave a message. <br> 3. Click post button | See an alert on top of the page "Your message has been sent" | See an alert on top of the page "Your message has been sent" | Success
+As a site user, I can save posts so that I can find them easily | 1. Click the bookmark icon on the right bottom corner of the post. <br> 2. Navigate to saved post's page. | The bookmark will go from being outlined to being fully black. On the Saved post's page, I will see a list of posts I have saved. | The bookmark will go from being outlined to being fully black. On the Saved post's page, I will see a list of posts I have saved. | Success
+As a user, I can use the navbar from every page so that I can find all pages easily | 1. Go to all pages. | See the navbar on all pages. | See the navbar on all pages. | Success
+
 - HTML pass [W3C HTML](https://validator.w3.org/) with no error
   <br>
 
@@ -743,6 +776,7 @@ Image by Marina Leonova: https://www.pexels.com/sv-se/foto/skog-bord-terrass-pla
 Image by Andrea Piacquadio: https://www.pexels.com/sv-se/foto/kvinna-smartphone-flicka-trad-3775087/
 Image by Masha Raymers: https://www.pexels.com/sv-se/foto/gryning-mode-person-kvinna-2726111/
 Image by R. Fera: https://www.pexels.com/sv-se/foto/svartvitt-mode-man-person-432059/
+Image by Jonathan Borba: https://www.pexels.com/sv-se/foto/tra-fagel-djur-husdjur-16147939/
 
 </details>
 <br>
