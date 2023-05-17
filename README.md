@@ -266,7 +266,7 @@ User Story
 
 * The explore accounts feature on smaller screens.
 
-## All page
+## All pages
 
 <details><summary>Home page</summary>
 <h3>Desktop</h3>
@@ -448,6 +448,33 @@ User Story
 
 
 <br>
+
+## Reusable components
+
+Here are the components that have been used for multiple pages:
+
+### Asset
+* The asset component was used to create the NotFound component
+* The asset component was used to display a spinner in the explore accounts component.
+* The asset component was used in the account page to display a spinner and to display a not found message if a user has not posted any images.
+* The asset component was used on the contact page to display a spinner and to display a not found message.
+* The asset component was used in the post add form to display an upload image and a message.
+* The asset component was used in the post page page to display a spinner.
+* The asset component was used in the posts page page to display a spinner and a not found message.
+
+### Profile
+* The profile component was used in the sidebar next to the user's username.
+* The profile component was used in the account owners account page.
+* The profile component was used in the comment component.
+* The profile component was used in the comments add form component.
+* The profile component was used in the contact component.
+* The profile component was used in the post component.
+
+### MoreDropdown
+* The MoreDropdown component was used in the comment component.
+* The MoreDropdown component was used in the post component.
+
+
 
 # Future Features
 
