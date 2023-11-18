@@ -1,5 +1,7 @@
 # Snap it
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35d32c76-6b29-4b61-9eed-dcf963d253ec/deploy-status)](https://app.netlify.com/sites/snaapit/deploys)
+
 - [**Project**](#project)
 - [**Project Management**](#project-management)
 - [**Design**](#design)
@@ -20,7 +22,8 @@
 
 Welcome to Snap it! Snap it is the social media app is for everyone who wants to share their life with images and keep up with friends and family on what's going on in their life. Snap it is useful in many ways, people can easily keep up with what is trending regarding anything, like family events, fashion and their favourite celebrity! Anyone can create an account and start sharing images with their followers.
 
-[Front-end live link](https://front-end-react.herokuapp.com/)
+[Front-end live link](https://snaapit.netlify.app/)
+
 <br>
 
 [Front-end repository](https://github.com/frirsta/react-front-end)
